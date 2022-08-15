@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="Beipu" customModuleProvider="target">
+            <connections>
+                <outlet property="mapImageView" destination="e5g-Gb-Wim" id="pKq-ZD-uX0"/>
+                <outlet property="mapScrollView" destination="XpP-l3-U8U" id="pBB-2V-XVM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XpP-l3-U8U">
+                    <rect key="frame" x="0.0" y="44" width="414" height="844"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="e5g-Gb-Wim">
+                            <rect key="frame" x="0.0" y="0.0" width="1115" height="844"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="e5g-Gb-Wim" secondAttribute="height" multiplier="1115:844" id="d4k-iC-mG3"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="e5g-Gb-Wim" firstAttribute="top" secondItem="XpP-l3-U8U" secondAttribute="top" id="ERb-bD-NPU"/>
+                        <constraint firstItem="e5g-Gb-Wim" firstAttribute="centerY" secondItem="XpP-l3-U8U" secondAttribute="centerY" id="Psg-Wa-Pyh"/>
+                        <constraint firstItem="e5g-Gb-Wim" firstAttribute="leading" secondItem="XpP-l3-U8U" secondAttribute="leading" id="RZj-ts-UzZ"/>
+                        <constraint firstAttribute="bottom" secondItem="e5g-Gb-Wim" secondAttribute="bottom" id="f41-gq-CDF"/>
+                        <constraint firstAttribute="trailing" secondItem="e5g-Gb-Wim" secondAttribute="trailing" id="unD-QG-JjV"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="XpP-l3-U8U" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QOx-eV-47Y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="XpP-l3-U8U" secondAttribute="bottom" id="Qis-jQ-ci1"/>
+                <constraint firstAttribute="trailing" secondItem="XpP-l3-U8U" secondAttribute="trailing" id="WfP-at-xTv"/>
+                <constraint firstItem="e5g-Gb-Wim" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="afX-B5-dAk"/>
+                <constraint firstItem="XpP-l3-U8U" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="kRe-3n-3m6"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="121"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="map" width="1115" height="844"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

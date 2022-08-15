@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MerchantScanViewController" customModule="Beipu" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraView" destination="MBM-tD-jzK" id="9ug-fL-Tce"/>
+                <outlet property="outView" destination="DQk-4c-9RM" id="XjS-WN-txD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQk-4c-9RM">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNb-tY-IQc" userLabel="TitleView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="掃描 QR Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2K-Ut-8lC">
+                            <rect key="frame" x="150" y="14" width="114" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cw0-Ym-tEP">
+                            <rect key="frame" x="17" y="8" width="30" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="Ｘ">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="backAction" destination="-1" eventType="touchUpInside" id="r8z-fO-YIc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="cw0-Ym-tEP" firstAttribute="leading" secondItem="DNb-tY-IQc" secondAttribute="leading" constant="17" id="B3K-T1-Oiy"/>
+                        <constraint firstItem="cw0-Ym-tEP" firstAttribute="centerY" secondItem="DNb-tY-IQc" secondAttribute="centerY" id="Hho-FR-Dg0"/>
+                        <constraint firstItem="L2K-Ut-8lC" firstAttribute="centerY" secondItem="DNb-tY-IQc" secondAttribute="centerY" id="c4j-nW-ZXh"/>
+                        <constraint firstAttribute="height" constant="50" id="yRY-YV-hEi"/>
+                        <constraint firstItem="L2K-Ut-8lC" firstAttribute="centerX" secondItem="DNb-tY-IQc" secondAttribute="centerX" id="zto-sb-4u2"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MBM-tD-jzK" userLabel="CameraView">
+                    <rect key="frame" x="35" y="119" width="344" height="344"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="MBM-tD-jzK" secondAttribute="height" multiplier="1:1" id="TLh-0P-AZr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MBM-tD-jzK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="75" id="70B-UX-m7Z"/>
+                <constraint firstItem="DQk-4c-9RM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AYD-BE-M1X"/>
+                <constraint firstItem="DQk-4c-9RM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="L7q-Te-VOi"/>
+                <constraint firstItem="MBM-tD-jzK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MDm-4M-MEz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DQk-4c-9RM" secondAttribute="trailing" id="NNs-AV-3br"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DQk-4c-9RM" secondAttribute="bottom" id="UsN-jM-W9T"/>
+                <constraint firstItem="MBM-tD-jzK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="WJR-2q-3SB"/>
+                <constraint firstItem="DNb-tY-IQc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zeu-22-kfW"/>
+                <constraint firstItem="DNb-tY-IQc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bD3-5k-ovh"/>
+                <constraint firstAttribute="trailing" secondItem="DNb-tY-IQc" secondAttribute="trailing" id="ufl-az-d1v"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="121"/>
+        </view>
+    </objects>
+</document>

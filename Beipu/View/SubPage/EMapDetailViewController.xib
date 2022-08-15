@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EMapDetailViewController" customModule="Beipu" customModuleProvider="target">
+            <connections>
+                <outlet property="addrLabel" destination="cg0-2J-XOn" id="Qjt-nU-8xU"/>
+                <outlet property="descriptLabel" destination="gI1-DD-QHl" id="xkW-ym-9Zq"/>
+                <outlet property="titleLabel" destination="Mf0-KO-WYc" id="kQk-BL-0TA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiD-cf-x1N">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WEz-16-THq">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gI1-DD-QHl">
+                                    <rect key="frame" x="30" y="127" width="354" height="325"/>
+                                    <mutableString key="text">民國九十一年，從原本的光君製茶廠，改建成現在這種客家唐式風格建築， 取名北埔第一棧，讓客家美食與茶文化更多元豐富。 北埔第一棧在吃的文化上，除酸、鹹、香一貫的客家菜特色外，也發展出令人讚嘆垂涎的料理，如金桔入菜與膨風茶入菜等， 都是極具地方特色的客家美食。 另外，特色膨風茶之產製和銷售，是近年北埔鄉對外的一項主要文化產業，亦是地方重要的經濟來源，「北埔第一棧」為北埔產茶勝地，開設膨風茶文物館，配合四周觀光茶園、果園、客家歷史古蹟、水域遊憩設施等，亦成為遊客想了解北埔鄉茶業的遊憩據點重心，更能吸引國內遊客甚至國際觀光客之注意。北埔第一棧在客家文化的傳承與發揚一直在北埔站在領先的地位，我們希望用認真傳承的心，永續經營這樣的一塊寶地。</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="埔第一棧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mf0-KO-WYc">
+                                    <rect key="frame" x="162" y="50" width="90" height="27"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址:水際村3鄰31之1號" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg0-2J-XOn">
+                                    <rect key="frame" x="92.5" y="502" width="229.5" height="26.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="gI1-DD-QHl" firstAttribute="top" secondItem="Mf0-KO-WYc" secondAttribute="bottom" constant="50" id="5hP-e1-cJV"/>
+                                <constraint firstItem="Mf0-KO-WYc" firstAttribute="top" secondItem="WEz-16-THq" secondAttribute="top" constant="50" id="HNG-T6-kB4"/>
+                                <constraint firstItem="cg0-2J-XOn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WEz-16-THq" secondAttribute="leading" constant="30" id="JEe-Y0-oIv"/>
+                                <constraint firstItem="gI1-DD-QHl" firstAttribute="centerX" secondItem="WEz-16-THq" secondAttribute="centerX" id="Q7s-IT-MyH"/>
+                                <constraint firstItem="gI1-DD-QHl" firstAttribute="leading" secondItem="WEz-16-THq" secondAttribute="leading" constant="30" id="bU1-7v-hvZ"/>
+                                <constraint firstItem="cg0-2J-XOn" firstAttribute="top" secondItem="gI1-DD-QHl" secondAttribute="bottom" constant="50" id="cZs-qX-49S"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cg0-2J-XOn" secondAttribute="bottom" constant="200" id="qTC-qt-Q3O"/>
+                                <constraint firstItem="Mf0-KO-WYc" firstAttribute="centerX" secondItem="WEz-16-THq" secondAttribute="centerX" id="rGz-UI-fpp"/>
+                                <constraint firstItem="cg0-2J-XOn" firstAttribute="centerX" secondItem="WEz-16-THq" secondAttribute="centerX" id="rVC-JF-UbO"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="WEz-16-THq" secondAttribute="trailing" id="0nT-Ov-mjS"/>
+                        <constraint firstItem="WEz-16-THq" firstAttribute="top" secondItem="fiD-cf-x1N" secondAttribute="top" id="8oj-YH-Mpt"/>
+                        <constraint firstItem="WEz-16-THq" firstAttribute="leading" secondItem="fiD-cf-x1N" secondAttribute="leading" id="AWx-TI-UKT"/>
+                        <constraint firstItem="WEz-16-THq" firstAttribute="centerY" secondItem="fiD-cf-x1N" secondAttribute="centerY" priority="250" id="fzX-57-86b"/>
+                        <constraint firstAttribute="bottom" secondItem="WEz-16-THq" secondAttribute="bottom" priority="250" id="hcl-R0-iIP"/>
+                        <constraint firstItem="WEz-16-THq" firstAttribute="centerX" secondItem="fiD-cf-x1N" secondAttribute="centerX" id="rbh-yp-9qS"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fiD-cf-x1N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="07f-mQ-qvg"/>
+                <constraint firstItem="fiD-cf-x1N" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="144-kI-GZS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fiD-cf-x1N" secondAttribute="trailing" id="HHn-SD-B8G"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fiD-cf-x1N" secondAttribute="bottom" id="etq-u1-KTb"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="121"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

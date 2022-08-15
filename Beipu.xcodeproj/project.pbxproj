@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5406E8DC289A6D3300B639EA /* PayRecordTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5406E8DA289A6D3300B639EA /* PayRecordTableViewController.storyboard */; };
+		5406E8DD289A6D3300B639EA /* PayRecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5406E8DB289A6D3300B639EA /* PayRecordTableViewController.swift */; };
+		5406E8E0289A775300B639EA /* PayRecordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5406E8DE289A775300B639EA /* PayRecordDetailViewController.swift */; };
+		5406E8E3289B61A900B639EA /* PayRecordDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5406E8E2289B61A900B639EA /* PayRecordDetailViewController.storyboard */; };
+		5416F3FF289BD03F00D4F9B9 /* EMapDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5416F3FD289BD03F00D4F9B9 /* EMapDetailViewController.swift */; };
+		5416F400289BD03F00D4F9B9 /* EMapDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5416F3FE289BD03F00D4F9B9 /* EMapDetailViewController.xib */; };
+		5416F404289BDD0700D4F9B9 /* MerchantTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5416F402289BDD0700D4F9B9 /* MerchantTopViewController.swift */; };
+		5416F405289BDD0700D4F9B9 /* MerchantTopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5416F403289BDD0700D4F9B9 /* MerchantTopViewController.xib */; };
+		5416F408289BDF0500D4F9B9 /* MerchantScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5416F406289BDF0500D4F9B9 /* MerchantScanViewController.swift */; };
+		5416F409289BDF0500D4F9B9 /* MerchantScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5416F407289BDF0500D4F9B9 /* MerchantScanViewController.xib */; };
+		5416F40C289CC48F00D4F9B9 /* CouponFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5416F40B289CC48F00D4F9B9 /* CouponFlowViewController.swift */; };
+		5416F40F289CC70400D4F9B9 /* CouponCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5416F40D289CC70400D4F9B9 /* CouponCodeViewController.swift */; };
+		5416F410289CC70400D4F9B9 /* CouponCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5416F40E289CC70400D4F9B9 /* CouponCodeViewController.xib */; };
+		541806C5288A545200A0E55E /* ItemListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541806C4288A545200A0E55E /* ItemListCollectionViewController.swift */; };
+		541806C7288A545C00A0E55E /* ItemListCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541806C6288A545C00A0E55E /* ItemListCollectionViewController.storyboard */; };
+		541806CA288AAAF500A0E55E /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541806C8288AAAF500A0E55E /* ItemDetailViewController.swift */; };
+		541806CB288AAAF500A0E55E /* ItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541806C9288AAAF500A0E55E /* ItemDetailViewController.xib */; };
 		5420E562286567E2003F8371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5420E561286567E2003F8371 /* AppDelegate.swift */; };
 		5420E564286567E2003F8371 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5420E563286567E2003F8371 /* SceneDelegate.swift */; };
 		5420E569286567E2003F8371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5420E567286567E2003F8371 /* Main.storyboard */; };
@@ -15,6 +32,76 @@
 		5420E579286567E2003F8371 /* BeipuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5420E578286567E2003F8371 /* BeipuTests.swift */; };
 		5420E583286567E2003F8371 /* BeipuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5420E582286567E2003F8371 /* BeipuUITests.swift */; };
 		5420E585286567E2003F8371 /* BeipuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5420E584286567E2003F8371 /* BeipuUITestsLaunchTests.swift */; };
+		5420E59E2865A8BA003F8371 /* TopPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5420E59B2865A8BA003F8371 /* TopPageViewController.swift */; };
+		5420E5A02865A8BA003F8371 /* RoootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5420E59D2865A8BA003F8371 /* RoootNavigationController.swift */; };
+		5428056D288C3787009D243F /* BeipuSetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428056C288C3787009D243F /* BeipuSetTableViewController.swift */; };
+		5428056F288C37AE009D243F /* BeipuSetTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5428056E288C37AE009D243F /* BeipuSetTableViewController.storyboard */; };
+		5428AC50286ACD1C009AD92B /* TopPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5428AC4F286ACD1C009AD92B /* TopPageViewController.storyboard */; };
+		5428AC52286B1144009AD92B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428AC51286B1144009AD92B /* Model.swift */; };
+		5428AC5E286B11A7009AD92B /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428AC59286B11A7009AD92B /* WebAPI.swift */; };
+		5428AC70286B11B5009AD92B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428AC61286B11B5009AD92B /* Extensions.swift */; };
+		5428AC72286B11B5009AD92B /* TimeSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428AC64286B11B5009AD92B /* TimeSelectView.swift */; };
+		5428AC73286B11B5009AD92B /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428AC65286B11B5009AD92B /* WKWebViewController.swift */; };
+		5428AC74286B11B5009AD92B /* BlankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5428AC66286B11B5009AD92B /* BlankViewController.xib */; };
+		5428AC75286B11B5009AD92B /* BlankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428AC67286B11B5009AD92B /* BlankViewController.swift */; };
+		5428AC76286B11B5009AD92B /* WKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5428AC68286B11B5009AD92B /* WKWebViewController.xib */; };
+		5428AC77286B11B5009AD92B /* ScreenCapAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428AC69286B11B5009AD92B /* ScreenCapAlert.swift */; };
+		5428AC78286B11B5009AD92B /* TimeSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5428AC6A286B11B5009AD92B /* TimeSelectView.xib */; };
+		5428AC79286B11B5009AD92B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428AC6B286B11B5009AD92B /* LoadingView.swift */; };
+		5428AC7A286B11B5009AD92B /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428AC6C286B11B5009AD92B /* NibOwnerLoadable.swift */; };
+		5428F65B286C58460096AA34 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5428F659286C58460096AA34 /* LogInViewController.xib */; };
+		5428F65C286C58460096AA34 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428F65A286C58460096AA34 /* LogInViewController.swift */; };
+		5428F667286C5A0E0096AA34 /* LogInFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428F666286C5A0E0096AA34 /* LogInFlowViewController.swift */; };
+		5428F669286D3C730096AA34 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428F668286D3C730096AA34 /* Theme.swift */; };
+		5428F66B286D42B20096AA34 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428F66A286D42B20096AA34 /* UserService.swift */; };
+		542FBEB5286EE1A200EAB612 /* MemberCenterTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542FBEB4286EE1A200EAB612 /* MemberCenterTableViewController.storyboard */; };
+		542FBEB7286EE1BC00EAB612 /* MemberCenterFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542FBEB6286EE1BC00EAB612 /* MemberCenterFlowViewController.swift */; };
+		542FBEB9286EE1CC00EAB612 /* MemberCenterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542FBEB8286EE1CC00EAB612 /* MemberCenterTableViewController.swift */; };
+		543005D12871937100784D3B /* MemberInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543005CF2871937100784D3B /* MemberInfoViewController.swift */; };
+		543005D22871937100784D3B /* MemberInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 543005D02871937100784D3B /* MemberInfoViewController.xib */; };
+		543005D5287288EA00784D3B /* RuleTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543005D3287288EA00784D3B /* RuleTextViewController.swift */; };
+		543005D6287288EA00784D3B /* RuleTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 543005D4287288EA00784D3B /* RuleTextViewController.xib */; };
+		543005D82872C51400784D3B /* ThemeSetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543005D72872C51400784D3B /* ThemeSetTableViewController.swift */; };
+		543005DA2872C52000784D3B /* ThemeSetTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543005D92872C52000784D3B /* ThemeSetTableViewController.storyboard */; };
+		543005DC2872D6CE00784D3B /* CouponTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543005DB2872D6CE00784D3B /* CouponTableViewController.swift */; };
+		543005DF2872D6DE00784D3B /* CouponTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543005DE2872D6DE00784D3B /* CouponTableViewController.storyboard */; };
+		543005E72874105800784D3B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543005E52874105800784D3B /* MapViewController.swift */; };
+		543005E82874105800784D3B /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 543005E62874105800784D3B /* MapViewController.xib */; };
+		543005EB2874129000784D3B /* ParkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543005E92874129000784D3B /* ParkingViewController.swift */; };
+		543005EC2874129000784D3B /* ParkingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 543005EA2874129000784D3B /* ParkingViewController.xib */; };
+		543005F42874304100784D3B /* GetSetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543005F32874304100784D3B /* GetSetTableViewController.swift */; };
+		543005F62874304D00784D3B /* GetSetTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543005F52874304D00784D3B /* GetSetTableViewController.storyboard */; };
+		5431FEC0288D92510060D5DC /* NaviDescriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5431FEBE288D92510060D5DC /* NaviDescriptViewController.swift */; };
+		5431FEC1288D92510060D5DC /* NaviDescriptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5431FEBF288D92510060D5DC /* NaviDescriptViewController.xib */; };
+		5431FEC4288D94330060D5DC /* NaviCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5431FEC2288D94330060D5DC /* NaviCameraViewController.swift */; };
+		5431FEC5288D94330060D5DC /* NaviCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5431FEC3288D94330060D5DC /* NaviCameraViewController.xib */; };
+		5431FEC8288D95640060D5DC /* NaviNotInRangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5431FEC6288D95640060D5DC /* NaviNotInRangeViewController.swift */; };
+		5431FEC9288D95640060D5DC /* NaviNotInRangeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5431FEC7288D95640060D5DC /* NaviNotInRangeViewController.xib */; };
+		5431FECC288D9AB30060D5DC /* NaviGetPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5431FECA288D9AB30060D5DC /* NaviGetPointViewController.swift */; };
+		5431FECD288D9AB30060D5DC /* NaviGetPointViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5431FECB288D9AB30060D5DC /* NaviGetPointViewController.xib */; };
+		5431FECF288E778B0060D5DC /* ShoppingCartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5431FECE288E778B0060D5DC /* ShoppingCartTableViewController.swift */; };
+		5431FED1288E77940060D5DC /* ShoppingCartTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5431FED0288E77940060D5DC /* ShoppingCartTableViewController.storyboard */; };
+		54377F5F287539D7004A9482 /* NaviCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54377F5D287539D7004A9482 /* NaviCategoryViewController.swift */; };
+		54377F60287539D7004A9482 /* NaviCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54377F5E287539D7004A9482 /* NaviCategoryViewController.xib */; };
+		54377F6228755D07004A9482 /* NaviStoreListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54377F6128755D06004A9482 /* NaviStoreListCollectionViewController.swift */; };
+		54377F6428755DC8004A9482 /* NaviStoreListCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54377F6328755DC8004A9482 /* NaviStoreListCollectionViewController.storyboard */; };
+		545AA5F5289BC418004A178B /* EMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AA5F3289BC418004A178B /* EMapViewController.swift */; };
+		545AA5F6289BC418004A178B /* EMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545AA5F4289BC418004A178B /* EMapViewController.xib */; };
+		545CC627286D9C8A00D6714A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545CC625286D9C8A00D6714A /* SignUpViewController.swift */; };
+		545CC628286D9C8A00D6714A /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545CC626286D9C8A00D6714A /* SignUpViewController.xib */; };
+		545CC62B286D9C9200D6714A /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545CC629286D9C9200D6714A /* ForgotPasswordViewController.swift */; };
+		545CC62C286D9C9200D6714A /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545CC62A286D9C9200D6714A /* ForgotPasswordViewController.xib */; };
+		5481BF252898F70600E6C98C /* URLpath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5481BF242898F70600E6C98C /* URLpath.swift */; };
+		54B0467B288E92A9003F04CA /* PayDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B04679288E92A9003F04CA /* PayDetailViewController.swift */; };
+		54B0467C288E92A9003F04CA /* PayDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B0467A288E92A9003F04CA /* PayDetailViewController.xib */; };
+		54B0467F288EA9FE003F04CA /* PayResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0467D288EA9FE003F04CA /* PayResultViewController.swift */; };
+		54B04680288EA9FE003F04CA /* PayResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B0467E288EA9FE003F04CA /* PayResultViewController.xib */; };
+		54E1EF042876B15700D17C85 /* OnTopTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E1EF032876B15700D17C85 /* OnTopTabBarController.swift */; };
+		54E1EF0B2876CBDA00D17C85 /* BeiPuSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E1EF092876CBDA00D17C85 /* BeiPuSpotViewController.swift */; };
+		54E1EF0C2876CBDA00D17C85 /* BeiPuSpotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E1EF0A2876CBDA00D17C85 /* BeiPuSpotViewController.xib */; };
+		5F81FE6FD780B10426892BCF /* Pods_Beipu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0BC9211ADE2F454325F4A14 /* Pods_Beipu.framework */; };
+		A42D01C54FEE4218458F38EC /* Pods_Beipu_BeipuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B1C0BDFF32B950A8B7B048 /* Pods_Beipu_BeipuUITests.framework */; };
+		E3A86D9777843D9E941694E7 /* Pods_BeipuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8B38D6E7A65A9A70CD9ADA /* Pods_BeipuTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +122,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		323177F9D1C30B6FB62EB422 /* Pods-Beipu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beipu.release.xcconfig"; path = "Target Support Files/Pods-Beipu/Pods-Beipu.release.xcconfig"; sourceTree = "<group>"; };
+		47390562EB75239BB69FA8AD /* Pods-Beipu-BeipuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beipu-BeipuUITests.debug.xcconfig"; path = "Target Support Files/Pods-Beipu-BeipuUITests/Pods-Beipu-BeipuUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5406E8DA289A6D3300B639EA /* PayRecordTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PayRecordTableViewController.storyboard; sourceTree = "<group>"; };
+		5406E8DB289A6D3300B639EA /* PayRecordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayRecordTableViewController.swift; sourceTree = "<group>"; };
+		5406E8DE289A775300B639EA /* PayRecordDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayRecordDetailViewController.swift; sourceTree = "<group>"; };
+		5406E8E2289B61A900B639EA /* PayRecordDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PayRecordDetailViewController.storyboard; sourceTree = "<group>"; };
+		5416F3FD289BD03F00D4F9B9 /* EMapDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMapDetailViewController.swift; sourceTree = "<group>"; };
+		5416F3FE289BD03F00D4F9B9 /* EMapDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EMapDetailViewController.xib; sourceTree = "<group>"; };
+		5416F402289BDD0700D4F9B9 /* MerchantTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantTopViewController.swift; sourceTree = "<group>"; };
+		5416F403289BDD0700D4F9B9 /* MerchantTopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantTopViewController.xib; sourceTree = "<group>"; };
+		5416F406289BDF0500D4F9B9 /* MerchantScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantScanViewController.swift; sourceTree = "<group>"; };
+		5416F407289BDF0500D4F9B9 /* MerchantScanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantScanViewController.xib; sourceTree = "<group>"; };
+		5416F40B289CC48F00D4F9B9 /* CouponFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponFlowViewController.swift; sourceTree = "<group>"; };
+		5416F40D289CC70400D4F9B9 /* CouponCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponCodeViewController.swift; sourceTree = "<group>"; };
+		5416F40E289CC70400D4F9B9 /* CouponCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponCodeViewController.xib; sourceTree = "<group>"; };
+		541806C4288A545200A0E55E /* ItemListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListCollectionViewController.swift; sourceTree = "<group>"; };
+		541806C6288A545C00A0E55E /* ItemListCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ItemListCollectionViewController.storyboard; sourceTree = "<group>"; };
+		541806C8288AAAF500A0E55E /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		541806C9288AAAF500A0E55E /* ItemDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDetailViewController.xib; sourceTree = "<group>"; };
 		5420E55E286567E2003F8371 /* Beipu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beipu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5420E561286567E2003F8371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5420E563286567E2003F8371 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +153,80 @@
 		5420E57E286567E2003F8371 /* BeipuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeipuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5420E582286567E2003F8371 /* BeipuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeipuUITests.swift; sourceTree = "<group>"; };
 		5420E584286567E2003F8371 /* BeipuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeipuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5420E59B2865A8BA003F8371 /* TopPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopPageViewController.swift; sourceTree = "<group>"; };
+		5420E59D2865A8BA003F8371 /* RoootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoootNavigationController.swift; sourceTree = "<group>"; };
+		5428056C288C3787009D243F /* BeipuSetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeipuSetTableViewController.swift; sourceTree = "<group>"; };
+		5428056E288C37AE009D243F /* BeipuSetTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BeipuSetTableViewController.storyboard; sourceTree = "<group>"; };
+		5428AC4F286ACD1C009AD92B /* TopPageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TopPageViewController.storyboard; sourceTree = "<group>"; };
+		5428AC51286B1144009AD92B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5428AC59286B11A7009AD92B /* WebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
+		5428AC61286B11B5009AD92B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5428AC64286B11B5009AD92B /* TimeSelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSelectView.swift; sourceTree = "<group>"; };
+		5428AC65286B11B5009AD92B /* WKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
+		5428AC66286B11B5009AD92B /* BlankViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlankViewController.xib; sourceTree = "<group>"; };
+		5428AC67286B11B5009AD92B /* BlankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankViewController.swift; sourceTree = "<group>"; };
+		5428AC68286B11B5009AD92B /* WKWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKWebViewController.xib; sourceTree = "<group>"; };
+		5428AC69286B11B5009AD92B /* ScreenCapAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenCapAlert.swift; sourceTree = "<group>"; };
+		5428AC6A286B11B5009AD92B /* TimeSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeSelectView.xib; sourceTree = "<group>"; };
+		5428AC6B286B11B5009AD92B /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		5428AC6C286B11B5009AD92B /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
+		5428F659286C58460096AA34 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
+		5428F65A286C58460096AA34 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		5428F666286C5A0E0096AA34 /* LogInFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInFlowViewController.swift; sourceTree = "<group>"; };
+		5428F668286D3C730096AA34 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		5428F66A286D42B20096AA34 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		542FBEB4286EE1A200EAB612 /* MemberCenterTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemberCenterTableViewController.storyboard; sourceTree = "<group>"; };
+		542FBEB6286EE1BC00EAB612 /* MemberCenterFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCenterFlowViewController.swift; sourceTree = "<group>"; };
+		542FBEB8286EE1CC00EAB612 /* MemberCenterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCenterTableViewController.swift; sourceTree = "<group>"; };
+		543005CF2871937100784D3B /* MemberInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberInfoViewController.swift; sourceTree = "<group>"; };
+		543005D02871937100784D3B /* MemberInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberInfoViewController.xib; sourceTree = "<group>"; };
+		543005D3287288EA00784D3B /* RuleTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleTextViewController.swift; sourceTree = "<group>"; };
+		543005D4287288EA00784D3B /* RuleTextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RuleTextViewController.xib; sourceTree = "<group>"; };
+		543005D72872C51400784D3B /* ThemeSetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSetTableViewController.swift; sourceTree = "<group>"; };
+		543005D92872C52000784D3B /* ThemeSetTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThemeSetTableViewController.storyboard; sourceTree = "<group>"; };
+		543005DB2872D6CE00784D3B /* CouponTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponTableViewController.swift; sourceTree = "<group>"; };
+		543005DE2872D6DE00784D3B /* CouponTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CouponTableViewController.storyboard; sourceTree = "<group>"; };
+		543005E52874105800784D3B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		543005E62874105800784D3B /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		543005E92874129000784D3B /* ParkingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingViewController.swift; sourceTree = "<group>"; };
+		543005EA2874129000784D3B /* ParkingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkingViewController.xib; sourceTree = "<group>"; };
+		543005F32874304100784D3B /* GetSetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSetTableViewController.swift; sourceTree = "<group>"; };
+		543005F52874304D00784D3B /* GetSetTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GetSetTableViewController.storyboard; sourceTree = "<group>"; };
+		5431FEBE288D92510060D5DC /* NaviDescriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviDescriptViewController.swift; sourceTree = "<group>"; };
+		5431FEBF288D92510060D5DC /* NaviDescriptViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NaviDescriptViewController.xib; sourceTree = "<group>"; };
+		5431FEC2288D94330060D5DC /* NaviCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviCameraViewController.swift; sourceTree = "<group>"; };
+		5431FEC3288D94330060D5DC /* NaviCameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NaviCameraViewController.xib; sourceTree = "<group>"; };
+		5431FEC6288D95640060D5DC /* NaviNotInRangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviNotInRangeViewController.swift; sourceTree = "<group>"; };
+		5431FEC7288D95640060D5DC /* NaviNotInRangeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NaviNotInRangeViewController.xib; sourceTree = "<group>"; };
+		5431FECA288D9AB30060D5DC /* NaviGetPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviGetPointViewController.swift; sourceTree = "<group>"; };
+		5431FECB288D9AB30060D5DC /* NaviGetPointViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NaviGetPointViewController.xib; sourceTree = "<group>"; };
+		5431FECE288E778B0060D5DC /* ShoppingCartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartTableViewController.swift; sourceTree = "<group>"; };
+		5431FED0288E77940060D5DC /* ShoppingCartTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShoppingCartTableViewController.storyboard; sourceTree = "<group>"; };
+		54377F5D287539D7004A9482 /* NaviCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviCategoryViewController.swift; sourceTree = "<group>"; };
+		54377F5E287539D7004A9482 /* NaviCategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NaviCategoryViewController.xib; sourceTree = "<group>"; };
+		54377F6128755D06004A9482 /* NaviStoreListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviStoreListCollectionViewController.swift; sourceTree = "<group>"; };
+		54377F6328755DC8004A9482 /* NaviStoreListCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NaviStoreListCollectionViewController.storyboard; sourceTree = "<group>"; };
+		545AA5F3289BC418004A178B /* EMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMapViewController.swift; sourceTree = "<group>"; };
+		545AA5F4289BC418004A178B /* EMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EMapViewController.xib; sourceTree = "<group>"; };
+		545CC625286D9C8A00D6714A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		545CC626286D9C8A00D6714A /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		545CC629286D9C9200D6714A /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		545CC62A286D9C9200D6714A /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		5481BF242898F70600E6C98C /* URLpath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLpath.swift; sourceTree = "<group>"; };
+		54B04679288E92A9003F04CA /* PayDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayDetailViewController.swift; sourceTree = "<group>"; };
+		54B0467A288E92A9003F04CA /* PayDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayDetailViewController.xib; sourceTree = "<group>"; };
+		54B0467D288EA9FE003F04CA /* PayResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayResultViewController.swift; sourceTree = "<group>"; };
+		54B0467E288EA9FE003F04CA /* PayResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PayResultViewController.xib; sourceTree = "<group>"; };
+		54E1EF032876B15700D17C85 /* OnTopTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnTopTabBarController.swift; sourceTree = "<group>"; };
+		54E1EF092876CBDA00D17C85 /* BeiPuSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeiPuSpotViewController.swift; sourceTree = "<group>"; };
+		54E1EF0A2876CBDA00D17C85 /* BeiPuSpotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeiPuSpotViewController.xib; sourceTree = "<group>"; };
+		6B6933EF052C3BB97E125725 /* Pods-BeipuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeipuTests.release.xcconfig"; path = "Target Support Files/Pods-BeipuTests/Pods-BeipuTests.release.xcconfig"; sourceTree = "<group>"; };
+		6C8B38D6E7A65A9A70CD9ADA /* Pods_BeipuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeipuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		734C82ECEE16BB2879EBF2E4 /* Pods-Beipu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beipu.debug.xcconfig"; path = "Target Support Files/Pods-Beipu/Pods-Beipu.debug.xcconfig"; sourceTree = "<group>"; };
+		74B1C0BDFF32B950A8B7B048 /* Pods_Beipu_BeipuUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beipu_BeipuUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A088BA36BE4A78ED3C47CEC2 /* Pods-Beipu-BeipuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beipu-BeipuUITests.release.xcconfig"; path = "Target Support Files/Pods-Beipu-BeipuUITests/Pods-Beipu-BeipuUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B0BC9211ADE2F454325F4A14 /* Pods_Beipu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beipu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B911ACE6314E149820B3DD6B /* Pods-BeipuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeipuTests.debug.xcconfig"; path = "Target Support Files/Pods-BeipuTests/Pods-BeipuTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +234,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F81FE6FD780B10426892BCF /* Pods_Beipu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +242,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3A86D9777843D9E941694E7 /* Pods_BeipuTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +250,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A42D01C54FEE4218458F38EC /* Pods_Beipu_BeipuUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AA208262C1CEA08D03EFA31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				734C82ECEE16BB2879EBF2E4 /* Pods-Beipu.debug.xcconfig */,
+				323177F9D1C30B6FB62EB422 /* Pods-Beipu.release.xcconfig */,
+				47390562EB75239BB69FA8AD /* Pods-Beipu-BeipuUITests.debug.xcconfig */,
+				A088BA36BE4A78ED3C47CEC2 /* Pods-Beipu-BeipuUITests.release.xcconfig */,
+				B911ACE6314E149820B3DD6B /* Pods-BeipuTests.debug.xcconfig */,
+				6B6933EF052C3BB97E125725 /* Pods-BeipuTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5416F401289BDB6300D4F9B9 /* Merchant */ = {
+			isa = PBXGroup;
+			children = (
+				5416F402289BDD0700D4F9B9 /* MerchantTopViewController.swift */,
+				5416F403289BDD0700D4F9B9 /* MerchantTopViewController.xib */,
+				5416F406289BDF0500D4F9B9 /* MerchantScanViewController.swift */,
+				5416F407289BDF0500D4F9B9 /* MerchantScanViewController.xib */,
+			);
+			path = Merchant;
+			sourceTree = "<group>";
+		};
+		5416F40A289CC44D00D4F9B9 /* Coupon */ = {
+			isa = PBXGroup;
+			children = (
+				5416F40B289CC48F00D4F9B9 /* CouponFlowViewController.swift */,
+				543005DB2872D6CE00784D3B /* CouponTableViewController.swift */,
+				543005DE2872D6DE00784D3B /* CouponTableViewController.storyboard */,
+				5416F40D289CC70400D4F9B9 /* CouponCodeViewController.swift */,
+				5416F40E289CC70400D4F9B9 /* CouponCodeViewController.xib */,
+			);
+			path = Coupon;
+			sourceTree = "<group>";
+		};
+		541806C3288A542500A0E55E /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				541806C4288A545200A0E55E /* ItemListCollectionViewController.swift */,
+				541806C6288A545C00A0E55E /* ItemListCollectionViewController.storyboard */,
+				541806C8288AAAF500A0E55E /* ItemDetailViewController.swift */,
+				541806C9288AAAF500A0E55E /* ItemDetailViewController.xib */,
+				5431FECE288E778B0060D5DC /* ShoppingCartTableViewController.swift */,
+				5431FED0288E77940060D5DC /* ShoppingCartTableViewController.storyboard */,
+				54B04679288E92A9003F04CA /* PayDetailViewController.swift */,
+				54B0467A288E92A9003F04CA /* PayDetailViewController.xib */,
+				54B0467D288EA9FE003F04CA /* PayResultViewController.swift */,
+				54B0467E288EA9FE003F04CA /* PayResultViewController.xib */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
 		5420E555286567E2003F8371 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +317,8 @@
 				5420E577286567E2003F8371 /* BeipuTests */,
 				5420E581286567E2003F8371 /* BeipuUITests */,
 				5420E55F286567E2003F8371 /* Products */,
+				1AA208262C1CEA08D03EFA31 /* Pods */,
+				CE93F8F40C341731E877DB4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +335,9 @@
 		5420E560286567E2003F8371 /* Beipu */ = {
 			isa = PBXGroup;
 			children = (
+				5428AC5F286B11B5009AD92B /* Custom */,
+				5428AC53286B11A7009AD92B /* Service */,
+				5420E59A2865A8BA003F8371 /* View */,
 				5420E561286567E2003F8371 /* AppDelegate.swift */,
 				5420E563286567E2003F8371 /* SceneDelegate.swift */,
 				5420E567286567E2003F8371 /* Main.storyboard */,
@@ -124,6 +365,161 @@
 			path = BeipuUITests;
 			sourceTree = "<group>";
 		};
+		5420E59A2865A8BA003F8371 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5420E59D2865A8BA003F8371 /* RoootNavigationController.swift */,
+				5420E59B2865A8BA003F8371 /* TopPageViewController.swift */,
+				5428AC4F286ACD1C009AD92B /* TopPageViewController.storyboard */,
+				5428AC51286B1144009AD92B /* Model.swift */,
+				543005E028740D6E00784D3B /* SubPage */,
+				5428F654286C4E520096AA34 /* Member */,
+				5416F401289BDB6300D4F9B9 /* Merchant */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5428AC53286B11A7009AD92B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5428AC56286B11A7009AD92B /* API */,
+				5428F66A286D42B20096AA34 /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5428AC56286B11A7009AD92B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5428AC59286B11A7009AD92B /* WebAPI.swift */,
+				5481BF242898F70600E6C98C /* URLpath.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5428AC5F286B11B5009AD92B /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				5428AC63286B11B5009AD92B /* View */,
+				5428AC61286B11B5009AD92B /* Extensions.swift */,
+				5428F668286D3C730096AA34 /* Theme.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		5428AC63286B11B5009AD92B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5428AC64286B11B5009AD92B /* TimeSelectView.swift */,
+				5428AC65286B11B5009AD92B /* WKWebViewController.swift */,
+				5428AC66286B11B5009AD92B /* BlankViewController.xib */,
+				5428AC67286B11B5009AD92B /* BlankViewController.swift */,
+				5428AC68286B11B5009AD92B /* WKWebViewController.xib */,
+				5428AC69286B11B5009AD92B /* ScreenCapAlert.swift */,
+				5428AC6A286B11B5009AD92B /* TimeSelectView.xib */,
+				5428AC6B286B11B5009AD92B /* LoadingView.swift */,
+				5428AC6C286B11B5009AD92B /* NibOwnerLoadable.swift */,
+				54E1EF032876B15700D17C85 /* OnTopTabBarController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5428F654286C4E520096AA34 /* Member */ = {
+			isa = PBXGroup;
+			children = (
+				542FBEB3286ECEDD00EAB612 /* AfterLogin */,
+				5428F665286C58B00096AA34 /* Login */,
+			);
+			path = Member;
+			sourceTree = "<group>";
+		};
+		5428F665286C58B00096AA34 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5428F666286C5A0E0096AA34 /* LogInFlowViewController.swift */,
+				5428F65A286C58460096AA34 /* LogInViewController.swift */,
+				5428F659286C58460096AA34 /* LogInViewController.xib */,
+				545CC625286D9C8A00D6714A /* SignUpViewController.swift */,
+				545CC626286D9C8A00D6714A /* SignUpViewController.xib */,
+				545CC629286D9C9200D6714A /* ForgotPasswordViewController.swift */,
+				545CC62A286D9C9200D6714A /* ForgotPasswordViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		542FBEB3286ECEDD00EAB612 /* AfterLogin */ = {
+			isa = PBXGroup;
+			children = (
+				5416F40A289CC44D00D4F9B9 /* Coupon */,
+				542FBEB6286EE1BC00EAB612 /* MemberCenterFlowViewController.swift */,
+				542FBEB8286EE1CC00EAB612 /* MemberCenterTableViewController.swift */,
+				542FBEB4286EE1A200EAB612 /* MemberCenterTableViewController.storyboard */,
+				543005CF2871937100784D3B /* MemberInfoViewController.swift */,
+				543005D02871937100784D3B /* MemberInfoViewController.xib */,
+				543005D3287288EA00784D3B /* RuleTextViewController.swift */,
+				543005D4287288EA00784D3B /* RuleTextViewController.xib */,
+				543005D72872C51400784D3B /* ThemeSetTableViewController.swift */,
+				543005D92872C52000784D3B /* ThemeSetTableViewController.storyboard */,
+				5406E8DB289A6D3300B639EA /* PayRecordTableViewController.swift */,
+				5406E8DA289A6D3300B639EA /* PayRecordTableViewController.storyboard */,
+				5406E8DE289A775300B639EA /* PayRecordDetailViewController.swift */,
+				5406E8E2289B61A900B639EA /* PayRecordDetailViewController.storyboard */,
+			);
+			path = AfterLogin;
+			sourceTree = "<group>";
+		};
+		543005E028740D6E00784D3B /* SubPage */ = {
+			isa = PBXGroup;
+			children = (
+				541806C3288A542500A0E55E /* Shop */,
+				54377F5C28753975004A9482 /* Navi */,
+				543005E92874129000784D3B /* ParkingViewController.swift */,
+				543005EA2874129000784D3B /* ParkingViewController.xib */,
+				543005E52874105800784D3B /* MapViewController.swift */,
+				543005E62874105800784D3B /* MapViewController.xib */,
+				543005F32874304100784D3B /* GetSetTableViewController.swift */,
+				543005F52874304D00784D3B /* GetSetTableViewController.storyboard */,
+				5428056C288C3787009D243F /* BeipuSetTableViewController.swift */,
+				5428056E288C37AE009D243F /* BeipuSetTableViewController.storyboard */,
+				545AA5F3289BC418004A178B /* EMapViewController.swift */,
+				545AA5F4289BC418004A178B /* EMapViewController.xib */,
+				5416F3FD289BD03F00D4F9B9 /* EMapDetailViewController.swift */,
+				5416F3FE289BD03F00D4F9B9 /* EMapDetailViewController.xib */,
+			);
+			path = SubPage;
+			sourceTree = "<group>";
+		};
+		54377F5C28753975004A9482 /* Navi */ = {
+			isa = PBXGroup;
+			children = (
+				54377F5D287539D7004A9482 /* NaviCategoryViewController.swift */,
+				54377F5E287539D7004A9482 /* NaviCategoryViewController.xib */,
+				54377F6128755D06004A9482 /* NaviStoreListCollectionViewController.swift */,
+				54377F6328755DC8004A9482 /* NaviStoreListCollectionViewController.storyboard */,
+				54E1EF092876CBDA00D17C85 /* BeiPuSpotViewController.swift */,
+				54E1EF0A2876CBDA00D17C85 /* BeiPuSpotViewController.xib */,
+				5431FEBE288D92510060D5DC /* NaviDescriptViewController.swift */,
+				5431FEBF288D92510060D5DC /* NaviDescriptViewController.xib */,
+				5431FEC2288D94330060D5DC /* NaviCameraViewController.swift */,
+				5431FEC3288D94330060D5DC /* NaviCameraViewController.xib */,
+				5431FEC6288D95640060D5DC /* NaviNotInRangeViewController.swift */,
+				5431FEC7288D95640060D5DC /* NaviNotInRangeViewController.xib */,
+				5431FECA288D9AB30060D5DC /* NaviGetPointViewController.swift */,
+				5431FECB288D9AB30060D5DC /* NaviGetPointViewController.xib */,
+			);
+			path = Navi;
+			sourceTree = "<group>";
+		};
+		CE93F8F40C341731E877DB4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0BC9211ADE2F454325F4A14 /* Pods_Beipu.framework */,
+				74B1C0BDFF32B950A8B7B048 /* Pods_Beipu_BeipuUITests.framework */,
+				6C8B38D6E7A65A9A70CD9ADA /* Pods_BeipuTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,6 +527,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5420E588286567E2003F8371 /* Build configuration list for PBXNativeTarget "Beipu" */;
 			buildPhases = (
+				A302205FC13E99F83BE43E7B /* [CP] Check Pods Manifest.lock */,
 				5420E55A286567E2003F8371 /* Sources */,
 				5420E55B286567E2003F8371 /* Frameworks */,
 				5420E55C286567E2003F8371 /* Resources */,
@@ -148,6 +545,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5420E58B286567E2003F8371 /* Build configuration list for PBXNativeTarget "BeipuTests" */;
 			buildPhases = (
+				CE0D01C92A5CDF058073B00F /* [CP] Check Pods Manifest.lock */,
 				5420E570286567E2003F8371 /* Sources */,
 				5420E571286567E2003F8371 /* Frameworks */,
 				5420E572286567E2003F8371 /* Resources */,
@@ -166,6 +564,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5420E58E286567E2003F8371 /* Build configuration list for PBXNativeTarget "BeipuUITests" */;
 			buildPhases = (
+				03CBFF5B2266B8DB6505122E /* [CP] Check Pods Manifest.lock */,
 				5420E57A286567E2003F8371 /* Sources */,
 				5420E57B286567E2003F8371 /* Frameworks */,
 				5420E57C286567E2003F8371 /* Resources */,
@@ -228,9 +627,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5431FEC1288D92510060D5DC /* NaviDescriptViewController.xib in Resources */,
+				541806C7288A545C00A0E55E /* ItemListCollectionViewController.storyboard in Resources */,
+				5428AC76286B11B5009AD92B /* WKWebViewController.xib in Resources */,
+				54377F6428755DC8004A9482 /* NaviStoreListCollectionViewController.storyboard in Resources */,
+				5428AC74286B11B5009AD92B /* BlankViewController.xib in Resources */,
+				543005F62874304D00784D3B /* GetSetTableViewController.storyboard in Resources */,
+				5416F405289BDD0700D4F9B9 /* MerchantTopViewController.xib in Resources */,
+				5431FECD288D9AB30060D5DC /* NaviGetPointViewController.xib in Resources */,
+				5428056F288C37AE009D243F /* BeipuSetTableViewController.storyboard in Resources */,
+				5416F409289BDF0500D4F9B9 /* MerchantScanViewController.xib in Resources */,
+				5428F65B286C58460096AA34 /* LogInViewController.xib in Resources */,
+				54B04680288EA9FE003F04CA /* PayResultViewController.xib in Resources */,
 				5420E56E286567E2003F8371 /* LaunchScreen.storyboard in Resources */,
+				5416F410289CC70400D4F9B9 /* CouponCodeViewController.xib in Resources */,
+				545AA5F6289BC418004A178B /* EMapViewController.xib in Resources */,
+				5431FEC5288D94330060D5DC /* NaviCameraViewController.xib in Resources */,
+				543005DF2872D6DE00784D3B /* CouponTableViewController.storyboard in Resources */,
+				543005E82874105800784D3B /* MapViewController.xib in Resources */,
+				5406E8DC289A6D3300B639EA /* PayRecordTableViewController.storyboard in Resources */,
+				545CC62C286D9C9200D6714A /* ForgotPasswordViewController.xib in Resources */,
+				545CC628286D9C8A00D6714A /* SignUpViewController.xib in Resources */,
+				54377F60287539D7004A9482 /* NaviCategoryViewController.xib in Resources */,
+				54E1EF0C2876CBDA00D17C85 /* BeiPuSpotViewController.xib in Resources */,
+				5428AC50286ACD1C009AD92B /* TopPageViewController.storyboard in Resources */,
+				5406E8E3289B61A900B639EA /* PayRecordDetailViewController.storyboard in Resources */,
+				5428AC78286B11B5009AD92B /* TimeSelectView.xib in Resources */,
+				543005D22871937100784D3B /* MemberInfoViewController.xib in Resources */,
+				54B0467C288E92A9003F04CA /* PayDetailViewController.xib in Resources */,
+				5431FEC9288D95640060D5DC /* NaviNotInRangeViewController.xib in Resources */,
+				5431FED1288E77940060D5DC /* ShoppingCartTableViewController.storyboard in Resources */,
+				543005EC2874129000784D3B /* ParkingViewController.xib in Resources */,
+				542FBEB5286EE1A200EAB612 /* MemberCenterTableViewController.storyboard in Resources */,
+				541806CB288AAAF500A0E55E /* ItemDetailViewController.xib in Resources */,
+				543005D6287288EA00784D3B /* RuleTextViewController.xib in Resources */,
 				5420E56B286567E2003F8371 /* Assets.xcassets in Resources */,
 				5420E569286567E2003F8371 /* Main.storyboard in Resources */,
+				543005DA2872C52000784D3B /* ThemeSetTableViewController.storyboard in Resources */,
+				5416F400289BD03F00D4F9B9 /* EMapDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,13 +684,131 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03CBFF5B2266B8DB6505122E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beipu-BeipuUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A302205FC13E99F83BE43E7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beipu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE0D01C92A5CDF058073B00F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeipuTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5420E55A286567E2003F8371 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5428AC52286B1144009AD92B /* Model.swift in Sources */,
+				5428AC7A286B11B5009AD92B /* NibOwnerLoadable.swift in Sources */,
+				5428F667286C5A0E0096AA34 /* LogInFlowViewController.swift in Sources */,
+				541806C5288A545200A0E55E /* ItemListCollectionViewController.swift in Sources */,
 				5420E562286567E2003F8371 /* AppDelegate.swift in Sources */,
+				54377F5F287539D7004A9482 /* NaviCategoryViewController.swift in Sources */,
+				5428AC79286B11B5009AD92B /* LoadingView.swift in Sources */,
+				5416F40F289CC70400D4F9B9 /* CouponCodeViewController.swift in Sources */,
+				5431FEC8288D95640060D5DC /* NaviNotInRangeViewController.swift in Sources */,
+				54377F6228755D07004A9482 /* NaviStoreListCollectionViewController.swift in Sources */,
+				5431FECF288E778B0060D5DC /* ShoppingCartTableViewController.swift in Sources */,
+				5428AC5E286B11A7009AD92B /* WebAPI.swift in Sources */,
+				545CC627286D9C8A00D6714A /* SignUpViewController.swift in Sources */,
+				543005DC2872D6CE00784D3B /* CouponTableViewController.swift in Sources */,
+				5416F408289BDF0500D4F9B9 /* MerchantScanViewController.swift in Sources */,
+				545CC62B286D9C9200D6714A /* ForgotPasswordViewController.swift in Sources */,
+				5416F404289BDD0700D4F9B9 /* MerchantTopViewController.swift in Sources */,
+				5431FEC0288D92510060D5DC /* NaviDescriptViewController.swift in Sources */,
+				542FBEB9286EE1CC00EAB612 /* MemberCenterTableViewController.swift in Sources */,
+				5420E5A02865A8BA003F8371 /* RoootNavigationController.swift in Sources */,
+				543005D5287288EA00784D3B /* RuleTextViewController.swift in Sources */,
+				5420E59E2865A8BA003F8371 /* TopPageViewController.swift in Sources */,
+				5428AC75286B11B5009AD92B /* BlankViewController.swift in Sources */,
+				5416F40C289CC48F00D4F9B9 /* CouponFlowViewController.swift in Sources */,
+				5431FECC288D9AB30060D5DC /* NaviGetPointViewController.swift in Sources */,
+				5428AC73286B11B5009AD92B /* WKWebViewController.swift in Sources */,
+				5428F669286D3C730096AA34 /* Theme.swift in Sources */,
+				5428F66B286D42B20096AA34 /* UserService.swift in Sources */,
+				541806CA288AAAF500A0E55E /* ItemDetailViewController.swift in Sources */,
+				5428AC77286B11B5009AD92B /* ScreenCapAlert.swift in Sources */,
+				54E1EF0B2876CBDA00D17C85 /* BeiPuSpotViewController.swift in Sources */,
+				542FBEB7286EE1BC00EAB612 /* MemberCenterFlowViewController.swift in Sources */,
+				5428F65C286C58460096AA34 /* LogInViewController.swift in Sources */,
+				545AA5F5289BC418004A178B /* EMapViewController.swift in Sources */,
+				5406E8DD289A6D3300B639EA /* PayRecordTableViewController.swift in Sources */,
+				5428AC72286B11B5009AD92B /* TimeSelectView.swift in Sources */,
+				543005F42874304100784D3B /* GetSetTableViewController.swift in Sources */,
+				543005E72874105800784D3B /* MapViewController.swift in Sources */,
+				5431FEC4288D94330060D5DC /* NaviCameraViewController.swift in Sources */,
+				5416F3FF289BD03F00D4F9B9 /* EMapDetailViewController.swift in Sources */,
+				5428056D288C3787009D243F /* BeipuSetTableViewController.swift in Sources */,
 				5420E564286567E2003F8371 /* SceneDelegate.swift in Sources */,
+				543005D12871937100784D3B /* MemberInfoViewController.swift in Sources */,
+				54B0467B288E92A9003F04CA /* PayDetailViewController.swift in Sources */,
+				54E1EF042876B15700D17C85 /* OnTopTabBarController.swift in Sources */,
+				54B0467F288EA9FE003F04CA /* PayResultViewController.swift in Sources */,
+				543005D82872C51400784D3B /* ThemeSetTableViewController.swift in Sources */,
+				5406E8E0289A775300B639EA /* PayRecordDetailViewController.swift in Sources */,
+				5428AC70286B11B5009AD92B /* Extensions.swift in Sources */,
+				5481BF252898F70600E6C98C /* URLpath.swift in Sources */,
+				543005EB2874129000784D3B /* ParkingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,64 +980,77 @@
 		};
 		5420E589286567E2003F8371 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 734C82ECEE16BB2879EBF2E4 /* Pods-Beipu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = RV8U4Q9DP5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Beipu/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "北埔印象";
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要開啟相機權限以拍照或掃描QRCode";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "需要開啟定位權限以標註附近的地標";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jotangi.Beipu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jotangi.BeipuImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5420E58A286567E2003F8371 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 323177F9D1C30B6FB62EB422 /* Pods-Beipu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = RV8U4Q9DP5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Beipu/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "北埔印象";
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要開啟相機權限以拍照或掃描QRCode";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "需要開啟定位權限以標註附近的地標";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jotangi.Beipu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jotangi.BeipuImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		5420E58C286567E2003F8371 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B911ACE6314E149820B3DD6B /* Pods-BeipuTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +1071,7 @@
 		};
 		5420E58D286567E2003F8371 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6933EF052C3BB97E125725 /* Pods-BeipuTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -526,6 +1092,7 @@
 		};
 		5420E58F286567E2003F8371 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47390562EB75239BB69FA8AD /* Pods-Beipu-BeipuUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -544,6 +1111,7 @@
 		};
 		5420E590286567E2003F8371 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A088BA36BE4A78ED3C47CEC2 /* Pods-Beipu-BeipuUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

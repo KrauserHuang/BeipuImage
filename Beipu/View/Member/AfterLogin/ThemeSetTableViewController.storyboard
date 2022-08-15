@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Theme Set Table View Controller-->
+        <scene sceneID="MuT-v8-X6v">
+            <objects>
+                <tableViewController storyboardIdentifier="ThemeSetTableViewController" id="1dS-fO-vLs" customClass="ThemeSetTableViewController" customModule="Beipu" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="DNm-H9-0AI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ThemeSetTableViewCell" rowHeight="150" id="UEe-H7-f7P" customClass="ThemeSetTableViewCell" customModule="Beipu" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UEe-H7-f7P" id="BK6-EB-FhY">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQR-S3-HSA">
+                                            <rect key="frame" x="5" y="5" width="404" height="140"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="u102" translatesAutoresizingMaskIntoConstraints="NO" id="c2Q-Vm-PtA">
+                                                    <rect key="frame" x="5" y="5" width="130" height="130"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="c2Q-Vm-PtA" secondAttribute="height" id="CD6-6s-bck"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="套票1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkP-h4-xPa">
+                                                    <rect key="frame" x="155" y="5" width="43" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="截止日期：無限制" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bG-eG-4XB">
+                                                    <rect key="frame" x="155" y="83" width="139" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="訂單編號：202105260099" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBH-VM-dIZ">
+                                                    <rect key="frame" x="155" y="109" width="206" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="OBH-VM-dIZ" secondAttribute="bottom" constant="10" id="3zo-9j-YPq"/>
+                                                <constraint firstItem="c2Q-Vm-PtA" firstAttribute="centerY" secondItem="qQR-S3-HSA" secondAttribute="centerY" id="8w0-LH-cl2"/>
+                                                <constraint firstItem="c2Q-Vm-PtA" firstAttribute="top" secondItem="qQR-S3-HSA" secondAttribute="top" constant="5" id="Fob-Wn-Zzn"/>
+                                                <constraint firstItem="OBH-VM-dIZ" firstAttribute="top" secondItem="0bG-eG-4XB" secondAttribute="bottom" constant="5" id="HRK-kt-avy"/>
+                                                <constraint firstItem="dkP-h4-xPa" firstAttribute="leading" secondItem="c2Q-Vm-PtA" secondAttribute="trailing" constant="20" id="Kwd-s7-4dK"/>
+                                                <constraint firstItem="0bG-eG-4XB" firstAttribute="leading" secondItem="dkP-h4-xPa" secondAttribute="leading" id="MFG-E9-f8d"/>
+                                                <constraint firstItem="c2Q-Vm-PtA" firstAttribute="leading" secondItem="qQR-S3-HSA" secondAttribute="leading" constant="5" id="a2j-eT-zBk"/>
+                                                <constraint firstAttribute="bottom" secondItem="c2Q-Vm-PtA" secondAttribute="bottom" constant="5" id="tHP-My-QeG"/>
+                                                <constraint firstItem="OBH-VM-dIZ" firstAttribute="leading" secondItem="0bG-eG-4XB" secondAttribute="leading" id="yDk-UL-ln4"/>
+                                                <constraint firstItem="dkP-h4-xPa" firstAttribute="top" secondItem="qQR-S3-HSA" secondAttribute="top" constant="5" id="zAy-Qv-JYi"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="qQR-S3-HSA" secondAttribute="trailing" constant="5" id="10w-JW-F7u"/>
+                                        <constraint firstItem="qQR-S3-HSA" firstAttribute="leading" secondItem="BK6-EB-FhY" secondAttribute="leading" constant="5" id="67q-wv-7rB"/>
+                                        <constraint firstAttribute="bottom" secondItem="qQR-S3-HSA" secondAttribute="bottom" constant="5" id="NEa-X5-28T"/>
+                                        <constraint firstItem="qQR-S3-HSA" firstAttribute="top" secondItem="BK6-EB-FhY" secondAttribute="top" constant="5" id="WZF-a6-7T6"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bookingNoLabel" destination="OBH-VM-dIZ" id="svP-06-qqC"/>
+                                    <outlet property="borderView" destination="qQR-S3-HSA" id="5tT-fR-RF9"/>
+                                    <outlet property="limitLabel" destination="0bG-eG-4XB" id="KT3-0f-lw1"/>
+                                    <outlet property="setImage" destination="c2Q-Vm-PtA" id="IbQ-gj-S0N"/>
+                                    <outlet property="titleLabel" destination="dkP-h4-xPa" id="wSC-WZ-tJN"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1dS-fO-vLs" id="4Qy-uK-CJU"/>
+                            <outlet property="delegate" destination="1dS-fO-vLs" id="jZl-K7-Xq9"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TT1-ii-Qt0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81.159420289855078" y="76.339285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="u102" width="500" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

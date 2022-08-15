@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Beipu Set Table View Controller-->
+        <scene sceneID="JP8-GC-PKS">
+            <objects>
+                <tableViewController storyboardIdentifier="BeipuSetTableViewController" id="zqB-kC-GaA" customClass="BeipuSetTableViewController" customModule="Beipu" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="LdK-Vb-uQM">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="abb-10-ZUm">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="147" id="BHY-xW-VLr">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="147"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BHY-xW-VLr" id="j2x-wc-baJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="147"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="瞭解特色餐廳怎麼走" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chw-TF-8aS">
+                                                    <rect key="frame" x="133" y="111.66666666666667" width="260" height="19.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" systemColor="linkColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eat" translatesAutoresizingMaskIntoConstraints="NO" id="oRr-YF-d9L">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="147"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="128" id="Nop-YH-ox9"/>
+                                                        <constraint firstAttribute="height" constant="128" id="jVt-fB-X7F"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="HUN-4z-w2C">
+                                                    <rect key="frame" x="398" y="0.0" width="30" height="147"/>
+                                                    <color key="backgroundColor" red="0.90588235289999997" green="0.0" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="XY2-cX-gBD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <state key="normal" title="優惠推薦">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="action:" destination="zqB-kC-GaA" eventType="touchUpInside" id="2oK-vc-4Tg"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="餓了嗎？推薦您北埔優質餐廳，老饕推薦" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32a-Th-75w">
+                                                    <rect key="frame" x="133" y="5" width="260" height="38.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="HUN-4z-w2C" secondAttribute="bottom" id="625-R6-YHg"/>
+                                                <constraint firstItem="32a-Th-75w" firstAttribute="leading" secondItem="oRr-YF-d9L" secondAttribute="trailing" constant="5" id="6hE-bt-M7h"/>
+                                                <constraint firstItem="HUN-4z-w2C" firstAttribute="leading" secondItem="32a-Th-75w" secondAttribute="trailing" constant="5" id="DDI-ht-tgH"/>
+                                                <constraint firstItem="HUN-4z-w2C" firstAttribute="top" secondItem="j2x-wc-baJ" secondAttribute="top" id="IbH-dB-aMj"/>
+                                                <constraint firstItem="oRr-YF-d9L" firstAttribute="top" secondItem="j2x-wc-baJ" secondAttribute="top" id="Imv-Sh-VNC"/>
+                                                <constraint firstItem="oRr-YF-d9L" firstAttribute="leading" secondItem="j2x-wc-baJ" secondAttribute="leading" id="O6m-fe-9sO"/>
+                                                <constraint firstAttribute="bottom" secondItem="oRr-YF-d9L" secondAttribute="bottom" id="RbN-Fw-9il"/>
+                                                <constraint firstItem="HUN-4z-w2C" firstAttribute="leading" secondItem="Chw-TF-8aS" secondAttribute="trailing" constant="5" id="TA6-4Z-GKj"/>
+                                                <constraint firstItem="Chw-TF-8aS" firstAttribute="leading" secondItem="oRr-YF-d9L" secondAttribute="trailing" constant="5" id="UTI-Bx-Jkd"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Chw-TF-8aS" secondAttribute="bottom" constant="5" id="ayP-kN-6tO"/>
+                                                <constraint firstAttribute="trailing" secondItem="HUN-4z-w2C" secondAttribute="trailing" id="pTt-1t-YPU"/>
+                                                <constraint firstItem="32a-Th-75w" firstAttribute="top" secondItem="j2x-wc-baJ" secondAttribute="top" constant="5" id="uti-Hn-ey0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="147" id="cK1-PW-5pc">
+                                        <rect key="frame" x="0.0" y="191.66666603088379" width="428" height="147"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cK1-PW-5pc" id="xzi-K9-85w">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="147"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="瞭解特色景點怎麼走" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsM-NT-pu4">
+                                                    <rect key="frame" x="133" y="111.66666666666667" width="260" height="19.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" systemColor="linkColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="41c-GS-xfN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="147"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="4Lh-Ge-YiP"/>
+                                                        <constraint firstAttribute="width" constant="128" id="bLY-ul-xdC"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="k0w-O7-8g0">
+                                                    <rect key="frame" x="398" y="0.0" width="30" height="147"/>
+                                                    <color key="backgroundColor" red="0.90588235289999997" green="0.0" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="ccg-eg-3FH"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <state key="normal" title="優惠推薦">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="action:" destination="zqB-kC-GaA" eventType="touchUpInside" id="5b1-b5-Hfk"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北埔哪裡好玩報你知，最有味道的特色景點，快來暸解" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCN-eG-TvT">
+                                                    <rect key="frame" x="133" y="5" width="260" height="38.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="k0w-O7-8g0" secondAttribute="trailing" id="3Mu-xt-ml9"/>
+                                                <constraint firstItem="41c-GS-xfN" firstAttribute="top" secondItem="xzi-K9-85w" secondAttribute="top" id="9Bk-NP-yVd"/>
+                                                <constraint firstItem="VCN-eG-TvT" firstAttribute="leading" secondItem="41c-GS-xfN" secondAttribute="trailing" constant="5" id="9Um-tU-WnU"/>
+                                                <constraint firstItem="k0w-O7-8g0" firstAttribute="top" secondItem="xzi-K9-85w" secondAttribute="top" id="DdH-Ms-Tn8"/>
+                                                <constraint firstItem="41c-GS-xfN" firstAttribute="leading" secondItem="xzi-K9-85w" secondAttribute="leading" id="Fqp-k9-bsU"/>
+                                                <constraint firstItem="VCN-eG-TvT" firstAttribute="top" secondItem="xzi-K9-85w" secondAttribute="top" constant="5" id="NNz-Df-7c9"/>
+                                                <constraint firstItem="k0w-O7-8g0" firstAttribute="leading" secondItem="MsM-NT-pu4" secondAttribute="trailing" constant="5" id="Nsd-Nl-6Ct"/>
+                                                <constraint firstAttribute="bottom" secondItem="41c-GS-xfN" secondAttribute="bottom" id="UG1-9d-g3R"/>
+                                                <constraint firstItem="k0w-O7-8g0" firstAttribute="leading" secondItem="VCN-eG-TvT" secondAttribute="trailing" constant="5" id="Wj0-KW-s02"/>
+                                                <constraint firstAttribute="bottom" secondItem="k0w-O7-8g0" secondAttribute="bottom" id="eYM-8B-LIw"/>
+                                                <constraint firstItem="MsM-NT-pu4" firstAttribute="leading" secondItem="41c-GS-xfN" secondAttribute="trailing" constant="5" id="pqU-Wo-IwK"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="MsM-NT-pu4" secondAttribute="bottom" constant="5" id="yqB-i5-5vS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="147" id="seL-ax-diX">
+                                        <rect key="frame" x="0.0" y="338.66666603088379" width="428" height="147"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="seL-ax-diX" id="PaS-Rw-AC9">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="147"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="瞭解特色民宿怎麼走" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMd-9e-vrZ">
+                                                    <rect key="frame" x="133" y="111.66666666666667" width="260" height="19.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" systemColor="linkColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live" translatesAutoresizingMaskIntoConstraints="NO" id="TXg-Tp-YHj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="147"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="8Yw-Vj-0xx"/>
+                                                        <constraint firstAttribute="width" constant="128" id="LBY-eK-1kf"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pmp-xi-xwG">
+                                                    <rect key="frame" x="398" y="0.0" width="30" height="147"/>
+                                                    <color key="backgroundColor" red="0.90588235289999997" green="0.0" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="8Zz-62-Ncv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <state key="normal" title="優惠推薦">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="action:" destination="zqB-kC-GaA" eventType="touchUpInside" id="e4M-AW-Z7j"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最美夜色、古意美景，別錯過" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4K-vN-Q5D">
+                                                    <rect key="frame" x="133" y="5" width="260" height="19.333333333333332"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="E4K-vN-Q5D" firstAttribute="leading" secondItem="TXg-Tp-YHj" secondAttribute="trailing" constant="5" id="5tj-7E-oaB"/>
+                                                <constraint firstAttribute="bottom" secondItem="TXg-Tp-YHj" secondAttribute="bottom" id="J26-1B-ADE"/>
+                                                <constraint firstItem="pmp-xi-xwG" firstAttribute="top" secondItem="PaS-Rw-AC9" secondAttribute="top" id="LGN-Gm-qZo"/>
+                                                <constraint firstItem="GMd-9e-vrZ" firstAttribute="leading" secondItem="TXg-Tp-YHj" secondAttribute="trailing" constant="5" id="NO1-NO-J4w"/>
+                                                <constraint firstItem="E4K-vN-Q5D" firstAttribute="top" secondItem="PaS-Rw-AC9" secondAttribute="top" constant="5" id="QPJ-Ji-mlN"/>
+                                                <constraint firstAttribute="trailing" secondItem="pmp-xi-xwG" secondAttribute="trailing" id="RNn-jp-8qU"/>
+                                                <constraint firstItem="TXg-Tp-YHj" firstAttribute="top" secondItem="PaS-Rw-AC9" secondAttribute="top" id="SYs-wu-heZ"/>
+                                                <constraint firstItem="TXg-Tp-YHj" firstAttribute="leading" secondItem="PaS-Rw-AC9" secondAttribute="leading" id="Sj4-WS-938"/>
+                                                <constraint firstAttribute="bottom" secondItem="pmp-xi-xwG" secondAttribute="bottom" id="dbu-q2-Dej"/>
+                                                <constraint firstItem="pmp-xi-xwG" firstAttribute="leading" secondItem="E4K-vN-Q5D" secondAttribute="trailing" constant="5" id="gkC-zN-bQv"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="GMd-9e-vrZ" secondAttribute="bottom" constant="5" id="okH-mU-aIj"/>
+                                                <constraint firstItem="pmp-xi-xwG" firstAttribute="leading" secondItem="GMd-9e-vrZ" secondAttribute="trailing" constant="5" id="qzN-6S-Ftb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="zqB-kC-GaA" id="lHg-ed-Sis"/>
+                            <outlet property="delegate" destination="zqB-kC-GaA" id="fZa-0j-CA5"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9K5-bn-viJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84.057971014492765" y="40.848214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eat" width="77" height="78"/>
+        <image name="live" width="75" height="72"/>
+        <image name="play" width="72" height="75"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
