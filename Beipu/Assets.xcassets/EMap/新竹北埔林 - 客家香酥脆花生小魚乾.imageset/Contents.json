@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "新竹北埔林 - 客家香酥脆花生小魚乾.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
