@@ -6,6 +6,8 @@ target 'Beipu' do
   use_frameworks!
 
   # Pods for Beipu
+  pod 'Alamofire'
+  pod 'SwiftyJSON', '~> 4.0'
 
   target 'BeipuTests' do
     inherit! :search_paths

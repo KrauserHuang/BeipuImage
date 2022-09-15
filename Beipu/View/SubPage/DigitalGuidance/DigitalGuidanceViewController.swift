@@ -7,23 +7,42 @@
 
 import UIKit
 
+protocol DigitalGuidanceViewControllerDelegate: AnyObject {
+    func nextAction(_ viewController: DigitalGuidanceViewController, index: Int)
+}
+
 class DigitalGuidanceViewController: UIViewController {
+    
+    @IBOutlet var mapButtons: [UIButton]!
+    @IBOutlet var mapImageButtons: [UIButton]!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    weak var delegate: DigitalGuidanceViewControllerDelegate?
+    let mapList = [
+        "",
+        "北埔慈天宮",
+        "姜阿興洋樓",
+        "金廣福公館",
+        "姜式家廟",
+        "叮咚橋",
+        "秀巒公園",
+        "忠恕堂",
+        "鄧南光影像紀念館",
+        "天水堂"
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imageView.addCornerRadius(8)
 
-        // Do any additional setup after loading the view.
+        for button in mapButtons {
+            let index = button.tag
+            button.setImage(UIImage.init(systemName: "\(index).circle"), for: .normal)
+            button.setTitle(mapList[index], for: .normal)
+        }
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func nextAction(_ sender: UIButton) {
+        delegate?.nextAction(self, index: sender.tag)
     }
-    */
-
 }

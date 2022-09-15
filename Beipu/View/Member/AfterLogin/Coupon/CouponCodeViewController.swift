@@ -45,7 +45,8 @@ class CouponCodeViewController: UIViewController {
         itemNameLabel.text = "憑本券可兌換\(coupon.coupon_name)"
         descriptLabel.text = coupon.coupon_description
         let userId = UserService.shared.user!.member_id
-        let string = "m_id=\(userId)&coupon_no=\(coupon.coupon_no)"
+//        let string = "m_id=\(userId)&coupon_no=\(coupon.coupon_no)"
+        let string = "coupon_no=\(coupon.coupon_no)"
         setQRCode(str: string)
     }
 //    產生QRCode

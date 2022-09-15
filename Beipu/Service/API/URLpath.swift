@@ -39,6 +39,9 @@ let URL_STORELIST = "store_list.php"
 
 //領取票券
 let URL_GETCOUPON2 = "get_coupon2.php"
-
+//領取票券
+let URL_GETCOUPON3 = "get_coupon3.php"
+// MARK: - 店長
 //核銷票券
-let URL_APPLYCOUPON = "apply_coupon.php"
+//let URL_APPLYCOUPON = "apply_coupon.php"
+let URL_APPLYCOUPON = "apply_coupon2.php"

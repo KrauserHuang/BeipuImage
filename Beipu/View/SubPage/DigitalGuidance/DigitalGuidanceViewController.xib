@@ -1,22 +1,331 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DigitalGuidanceViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DigitalGuidanceViewController" customModule="Beipu" customModuleProvider="target">
             <connections>
+                <outlet property="imageView" destination="PvH-GJ-Uta" id="9vC-fs-EZs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="mapButtons" destination="5s1-it-VK7" collectionClass="NSMutableArray" id="nfU-aj-eLE"/>
+                <outletCollection property="mapButtons" destination="l6X-kM-Oqr" collectionClass="NSMutableArray" id="njO-aM-fmt"/>
+                <outletCollection property="mapButtons" destination="BNu-jJ-xqy" collectionClass="NSMutableArray" id="4pP-WC-VU5"/>
+                <outletCollection property="mapButtons" destination="wTC-vw-gMv" collectionClass="NSMutableArray" id="WrX-3A-wxf"/>
+                <outletCollection property="mapButtons" destination="atl-K9-krI" collectionClass="NSMutableArray" id="7Kf-aO-FIi"/>
+                <outletCollection property="mapButtons" destination="WwV-0g-eCV" collectionClass="NSMutableArray" id="8uj-Dh-xMM"/>
+                <outletCollection property="mapButtons" destination="HIe-MZ-Ht8" collectionClass="NSMutableArray" id="d8C-df-BPJ"/>
+                <outletCollection property="mapButtons" destination="E7e-ik-wt1" collectionClass="NSMutableArray" id="Q9g-ot-B47"/>
+                <outletCollection property="mapButtons" destination="XeR-Km-2XL" collectionClass="NSMutableArray" id="tRK-H5-Hue"/>
+                <outletCollection property="mapImageButtons" destination="cvu-Pc-grN" collectionClass="NSMutableArray" id="aDc-LO-4ar"/>
+                <outletCollection property="mapImageButtons" destination="ikr-gD-QC8" collectionClass="NSMutableArray" id="uSG-Cg-VgX"/>
+                <outletCollection property="mapImageButtons" destination="l5K-x8-cMP" collectionClass="NSMutableArray" id="mYg-Lc-aQ9"/>
+                <outletCollection property="mapImageButtons" destination="3Xu-gk-kEU" collectionClass="NSMutableArray" id="i0Y-PL-9HB"/>
+                <outletCollection property="mapImageButtons" destination="Qdk-RM-Td1" collectionClass="NSMutableArray" id="BWq-uo-Y7D"/>
+                <outletCollection property="mapImageButtons" destination="7Z3-Ow-fgW" collectionClass="NSMutableArray" id="VwO-Ce-6YH"/>
+                <outletCollection property="mapImageButtons" destination="pLn-YK-mVu" collectionClass="NSMutableArray" id="aK6-oU-saU"/>
+                <outletCollection property="mapImageButtons" destination="Gnd-Nu-OKj" collectionClass="NSMutableArray" id="z1N-E6-OdE"/>
+                <outletCollection property="mapImageButtons" destination="huU-89-mXX" collectionClass="NSMutableArray" id="P3H-Do-Bc0"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qjb-mI-KCP">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R5c-Ki-lSN">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="871"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digitalGuidanceMap" translatesAutoresizingMaskIntoConstraints="NO" id="PvH-GJ-Uta">
+                                    <rect key="frame" x="10" y="18" width="394" height="394"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="PvH-GJ-Uta" secondAttribute="height" multiplier="1:1" id="NTZ-d4-G90"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="tGn-h3-6NZ">
+                                    <rect key="frame" x="132.5" y="513" width="149" height="318"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5s1-it-VK7">
+                                            <rect key="frame" x="0.0" y="0.0" width="112" height="22"/>
+                                            <color key="tintColor" systemColor="systemRedColor"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="北埔第一棧" image="1.circle" catalog="system">
+                                                <color key="titleColor" systemColor="labelColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="Sww-dY-toR"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6X-kM-Oqr">
+                                            <rect key="frame" x="0.0" y="37" width="131" height="22"/>
+                                            <color key="tintColor" systemColor="systemRedColor"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="福美軒飲食店" image="2.circle" catalog="system">
+                                                <color key="titleColor" systemColor="labelColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="xWG-gd-j8I"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNu-jJ-xqy">
+                                            <rect key="frame" x="0.0" y="74" width="149" height="22"/>
+                                            <color key="tintColor" systemColor="systemRedColor"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="登富茶坊客家菜" image="3.circle" catalog="system">
+                                                <color key="titleColor" systemColor="labelColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="urK-uO-Sxm"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTC-vw-gMv">
+                                            <rect key="frame" x="0.0" y="111" width="112" height="22"/>
+                                            <color key="tintColor" systemColor="systemRedColor"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="北埔第一棧" image="1.circle" catalog="system">
+                                                <color key="titleColor" systemColor="labelColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="naf-ZU-gPy"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atl-K9-krI">
+                                            <rect key="frame" x="0.0" y="148" width="112" height="22"/>
+                                            <color key="tintColor" systemColor="systemRedColor"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="北埔第一棧" image="1.circle" catalog="system">
+                                                <color key="titleColor" systemColor="labelColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="Ctm-u1-TT2"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwV-0g-eCV">
+                                            <rect key="frame" x="0.0" y="185" width="112" height="22"/>
+                                            <color key="tintColor" systemColor="systemRedColor"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="北埔第一棧" image="1.circle" catalog="system">
+                                                <color key="titleColor" systemColor="labelColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="ryg-Re-gse"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIe-MZ-Ht8">
+                                            <rect key="frame" x="0.0" y="222" width="112" height="22"/>
+                                            <color key="tintColor" systemColor="systemRedColor"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="北埔第一棧" image="1.circle" catalog="system">
+                                                <color key="titleColor" systemColor="labelColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="gmh-er-lqW"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7e-ik-wt1">
+                                            <rect key="frame" x="0.0" y="259" width="112" height="22"/>
+                                            <color key="tintColor" systemColor="systemRedColor"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="北埔第一棧" image="1.circle" catalog="system">
+                                                <color key="titleColor" systemColor="labelColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="x5o-Bu-24M"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeR-Km-2XL">
+                                            <rect key="frame" x="0.0" y="296" width="112" height="22"/>
+                                            <color key="tintColor" systemColor="systemRedColor"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="北埔第一棧" image="1.circle" catalog="system">
+                                                <color key="titleColor" systemColor="labelColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="Gr1-7Q-7Cl"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歡迎來到數位導覽專區，只要點選地圖上的景點圖或是下方的古蹟名稱，即可了解更多關於景點的歷史與介紹" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSH-X0-lLB">
+                                    <rect key="frame" x="30" y="432" width="354" height="61"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5K-x8-cMP">
+                                    <rect key="frame" x="220" y="145" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="l5K-x8-cMP" secondAttribute="height" multiplier="1:1" id="Rc4-dM-U54"/>
+                                        <constraint firstAttribute="height" constant="50" id="VbG-qT-tdM"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="75Y-qT-TZ9"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdk-RM-Td1">
+                                    <rect key="frame" x="346" y="190" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="lKE-8m-0Qc"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="Gl7-um-3f7"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Z3-Ow-fgW">
+                                    <rect key="frame" x="207" y="208" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="H3U-eo-L1h"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="gDn-Jr-eIM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLn-YK-mVu">
+                                    <rect key="frame" x="192" y="274" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="jma-c8-uQY"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="IlJ-cQ-HeX"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnd-Nu-OKj">
+                                    <rect key="frame" x="192" y="349" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="IUK-w7-AcC"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="VD4-d7-awz"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvu-Pc-grN">
+                                    <rect key="frame" x="160" y="41" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="47w-T7-fk6"/>
+                                        <constraint firstAttribute="width" secondItem="cvu-Pc-grN" secondAttribute="height" multiplier="1:1" id="QBp-PQ-FYw"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="vK8-Wa-S9M"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikr-gD-QC8">
+                                    <rect key="frame" x="49" y="75" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="dfy-z5-EVa"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="VSp-xc-5y1"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xu-gk-kEU">
+                                    <rect key="frame" x="192" y="93" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="b6F-vu-RYi"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="7sY-Oz-UEA"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huU-89-mXX">
+                                    <rect key="frame" x="83" y="349" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="pON-3h-lK7"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="phC-gD-Qau"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="3Xu-gk-kEU" firstAttribute="width" secondItem="3Xu-gk-kEU" secondAttribute="height" multiplier="1:1" id="04s-Mx-ccr"/>
+                                <constraint firstItem="pLn-YK-mVu" firstAttribute="top" secondItem="R5c-Ki-lSN" secondAttribute="top" constant="274" id="0Y3-Em-HBv"/>
+                                <constraint firstItem="ikr-gD-QC8" firstAttribute="width" secondItem="ikr-gD-QC8" secondAttribute="height" multiplier="1:1" id="2Lp-Ut-E7G"/>
+                                <constraint firstItem="Qdk-RM-Td1" firstAttribute="width" secondItem="Qdk-RM-Td1" secondAttribute="height" multiplier="1:1" id="3sh-2l-5kQ"/>
+                                <constraint firstItem="7Z3-Ow-fgW" firstAttribute="width" secondItem="7Z3-Ow-fgW" secondAttribute="height" multiplier="1:1" id="4i9-YS-v6V"/>
+                                <constraint firstItem="PvH-GJ-Uta" firstAttribute="leading" secondItem="R5c-Ki-lSN" secondAttribute="leading" constant="10" id="Avg-ed-c42"/>
+                                <constraint firstItem="tGn-h3-6NZ" firstAttribute="top" secondItem="eSH-X0-lLB" secondAttribute="bottom" constant="20" id="BIT-tp-cbE"/>
+                                <constraint firstItem="ikr-gD-QC8" firstAttribute="leading" secondItem="R5c-Ki-lSN" secondAttribute="leading" constant="49" id="Cyz-9m-SJT"/>
+                                <constraint firstItem="l5K-x8-cMP" firstAttribute="top" secondItem="R5c-Ki-lSN" secondAttribute="top" constant="145" id="FKh-Ri-77G"/>
+                                <constraint firstAttribute="bottom" secondItem="tGn-h3-6NZ" secondAttribute="bottom" constant="40" id="FYl-mG-eJh"/>
+                                <constraint firstItem="Qdk-RM-Td1" firstAttribute="top" secondItem="R5c-Ki-lSN" secondAttribute="top" constant="190" id="Fc4-Yb-ymq"/>
+                                <constraint firstItem="huU-89-mXX" firstAttribute="width" secondItem="huU-89-mXX" secondAttribute="height" multiplier="1:1" id="Hwo-jB-5g5"/>
+                                <constraint firstAttribute="trailing" secondItem="7Z3-Ow-fgW" secondAttribute="trailing" constant="157" id="JvP-FV-xbz"/>
+                                <constraint firstItem="eSH-X0-lLB" firstAttribute="leading" secondItem="R5c-Ki-lSN" secondAttribute="leading" constant="30" id="Kl0-se-6Jl"/>
+                                <constraint firstAttribute="trailing" secondItem="Qdk-RM-Td1" secondAttribute="trailing" constant="18" id="O67-5u-jOX"/>
+                                <constraint firstItem="3Xu-gk-kEU" firstAttribute="top" secondItem="R5c-Ki-lSN" secondAttribute="top" constant="93" id="RHw-DE-aTb"/>
+                                <constraint firstItem="cvu-Pc-grN" firstAttribute="leading" secondItem="R5c-Ki-lSN" secondAttribute="leading" constant="160" id="RUz-dH-CRC"/>
+                                <constraint firstAttribute="trailing" secondItem="Gnd-Nu-OKj" secondAttribute="trailing" constant="172" id="Yto-5O-eBM"/>
+                                <constraint firstItem="Gnd-Nu-OKj" firstAttribute="width" secondItem="Gnd-Nu-OKj" secondAttribute="height" multiplier="1:1" id="b7E-0p-Moy"/>
+                                <constraint firstAttribute="trailing" secondItem="PvH-GJ-Uta" secondAttribute="trailing" constant="10" id="btZ-Vp-Qvp"/>
+                                <constraint firstItem="eSH-X0-lLB" firstAttribute="top" secondItem="PvH-GJ-Uta" secondAttribute="bottom" constant="20" id="daa-Jw-cW9"/>
+                                <constraint firstItem="PvH-GJ-Uta" firstAttribute="top" secondItem="R5c-Ki-lSN" secondAttribute="topMargin" constant="10" id="dcb-w7-AcR"/>
+                                <constraint firstItem="huU-89-mXX" firstAttribute="leading" secondItem="R5c-Ki-lSN" secondAttribute="leading" constant="83" id="fVx-Vy-wek"/>
+                                <constraint firstItem="cvu-Pc-grN" firstAttribute="top" secondItem="R5c-Ki-lSN" secondAttribute="top" constant="41" id="fvq-pr-FDD"/>
+                                <constraint firstItem="tGn-h3-6NZ" firstAttribute="centerX" secondItem="eSH-X0-lLB" secondAttribute="centerX" id="hLO-8K-YDg"/>
+                                <constraint firstItem="huU-89-mXX" firstAttribute="top" secondItem="R5c-Ki-lSN" secondAttribute="top" constant="349" id="mWS-w6-VHN"/>
+                                <constraint firstItem="ikr-gD-QC8" firstAttribute="top" secondItem="R5c-Ki-lSN" secondAttribute="top" constant="75" id="oCW-ce-hH7"/>
+                                <constraint firstAttribute="trailing" secondItem="pLn-YK-mVu" secondAttribute="trailing" constant="172" id="qj9-xO-aQr"/>
+                                <constraint firstItem="7Z3-Ow-fgW" firstAttribute="top" secondItem="R5c-Ki-lSN" secondAttribute="top" constant="208" id="sTQ-wq-em8"/>
+                                <constraint firstItem="Gnd-Nu-OKj" firstAttribute="top" secondItem="R5c-Ki-lSN" secondAttribute="top" constant="349" id="sqH-XB-ige"/>
+                                <constraint firstAttribute="trailing" secondItem="3Xu-gk-kEU" secondAttribute="trailing" constant="172" id="u9X-79-ZJ2"/>
+                                <constraint firstItem="pLn-YK-mVu" firstAttribute="width" secondItem="pLn-YK-mVu" secondAttribute="height" multiplier="1:1" id="vPE-2M-NPL"/>
+                                <constraint firstAttribute="trailing" secondItem="eSH-X0-lLB" secondAttribute="trailing" constant="30" id="wzZ-ZK-RUR"/>
+                                <constraint firstAttribute="trailing" secondItem="l5K-x8-cMP" secondAttribute="trailing" constant="144" id="xWF-zv-9MC"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="R5c-Ki-lSN" secondAttribute="trailing" id="1wL-oB-SFP"/>
+                        <constraint firstItem="R5c-Ki-lSN" firstAttribute="top" secondItem="Qjb-mI-KCP" secondAttribute="top" id="Ig3-0a-N02"/>
+                        <constraint firstAttribute="bottom" secondItem="R5c-Ki-lSN" secondAttribute="bottom" priority="250" id="KW6-A0-GZk"/>
+                        <constraint firstItem="R5c-Ki-lSN" firstAttribute="centerX" secondItem="Qjb-mI-KCP" secondAttribute="centerX" id="UOG-ML-fPK"/>
+                        <constraint firstItem="R5c-Ki-lSN" firstAttribute="centerY" secondItem="Qjb-mI-KCP" secondAttribute="centerY" priority="250" id="WXw-rU-qjh"/>
+                        <constraint firstItem="R5c-Ki-lSN" firstAttribute="leading" secondItem="Qjb-mI-KCP" secondAttribute="leading" id="ebr-dY-qew"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Qjb-mI-KCP" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5Ni-eu-NIz"/>
+                <constraint firstItem="Qjb-mI-KCP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="80m-dN-QDZ"/>
+                <constraint firstItem="Qjb-mI-KCP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GsI-5w-9tY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Qjb-mI-KCP" secondAttribute="bottom" id="pY0-RX-nV0"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </view>
     </objects>
+    <resources>
+        <image name="1.circle" catalog="system" width="128" height="121"/>
+        <image name="2.circle" catalog="system" width="128" height="121"/>
+        <image name="3.circle" catalog="system" width="128" height="121"/>
+        <image name="digitalGuidanceMap" width="1734" height="1668"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

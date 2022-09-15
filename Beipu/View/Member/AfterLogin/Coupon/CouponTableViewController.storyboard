@@ -28,7 +28,7 @@
                                             <rect key="frame" x="25" y="16" width="364" height="128"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消費滿1000元可打9折" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQo-Ag-iEe">
-                                                    <rect key="frame" x="20" y="20" width="202" height="24"/>
+                                                    <rect key="frame" x="20" y="20" width="324" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -44,6 +44,7 @@
                                             <constraints>
                                                 <constraint firstItem="Fs4-Pe-Q57" firstAttribute="leading" secondItem="yQo-Ag-iEe" secondAttribute="leading" id="ACl-Lz-bzW"/>
                                                 <constraint firstItem="yQo-Ag-iEe" firstAttribute="leading" secondItem="k7h-7h-lLJ" secondAttribute="leading" constant="20" id="B73-Ej-Jxd"/>
+                                                <constraint firstAttribute="trailing" secondItem="yQo-Ag-iEe" secondAttribute="trailing" constant="20" id="Orz-PZ-DG3"/>
                                                 <constraint firstItem="yQo-Ag-iEe" firstAttribute="top" secondItem="k7h-7h-lLJ" secondAttribute="top" constant="20" id="fDy-F2-MjH"/>
                                                 <constraint firstAttribute="bottom" secondItem="Fs4-Pe-Q57" secondAttribute="bottom" constant="20" id="mLb-OY-x5e"/>
                                             </constraints>

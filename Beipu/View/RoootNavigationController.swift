@@ -6,11 +6,19 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class RoootNavigationController: UINavigationController {
     
+    let bundleURLString = "http://itunes.apple.com/tw/lookup?bundleId=com.jotangi.BeipuImage"
+    let currentVersion = Bundle.main.releaseVersionNumberPretty
+    var appBundle_Version = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updateVersion()
         
         let controller = UIStoryboard(name: "TopPageViewController", bundle: nil).instantiateViewController(identifier: "TopPageViewController") as! TopPageViewController
         controller.delegate = self
@@ -88,10 +96,15 @@ class RoootNavigationController: UINavigationController {
 
 extension RoootNavigationController: TopPageViewControllerDelegate {
     func planAction(_ viewController: TopPageViewController) {
-        let controller = BlankViewController()
-        controller.message = "Coming soon......"
+//        let controller = BlankViewController()
+//        controller.message = "Coming soon......"
+//        pushViewController(controller, animated: true)
+//        controller.setNavigationTitle("主題套餐")
+        
+        let controller = DigitalGuidanceViewController()
+        controller.setNavigationTitle("數位導覽")
+        controller.delegate = self
         pushViewController(controller, animated: true)
-        controller.setNavigationTitle("主題套餐")
         
 //        let tabBarController = OnTopTabBarController()
 //        tabBarController.edgesForExtendedLayout = []
@@ -108,14 +121,20 @@ extension RoootNavigationController: TopPageViewControllerDelegate {
     
     func mapAction(_ viewController: TopPageViewController) {
         let controller = EMapViewController()
-        controller.setNavigationTitle("電子地圖")
+        controller.setNavigationTitle("店家介紹")
         controller.delegate = self
         pushViewController(controller, animated: true)
     }
     
     func naviAction(_ viewController: TopPageViewController) {
+        guard let user = UserService.shared.user else {
+//            let alert = UIAlertController.simpleOKAlert(title: "", message: "請先登入會員", buttonTitle: "確認", action: nil)
+//            present(alert, animated: true)
+            Alert.showMessage(title: "", msg: "請先登入會員", vc: viewController)
+            return
+        }
         let controller = NaviCategoryViewController()
-        controller.setNavigationTitle("數位導覽")
+        controller.setNavigationTitle("解謎遊戲")
         
         pushViewController(controller, animated: true)
     }
@@ -135,8 +154,10 @@ extension RoootNavigationController: TopPageViewControllerDelegate {
     }
     
     func shopAction(_ viewController: TopPageViewController) {
-        let controller = BlankViewController()
-        controller.message = "Coming soon......"
+//        let controller = BlankViewController()
+        let controller = WKWebViewController()
+//        controller.message = "建置中\n敬請期待"
+        controller.urlStr = "https://hcparking.jotangi.net/beipu_web/shop.php"
         pushViewController(controller, animated: true)
         controller.setNavigationTitle("線上商城")
         
@@ -173,6 +194,16 @@ extension RoootNavigationController: LogInFlowViewControllerDelegate {
             dismiss(animated: false) {
                 self.present(navi, animated: false)
             }
+        }
+    }
+    func adminLoginAction(_ viewController: LogInFlowViewController) {
+        let vc = AdminMainPageViewController()
+        vc.setNavigationTitle("店長核銷")
+        vc.delegate = self
+        let navi = UINavigationController(rootViewController: vc)
+        navi.modalPresentationStyle = .overFullScreen
+        dismiss(animated: false) {
+            self.present(navi, animated: false)
         }
     }
 }
@@ -242,7 +273,7 @@ extension RoootNavigationController: PayDetailViewControllerDelegate {
 extension RoootNavigationController: EMapViewControllerDelegate {
     func nextAction(_ viewController: EMapViewController, index: Int) {
         let controller = EMapDetailViewController()
-        controller.setNavigationTitle("電子地圖")
+        controller.setNavigationTitle("店家介紹")
         controller.index = index
         pushViewController(controller, animated: true)
     }
@@ -251,5 +282,84 @@ extension RoootNavigationController: EMapViewControllerDelegate {
 extension RoootNavigationController: MerchantTopViewControllerDelegate {
     func logoutAction(_ viewController: MerchantTopViewController) {
         dismiss(animated: true)
+    }
+}
+
+extension RoootNavigationController {
+    func updateVersion() {
+//        WebAPI.shared.request(urlString: bundleURLString, parameters: "") { isSuccess, data, error in
+//            guard isSuccess,
+//                  let data = data,
+//                  let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else { return }
+//            print(self, #function)
+////            print(json)
+//            print("======================================")
+//            if let results = json["results"] as? Any {
+//                print(results)
+//            }
+//        }
+        AF.request(bundleURLString).responseJSON { response in
+            let json: JSON = try! JSON(data: response.data!)
+            if let result = json["results"].array {
+                for data in result {
+                    self.appBundle_Version = data["version"].string!
+                    if self.appBundle_Version <= self.currentVersion {
+                        print("目前裝置版本為: \(self.currentVersion)")
+                        print("App Store版本為: \(self.appBundle_Version)")
+                    } else {
+                        print("版本不同請更新")
+                        print("appStore Version: \(self.appBundle_Version)")
+                        print("current Version: \(self.currentVersion)")
+                        let controller = UIAlertController(title: "需要更新版本", message: "請至App Store立即更新", preferredStyle: .alert)
+                        let updateAction = UIAlertAction(title: "立即更新", style: .default) { (action) in
+                            let targetUrl = URL(string: "https://apps.apple.com/tw/app/rilink/id1511096774")
+                            UIApplication.shared.open(targetUrl!, options: [:], completionHandler: nil)
+                        }
+                        controller.addAction(updateAction)
+                        self.present(controller, animated: true, completion: nil)
+                    }
+                }
+            }
+        }
+    }
+}
+// MARK: - 店長核銷(第一頁)
+extension RoootNavigationController: AdminMainPageViewControllerDelegate {
+    func didTappedQRScanButton(_ viewController: AdminMainPageViewController) {
+        let vc = AdminQRScanViewController()
+        vc.delegate = self
+        vc.modalPresentationStyle = .overFullScreen
+        viewController.present(vc, animated: true, completion: nil)
+    }
+    
+    func didTappedLogoutButton(_ viewController: AdminMainPageViewController) {
+        UserService.shared.logout()
+        let controller = LogInFlowViewController()
+        controller.setNavigationTitle("北埔印象")
+        controller.delegate = self
+        let navi = UINavigationController(rootViewController: controller)
+        navi.modalPresentationStyle = .overFullScreen
+        dismiss(animated: false) {
+            self.present(navi, animated: false)
+        }
+    }
+}
+//店長核銷(第二頁)
+extension RoootNavigationController: AdminQRScanViewControllerDelegate {
+    func didTappedDismissButton(_ viewController: AdminQRScanViewController) {
+        viewController.dismiss(animated: true)
+    }
+    
+    func didFinishedScan(_ viewController: AdminQRScanViewController) {
+        viewController.dismiss(animated: true)
+    }
+}
+
+extension RoootNavigationController: DigitalGuidanceViewControllerDelegate {
+    func nextAction(_ viewController: DigitalGuidanceViewController, index: Int) {
+        let controller = DigitalGuidanceDetailViewController()
+        controller.setNavigationTitle("數位導覽")
+        controller.index = index
+        pushViewController(controller, animated: true)
     }
 }

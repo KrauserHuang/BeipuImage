@@ -4,19 +4,7 @@
 //  Created by 陳昱宏 on 2021/1/4.
 //
 
-import Foundation
 import UIKit
-
-extension UIView {
-//    設定圓角
-    func roundCorners(radius: CGFloat, maskedCorners: CACornerMask? = nil){
-        self.layer.cornerRadius = radius
-        self.clipsToBounds = true
-        if let mask = maskedCorners {
-            self.layer.maskedCorners = mask
-        }
-    }
-}
 
 extension UITableView {
 //    動畫reloadData
@@ -37,6 +25,7 @@ extension UITableView {
 }
 
 extension UIImage {
+    static var parkingsign = UIImage(systemName: "parkingsign.circle.fill")
 //    重設Size
     func imageResized(to size: CGSize) -> UIImage {
         return UIGraphicsImageRenderer(size: size).image { _ in
@@ -258,3 +247,30 @@ func printf(function: String = #function ,_ items: Any..., separator: String = "
     }
     print(terminator, terminator: "")
 }
+
+extension Bundle {
+    var releaseVersionNumber: String? {
+        return infoDictionary?["CFBundleShortVersionString"] as? String
+    }
+    
+    var buildVersionNumber: String? {
+        return infoDictionary?["CFBundleVersion"] as? String
+    }
+    
+    var releaseVersionNumberPretty: String {
+        return "v\(releaseVersionNumber ?? "1.0.0")"
+    }
+}
+
+protocol ReuseIdentifiable {
+    static func reuseIdentifier() -> String
+//    static var reuseIdentifier: String //Why not
+}
+
+extension ReuseIdentifiable {
+    static func reuseIdentifier() -> String {
+        return String(describing: self)
+    }
+}
+
+extension UITableViewCell: ReuseIdentifiable {}

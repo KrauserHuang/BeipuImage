@@ -27,7 +27,7 @@ class OnTopTabBarController: UITabBarController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 //        設定tabbar位置
-        self.tabBar.frame = CGRect(x: 0, y: view.frame.origin.y, width: tabBar.frame.size.width, height: tabBar.frame.size.height)
+        self.tabBar.frame = CGRect(x: 0, y: view.frame.origin.y, width: tabBar.frame.size.width, height: tabBar.frame.size.height - 30)
         self.tabBar.backgroundImage = UIImage()
         self.tabBar.backgroundColor = UIColor.clear
         let layer = Theme().getThemeLayer(size: self.tabBar.frame.size)
@@ -52,7 +52,7 @@ class OnTopTabBarController: UITabBarController {
     
     func setTabBarItemText(){
 //        設定標籤文字
-        self.tabBar.tintColor = .black
+        self.tabBar.tintColor = Theme.redColor
         self.tabBar.unselectedItemTintColor = .lightGray
         for item in self.tabBar.items! {
             item.setTitleTextAttributes([NSAttributedString.Key.font : UIFont(name: "Arial", size: 16)!], for: [])

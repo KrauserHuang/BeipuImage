@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F1B1FAE28C081DD00E969CD /* AdminMainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B1FAD28C081DD00E969CD /* AdminMainPageViewController.swift */; };
+		4F1B1FB028C0820C00E969CD /* AdminQRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B1FAF28C0820C00E969CD /* AdminQRScanViewController.swift */; };
+		4F1B1FB428C0850900E969CD /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B1FB328C0850900E969CD /* UIColor+Extension.swift */; };
+		4F1B1FB628C0868100E969CD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B1FB528C0868100E969CD /* UIView+Extension.swift */; };
+		4F1B1FBA28C08DC700E969CD /* ButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B1FB928C08DC700E969CD /* ButtonFactory.swift */; };
+		4F1B1FBC28C08F5C00E969CD /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B1FBB28C08F5C00E969CD /* LabelFactory.swift */; };
+		4F1B1FBE28C0971F00E969CD /* AdminService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B1FBD28C0971F00E969CD /* AdminService.swift */; };
+		4F1B1FC228C09BEE00E969CD /* DigitalGuidanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B1FC028C09BEE00E969CD /* DigitalGuidanceViewController.swift */; };
+		4F1B1FC328C09BEE00E969CD /* DigitalGuidanceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F1B1FC128C09BEE00E969CD /* DigitalGuidanceViewController.xib */; };
+		4F1B1FC628C0A08100E969CD /* DigitalGuidanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B1FC428C0A08100E969CD /* DigitalGuidanceDetailViewController.swift */; };
+		4F1B1FC728C0A08100E969CD /* DigitalGuidanceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F1B1FC528C0A08100E969CD /* DigitalGuidanceDetailViewController.xib */; };
+		4F1B1FC928C0B66500E969CD /* CouponAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B1FC828C0B66500E969CD /* CouponAlert.swift */; };
+		4F727B9028AB998100AFABC3 /* ParkingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F727B8E28AB998100AFABC3 /* ParkingTableViewCell.swift */; };
+		4F727B9128AB998100AFABC3 /* ParkingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F727B8F28AB998100AFABC3 /* ParkingTableViewCell.xib */; };
 		5406E8DC289A6D3300B639EA /* PayRecordTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5406E8DA289A6D3300B639EA /* PayRecordTableViewController.storyboard */; };
 		5406E8DD289A6D3300B639EA /* PayRecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5406E8DB289A6D3300B639EA /* PayRecordTableViewController.swift */; };
 		5406E8E0289A775300B639EA /* PayRecordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5406E8DE289A775300B639EA /* PayRecordDetailViewController.swift */; };
@@ -124,6 +138,21 @@
 /* Begin PBXFileReference section */
 		323177F9D1C30B6FB62EB422 /* Pods-Beipu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beipu.release.xcconfig"; path = "Target Support Files/Pods-Beipu/Pods-Beipu.release.xcconfig"; sourceTree = "<group>"; };
 		47390562EB75239BB69FA8AD /* Pods-Beipu-BeipuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beipu-BeipuUITests.debug.xcconfig"; path = "Target Support Files/Pods-Beipu-BeipuUITests/Pods-Beipu-BeipuUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F1B1FAD28C081DD00E969CD /* AdminMainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMainPageViewController.swift; sourceTree = "<group>"; };
+		4F1B1FAF28C0820C00E969CD /* AdminQRScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminQRScanViewController.swift; sourceTree = "<group>"; };
+		4F1B1FB328C0850900E969CD /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		4F1B1FB528C0868100E969CD /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		4F1B1FB928C08DC700E969CD /* ButtonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFactory.swift; sourceTree = "<group>"; };
+		4F1B1FBB28C08F5C00E969CD /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
+		4F1B1FBD28C0971F00E969CD /* AdminService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminService.swift; sourceTree = "<group>"; };
+		4F1B1FC028C09BEE00E969CD /* DigitalGuidanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalGuidanceViewController.swift; sourceTree = "<group>"; };
+		4F1B1FC128C09BEE00E969CD /* DigitalGuidanceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DigitalGuidanceViewController.xib; sourceTree = "<group>"; };
+		4F1B1FC428C0A08100E969CD /* DigitalGuidanceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalGuidanceDetailViewController.swift; sourceTree = "<group>"; };
+		4F1B1FC528C0A08100E969CD /* DigitalGuidanceDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DigitalGuidanceDetailViewController.xib; sourceTree = "<group>"; };
+		4F1B1FC828C0B66500E969CD /* CouponAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponAlert.swift; sourceTree = "<group>"; };
+		4F49B72828D0592E00D86A03 /* Beipu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Beipu.entitlements; sourceTree = "<group>"; };
+		4F727B8E28AB998100AFABC3 /* ParkingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingTableViewCell.swift; sourceTree = "<group>"; };
+		4F727B8F28AB998100AFABC3 /* ParkingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingTableViewCell.xib; sourceTree = "<group>"; };
 		5406E8DA289A6D3300B639EA /* PayRecordTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PayRecordTableViewController.storyboard; sourceTree = "<group>"; };
 		5406E8DB289A6D3300B639EA /* PayRecordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayRecordTableViewController.swift; sourceTree = "<group>"; };
 		5406E8DE289A775300B639EA /* PayRecordDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayRecordDetailViewController.swift; sourceTree = "<group>"; };
@@ -270,6 +299,59 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4F1B1FAC28C0811900E969CD /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				4F1B1FAD28C081DD00E969CD /* AdminMainPageViewController.swift */,
+				4F1B1FAF28C0820C00E969CD /* AdminQRScanViewController.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		4F1B1FB128C084E400E969CD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4F1B1FB228C084F200E969CD /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4F1B1FB228C084F200E969CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4F1B1FB328C0850900E969CD /* UIColor+Extension.swift */,
+				4F1B1FB528C0868100E969CD /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4F1B1FB728C08DB300E969CD /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				4F1B1FBB28C08F5C00E969CD /* LabelFactory.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		4F1B1FB828C08DB900E969CD /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				4F1B1FB928C08DC700E969CD /* ButtonFactory.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		4F1B1FBF28C09A8000E969CD /* DigitalGuidance */ = {
+			isa = PBXGroup;
+			children = (
+				4F1B1FC028C09BEE00E969CD /* DigitalGuidanceViewController.swift */,
+				4F1B1FC128C09BEE00E969CD /* DigitalGuidanceViewController.xib */,
+				4F1B1FC428C0A08100E969CD /* DigitalGuidanceDetailViewController.swift */,
+				4F1B1FC528C0A08100E969CD /* DigitalGuidanceDetailViewController.xib */,
+			);
+			path = DigitalGuidance;
+			sourceTree = "<group>";
+		};
 		5416F401289BDB6300D4F9B9 /* Merchant */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +417,8 @@
 		5420E560286567E2003F8371 /* Beipu */ = {
 			isa = PBXGroup;
 			children = (
+				4F49B72828D0592E00D86A03 /* Beipu.entitlements */,
+				4F1B1FB128C084E400E969CD /* Utils */,
 				5428AC5F286B11B5009AD92B /* Custom */,
 				5428AC53286B11A7009AD92B /* Service */,
 				5420E59A2865A8BA003F8371 /* View */,
@@ -368,6 +452,7 @@
 		5420E59A2865A8BA003F8371 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4F1B1FAC28C0811900E969CD /* Admin */,
 				5420E59D2865A8BA003F8371 /* RoootNavigationController.swift */,
 				5420E59B2865A8BA003F8371 /* TopPageViewController.swift */,
 				5428AC4F286ACD1C009AD92B /* TopPageViewController.storyboard */,
@@ -384,6 +469,7 @@
 			children = (
 				5428AC56286B11A7009AD92B /* API */,
 				5428F66A286D42B20096AA34 /* UserService.swift */,
+				4F1B1FBD28C0971F00E969CD /* AdminService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -400,6 +486,8 @@
 		5428AC5F286B11B5009AD92B /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				4F1B1FB828C08DB900E969CD /* Button */,
+				4F1B1FB728C08DB300E969CD /* Label */,
 				5428AC63286B11B5009AD92B /* View */,
 				5428AC61286B11B5009AD92B /* Extensions.swift */,
 				5428F668286D3C730096AA34 /* Theme.swift */,
@@ -410,16 +498,17 @@
 		5428AC63286B11B5009AD92B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5428AC64286B11B5009AD92B /* TimeSelectView.swift */,
-				5428AC65286B11B5009AD92B /* WKWebViewController.swift */,
-				5428AC66286B11B5009AD92B /* BlankViewController.xib */,
 				5428AC67286B11B5009AD92B /* BlankViewController.swift */,
+				5428AC66286B11B5009AD92B /* BlankViewController.xib */,
+				5428AC65286B11B5009AD92B /* WKWebViewController.swift */,
 				5428AC68286B11B5009AD92B /* WKWebViewController.xib */,
-				5428AC69286B11B5009AD92B /* ScreenCapAlert.swift */,
+				5428AC64286B11B5009AD92B /* TimeSelectView.swift */,
 				5428AC6A286B11B5009AD92B /* TimeSelectView.xib */,
+				5428AC69286B11B5009AD92B /* ScreenCapAlert.swift */,
 				5428AC6B286B11B5009AD92B /* LoadingView.swift */,
 				5428AC6C286B11B5009AD92B /* NibOwnerLoadable.swift */,
 				54E1EF032876B15700D17C85 /* OnTopTabBarController.swift */,
+				4F1B1FC828C0B66500E969CD /* CouponAlert.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -471,6 +560,7 @@
 		543005E028740D6E00784D3B /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				4F1B1FBF28C09A8000E969CD /* DigitalGuidance */,
 				541806C3288A542500A0E55E /* Shop */,
 				54377F5C28753975004A9482 /* Navi */,
 				543005E92874129000784D3B /* ParkingViewController.swift */,
@@ -485,6 +575,8 @@
 				545AA5F4289BC418004A178B /* EMapViewController.xib */,
 				5416F3FD289BD03F00D4F9B9 /* EMapDetailViewController.swift */,
 				5416F3FE289BD03F00D4F9B9 /* EMapDetailViewController.xib */,
+				4F727B8E28AB998100AFABC3 /* ParkingTableViewCell.swift */,
+				4F727B8F28AB998100AFABC3 /* ParkingTableViewCell.xib */,
 			);
 			path = SubPage;
 			sourceTree = "<group>";
@@ -531,6 +623,7 @@
 				5420E55A286567E2003F8371 /* Sources */,
 				5420E55B286567E2003F8371 /* Frameworks */,
 				5420E55C286567E2003F8371 /* Resources */,
+				391EBDDCD0AD7DCC66DA3F91 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -568,6 +661,7 @@
 				5420E57A286567E2003F8371 /* Sources */,
 				5420E57B286567E2003F8371 /* Frameworks */,
 				5420E57C286567E2003F8371 /* Resources */,
+				8DBC0B3C9E4D5045A70BE400 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -633,12 +727,14 @@
 				54377F6428755DC8004A9482 /* NaviStoreListCollectionViewController.storyboard in Resources */,
 				5428AC74286B11B5009AD92B /* BlankViewController.xib in Resources */,
 				543005F62874304D00784D3B /* GetSetTableViewController.storyboard in Resources */,
+				4F727B9128AB998100AFABC3 /* ParkingTableViewCell.xib in Resources */,
 				5416F405289BDD0700D4F9B9 /* MerchantTopViewController.xib in Resources */,
 				5431FECD288D9AB30060D5DC /* NaviGetPointViewController.xib in Resources */,
 				5428056F288C37AE009D243F /* BeipuSetTableViewController.storyboard in Resources */,
 				5416F409289BDF0500D4F9B9 /* MerchantScanViewController.xib in Resources */,
 				5428F65B286C58460096AA34 /* LogInViewController.xib in Resources */,
 				54B04680288EA9FE003F04CA /* PayResultViewController.xib in Resources */,
+				4F1B1FC328C09BEE00E969CD /* DigitalGuidanceViewController.xib in Resources */,
 				5420E56E286567E2003F8371 /* LaunchScreen.storyboard in Resources */,
 				5416F410289CC70400D4F9B9 /* CouponCodeViewController.xib in Resources */,
 				545AA5F6289BC418004A178B /* EMapViewController.xib in Resources */,
@@ -652,6 +748,7 @@
 				54E1EF0C2876CBDA00D17C85 /* BeiPuSpotViewController.xib in Resources */,
 				5428AC50286ACD1C009AD92B /* TopPageViewController.storyboard in Resources */,
 				5406E8E3289B61A900B639EA /* PayRecordDetailViewController.storyboard in Resources */,
+				4F1B1FC728C0A08100E969CD /* DigitalGuidanceDetailViewController.xib in Resources */,
 				5428AC78286B11B5009AD92B /* TimeSelectView.xib in Resources */,
 				543005D22871937100784D3B /* MemberInfoViewController.xib in Resources */,
 				54B0467C288E92A9003F04CA /* PayDetailViewController.xib in Resources */,
@@ -705,6 +802,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		391EBDDCD0AD7DCC66DA3F91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beipu/Pods-Beipu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beipu/Pods-Beipu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beipu/Pods-Beipu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DBC0B3C9E4D5045A70BE400 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beipu-BeipuUITests/Pods-Beipu-BeipuUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beipu-BeipuUITests/Pods-Beipu-BeipuUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beipu-BeipuUITests/Pods-Beipu-BeipuUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A302205FC13E99F83BE43E7B /* [CP] Check Pods Manifest.lock */ = {
@@ -762,7 +893,10 @@
 				5428AC7A286B11B5009AD92B /* NibOwnerLoadable.swift in Sources */,
 				5428F667286C5A0E0096AA34 /* LogInFlowViewController.swift in Sources */,
 				541806C5288A545200A0E55E /* ItemListCollectionViewController.swift in Sources */,
+				4F727B9028AB998100AFABC3 /* ParkingTableViewCell.swift in Sources */,
 				5420E562286567E2003F8371 /* AppDelegate.swift in Sources */,
+				4F1B1FBA28C08DC700E969CD /* ButtonFactory.swift in Sources */,
+				4F1B1FC228C09BEE00E969CD /* DigitalGuidanceViewController.swift in Sources */,
 				54377F5F287539D7004A9482 /* NaviCategoryViewController.swift in Sources */,
 				5428AC79286B11B5009AD92B /* LoadingView.swift in Sources */,
 				5416F40F289CC70400D4F9B9 /* CouponCodeViewController.swift in Sources */,
@@ -771,6 +905,9 @@
 				5431FECF288E778B0060D5DC /* ShoppingCartTableViewController.swift in Sources */,
 				5428AC5E286B11A7009AD92B /* WebAPI.swift in Sources */,
 				545CC627286D9C8A00D6714A /* SignUpViewController.swift in Sources */,
+				4F1B1FC928C0B66500E969CD /* CouponAlert.swift in Sources */,
+				4F1B1FB428C0850900E969CD /* UIColor+Extension.swift in Sources */,
+				4F1B1FBE28C0971F00E969CD /* AdminService.swift in Sources */,
 				543005DC2872D6CE00784D3B /* CouponTableViewController.swift in Sources */,
 				5416F408289BDF0500D4F9B9 /* MerchantScanViewController.swift in Sources */,
 				545CC62B286D9C9200D6714A /* ForgotPasswordViewController.swift in Sources */,
@@ -783,13 +920,16 @@
 				5428AC75286B11B5009AD92B /* BlankViewController.swift in Sources */,
 				5416F40C289CC48F00D4F9B9 /* CouponFlowViewController.swift in Sources */,
 				5431FECC288D9AB30060D5DC /* NaviGetPointViewController.swift in Sources */,
+				4F1B1FAE28C081DD00E969CD /* AdminMainPageViewController.swift in Sources */,
 				5428AC73286B11B5009AD92B /* WKWebViewController.swift in Sources */,
 				5428F669286D3C730096AA34 /* Theme.swift in Sources */,
 				5428F66B286D42B20096AA34 /* UserService.swift in Sources */,
+				4F1B1FB028C0820C00E969CD /* AdminQRScanViewController.swift in Sources */,
 				541806CA288AAAF500A0E55E /* ItemDetailViewController.swift in Sources */,
 				5428AC77286B11B5009AD92B /* ScreenCapAlert.swift in Sources */,
 				54E1EF0B2876CBDA00D17C85 /* BeiPuSpotViewController.swift in Sources */,
 				542FBEB7286EE1BC00EAB612 /* MemberCenterFlowViewController.swift in Sources */,
+				4F1B1FBC28C08F5C00E969CD /* LabelFactory.swift in Sources */,
 				5428F65C286C58460096AA34 /* LogInViewController.swift in Sources */,
 				545AA5F5289BC418004A178B /* EMapViewController.swift in Sources */,
 				5406E8DD289A6D3300B639EA /* PayRecordTableViewController.swift in Sources */,
@@ -804,7 +944,9 @@
 				54B0467B288E92A9003F04CA /* PayDetailViewController.swift in Sources */,
 				54E1EF042876B15700D17C85 /* OnTopTabBarController.swift in Sources */,
 				54B0467F288EA9FE003F04CA /* PayResultViewController.swift in Sources */,
+				4F1B1FB628C0868100E969CD /* UIView+Extension.swift in Sources */,
 				543005D82872C51400784D3B /* ThemeSetTableViewController.swift in Sources */,
+				4F1B1FC628C0A08100E969CD /* DigitalGuidanceDetailViewController.swift in Sources */,
 				5406E8E0289A775300B639EA /* PayRecordDetailViewController.swift in Sources */,
 				5428AC70286B11B5009AD92B /* Extensions.swift in Sources */,
 				5481BF252898F70600E6C98C /* URLpath.swift in Sources */,
@@ -984,8 +1126,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Beipu/Beipu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RV8U4Q9DP5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Beipu/Info.plist;
@@ -1004,7 +1147,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jotangi.BeipuImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1019,8 +1162,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Beipu/Beipu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RV8U4Q9DP5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Beipu/Info.plist;
@@ -1039,7 +1183,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jotangi.BeipuImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

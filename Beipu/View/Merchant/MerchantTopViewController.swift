@@ -48,15 +48,17 @@ extension MerchantTopViewController: MerchantScanViewControllerDelegate {
         navigationController?.popViewController(animated: true)
     }
     func gotContent(_ viewController: MerchantScanViewController, content: String) {
-        print(content)
+        print("content:\(content)")
         let content = "beipu://?" + content
         let components = URLComponents(string: content)
-        guard let id = components?.searchValue(for: "m_id"), let no = components?.searchValue(for: "coupon_no"), let user = UserService.shared.user else{
+//        guard let id = components?.searchValue(for: "m_id"), let no = components?.searchValue(for: "coupon_no"), let user = UserService.shared.user else{
+        guard let no = components?.searchValue(for: "coupon_no"), let user = UserService.shared.user else{
             viewController.captureSession?.startRunning()
             return}
         let alert = UIAlertController.simpleOKAlert(title: "", message: "是否核銷此商品券", buttonTitle: "確定核銷", canCancel: true) { _ in
             let url = API_URL + URL_APPLYCOUPON
-            let parameter = "member_id=\(user.member_id)&member_pwd=\(user.member_pwd)&m_id=\(id)&coupon_no=\(no)"
+//            let parameter = "member_id=\(user.member_id)&member_pwd=\(user.member_pwd)&m_id=\(id)&coupon_no=\(no)"
+            let parameter = "member_id=\(user.member_id)&member_pwd=\(user.member_pwd)&coupon_no=\(no)"
             WebAPI.shared.request(urlString: url, parameters: parameter) { isSuccess, data, error in
                 if isSuccess {
                     let alert = UIAlertController.simpleOKAlert(title: "", message: "已核銷", buttonTitle: "確認") { _ in

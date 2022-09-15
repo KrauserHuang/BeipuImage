@@ -148,7 +148,18 @@ extension TopPageViewController: UICollectionViewDelegate, UICollectionViewDataS
         cell.store = storeList[indexPath.row]
         return cell
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let store = storeList[indexPath.row]
+        let website = store.store_website
+        if website.count != 0 {
+            let vc = WKWebViewController()
+            vc.urlStr = website
+            navigationController?.pushViewController(vc, animated: true)
+        } else {
+            print("沒網址可去拉")
+        }
+    }
 }
 
 class ShopCollectionViewCell: UICollectionViewCell {

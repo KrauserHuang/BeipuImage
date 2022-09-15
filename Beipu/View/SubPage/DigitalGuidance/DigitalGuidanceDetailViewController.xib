@@ -1,22 +1,178 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DigitalGuidanceDetailViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DigitalGuidanceDetailViewController" customModule="Beipu" customModuleProvider="target">
             <connections>
+                <outlet property="chargeLabel" destination="hJQ-LY-9pg" id="OFO-k0-5yN"/>
+                <outlet property="descriptionLabel" destination="E6T-uY-6Xm" id="9k7-tL-MVH"/>
+                <outlet property="descriptionView" destination="55a-SK-n9J" id="oVc-W7-Thi"/>
+                <outlet property="imageView" destination="vn3-Z5-ZO2" id="Fzp-EX-EWh"/>
+                <outlet property="openTimeLabel" destination="CrF-36-Xcn" id="1He-Lx-l7h"/>
+                <outlet property="titleLabel" destination="CRr-L9-Pby" id="AZj-Dq-tvV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8BE-4e-Z4U">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAD-Cv-Wwo">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="876"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55a-SK-n9J">
+                                    <rect key="frame" x="20" y="282" width="374" height="375"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6T-uY-6Xm">
+                                            <rect key="frame" x="15" y="15" width="344" height="345"/>
+                                            <string key="text">民國九十一年，從原本的光君製茶廠，改建成現在這種客家唐式風格建築， 取名北埔第一棧，讓客家美食與茶文化更多元豐富。 北埔第一棧在吃的文化上，除酸、鹹、香一貫的客家菜特色外，也發展出令人讚嘆垂涎的料理，如金桔入菜與膨風茶入菜等， 都是極具地方特色的客家美食。 另外，特色膨風茶之產製和銷售，是近年北埔鄉對外的一項主要文化產業，亦是地方重要的經濟來源，「北埔第一棧」為北埔產茶勝地，開設膨風茶文物館，配合四周觀光茶園、果園、客家歷史古蹟、水域遊憩設施等，亦成為遊客想了解北埔鄉茶業的遊憩據點重心，更能吸引國內遊客甚至國際觀光客之注意。北埔第一棧在客家文化的傳承與發揚一直在北埔站在領先的地位，我們希望用認真傳承的心，永續經營這樣的一塊寶地。</string>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.96470588235294119" green="0.7803921568627451" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstItem="E6T-uY-6Xm" firstAttribute="leading" secondItem="55a-SK-n9J" secondAttribute="leading" constant="15" id="ONr-GM-0s8"/>
+                                        <constraint firstItem="E6T-uY-6Xm" firstAttribute="top" secondItem="55a-SK-n9J" secondAttribute="top" constant="15" id="QI1-b1-9Gr"/>
+                                        <constraint firstAttribute="bottom" secondItem="E6T-uY-6Xm" secondAttribute="bottom" constant="15" id="oEg-gP-zKd"/>
+                                        <constraint firstAttribute="trailing" secondItem="E6T-uY-6Xm" secondAttribute="trailing" constant="15" id="yOC-ig-1JB"/>
+                                    </constraints>
+                                </view>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vn3-Z5-ZO2">
+                                    <rect key="frame" x="20" y="18" width="374" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="ZFx-oC-SBS"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="s7M-5A-yPb">
+                                    <rect key="frame" x="20" y="687" width="374" height="169"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2GA-Ko-ldL">
+                                            <rect key="frame" x="0.0" y="0.0" width="181.5" height="77"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar.badge.exclamationmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SGN-MH-9Kr">
+                                                    <rect key="frame" x="0.0" y="1.5" width="26.5" height="24"/>
+                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="JRy-qP-gYG"/>
+                                                        <constraint firstAttribute="width" secondItem="SGN-MH-9Kr" secondAttribute="height" multiplier="1:1" id="sa0-KC-aJb"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ccg-Qo-BrE">
+                                                    <rect key="frame" x="35" y="0.0" width="146.5" height="55.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="開放時間" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07d-2P-mCd">
+                                                            <rect key="frame" x="0.0" y="0.0" width="82" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="水際村3鄰31之1號" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrF-36-Xcn">
+                                                            <rect key="frame" x="0.0" y="34" width="146.5" height="21.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rRG-4I-diZ">
+                                            <rect key="frame" x="0.0" y="92" width="347" height="77"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollarsign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MKb-ws-y0n">
+                                                    <rect key="frame" x="0.0" y="0.5" width="25" height="24"/>
+                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="55F-s1-qbe"/>
+                                                        <constraint firstAttribute="width" secondItem="MKb-ws-y0n" secondAttribute="height" multiplier="1:1" id="jBt-IQ-D80"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yb4-eH-U2K">
+                                                    <rect key="frame" x="35" y="0.0" width="312" height="77"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="參觀收費" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0h-xq-PXG">
+                                                            <rect key="frame" x="0.0" y="0.0" width="82" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三館通行（金廣福＋茶博館＋忠恕堂）NT$60 /人" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJQ-LY-9pg">
+                                                            <rect key="frame" x="0.0" y="34" width="312" height="43"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="埔第一棧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRr-L9-Pby">
+                                    <rect key="frame" x="20" y="238" width="82" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="s7M-5A-yPb" firstAttribute="trailing" secondItem="vn3-Z5-ZO2" secondAttribute="trailing" id="2No-D2-Uvv"/>
+                                <constraint firstItem="s7M-5A-yPb" firstAttribute="centerX" secondItem="xAD-Cv-Wwo" secondAttribute="centerX" id="8HO-lv-RYY"/>
+                                <constraint firstItem="CRr-L9-Pby" firstAttribute="leading" secondItem="vn3-Z5-ZO2" secondAttribute="leading" id="Dac-Uf-94D"/>
+                                <constraint firstItem="55a-SK-n9J" firstAttribute="centerX" secondItem="vn3-Z5-ZO2" secondAttribute="centerX" id="Dg0-Rm-ZwJ"/>
+                                <constraint firstItem="vn3-Z5-ZO2" firstAttribute="leading" secondItem="xAD-Cv-Wwo" secondAttribute="leading" constant="20" id="EKU-XA-xp8"/>
+                                <constraint firstItem="55a-SK-n9J" firstAttribute="top" secondItem="CRr-L9-Pby" secondAttribute="bottom" constant="20" id="Lij-hH-MH1"/>
+                                <constraint firstAttribute="trailing" secondItem="vn3-Z5-ZO2" secondAttribute="trailing" constant="20" id="NOy-K0-ezr"/>
+                                <constraint firstItem="55a-SK-n9J" firstAttribute="trailing" secondItem="vn3-Z5-ZO2" secondAttribute="trailing" id="P45-ux-kSP"/>
+                                <constraint firstItem="CRr-L9-Pby" firstAttribute="top" secondItem="vn3-Z5-ZO2" secondAttribute="bottom" constant="20" id="VwA-Mj-cEx"/>
+                                <constraint firstItem="vn3-Z5-ZO2" firstAttribute="top" secondItem="xAD-Cv-Wwo" secondAttribute="topMargin" constant="10" id="eof-RS-Ym3"/>
+                                <constraint firstItem="s7M-5A-yPb" firstAttribute="top" secondItem="55a-SK-n9J" secondAttribute="bottom" constant="30" id="ezz-CF-l9b"/>
+                                <constraint firstItem="s7M-5A-yPb" firstAttribute="leading" secondItem="vn3-Z5-ZO2" secondAttribute="leading" id="fKN-Mw-dSo"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="s7M-5A-yPb" secondAttribute="bottom" constant="20" id="jqe-B0-gi2"/>
+                                <constraint firstItem="55a-SK-n9J" firstAttribute="leading" secondItem="vn3-Z5-ZO2" secondAttribute="leading" id="vgR-oc-psx"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xAD-Cv-Wwo" firstAttribute="centerX" secondItem="8BE-4e-Z4U" secondAttribute="centerX" id="FzB-6s-LGz"/>
+                        <constraint firstItem="xAD-Cv-Wwo" firstAttribute="leading" secondItem="8BE-4e-Z4U" secondAttribute="leading" id="Q9p-TG-lIJ"/>
+                        <constraint firstItem="xAD-Cv-Wwo" firstAttribute="top" secondItem="8BE-4e-Z4U" secondAttribute="top" id="RqT-55-EZr"/>
+                        <constraint firstAttribute="bottom" secondItem="xAD-Cv-Wwo" secondAttribute="bottom" priority="250" id="cOD-be-qwd"/>
+                        <constraint firstItem="xAD-Cv-Wwo" firstAttribute="centerY" secondItem="8BE-4e-Z4U" secondAttribute="centerY" priority="250" id="gL5-Uj-i3O"/>
+                        <constraint firstAttribute="trailing" secondItem="xAD-Cv-Wwo" secondAttribute="trailing" id="jMo-CM-Twz"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8BE-4e-Z4U" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6Mj-6k-Ofd"/>
+                <constraint firstItem="8BE-4e-Z4U" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7IE-sV-5zk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8BE-4e-Z4U" secondAttribute="bottom" id="N3D-9o-0Ip"/>
+                <constraint firstItem="8BE-4e-Z4U" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Sg0-Kl-clO"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="110"/>
         </view>
     </objects>
+    <resources>
+        <image name="calendar.badge.exclamationmark" catalog="system" width="128" height="108"/>
+        <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

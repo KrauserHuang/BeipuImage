@@ -74,7 +74,7 @@ class CouponTableViewCell: UITableViewCell {
     }
     
     func setCouponView(){
-        descriptLabel?.text = coupon?.coupon_description
+        descriptLabel?.text = coupon?.coupon_name
         limitLabel?.text = "兌換期限：" + (coupon?.coupon_enddate ?? "無")
     }
     

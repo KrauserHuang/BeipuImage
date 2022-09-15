@@ -143,7 +143,17 @@ class UserService {
                 UserDefaults.standard.set(account, forKey: "account")
                 UserDefaults.standard.set(password, forKey: "password")
                 self.loadUser(id: account, pw: password)
-                self.renewUser = { completion(isSuccess, "") }
+                if let data = data,
+                   let results = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any],
+                   let msg = results["responseMessage"] as? String {
+                    if msg == "Store login success!" {
+                        self.renewUser = { completion(isSuccess, msg) }
+                    } else {
+                        self.renewUser = { completion(isSuccess, "") }
+                    }
+                    print(#function)
+                    print("responseMessage:\(msg)")
+                }
                 return
             }
             var errorMsg = ""

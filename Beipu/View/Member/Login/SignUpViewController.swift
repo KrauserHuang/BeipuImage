@@ -43,17 +43,17 @@ class SignUpViewController: UIViewController {
     }
     @IBAction func signupAction(_ sender: Any) {
         //欄位都不可留白
-        if(nameTextField.text == "" || emailTextField.text == "" || phoneTextField.text == "" || passwordTextField.text == "" || !agreeButton.isSelected){
+        if(nameTextField.text == "" || phoneTextField.text == "" || passwordTextField.text == "" || !agreeButton.isSelected){
             let alert = UIAlertController.simpleOKAlert(title: "", message: "欄位不可空白", buttonTitle: "確認", action: nil)
             self.present(alert, animated: true, completion: nil)
             return
         }
         //驗證email
-        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}")
-        guard emailPredicate.evaluate(with: emailTextField.text) else {
-            let alert = UIAlertController.simpleOKAlert(title: "", message: "信箱格式錯誤，請重新輸入", buttonTitle: "確認", action: nil)
-            present(alert, animated: true, completion: nil)
-            return}
+//        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}")
+//        guard emailPredicate.evaluate(with: emailTextField.text) else {
+//            let alert = UIAlertController.simpleOKAlert(title: "", message: "信箱格式錯誤，請重新輸入", buttonTitle: "確認", action: nil)
+//            present(alert, animated: true, completion: nil)
+//            return}
         //手機號碼驗證
         let phonePredicate = NSPredicate(format: "SELF MATCHES %@", "^09[0-9]{8}$")
         guard phonePredicate.evaluate(with: phoneTextField.text) else{
@@ -79,7 +79,9 @@ class SignUpViewController: UIViewController {
         
         UserService.shared.signUp(user) { isSuccess, message in
             if isSuccess {
-                self.delegate?.signupAction(self, newUser: user)
+                Alert.showMessage(title: "獲得註冊優惠券", msg: "請至會員中心-優惠券查看", vc: self) {
+                    self.delegate?.signupAction(self, newUser: user)
+                }
             }else{
                 let alert = UIAlertController.simpleOKAlert(title: "註冊錯誤", message: message, buttonTitle: "確認", action: nil)
                 self.present(alert, animated: true)
@@ -92,6 +94,8 @@ class SignUpViewController: UIViewController {
     }
     
     weak var delegate: SignUpViewControllerDelegate?
+    private let couponAlert = CouponAlert()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setBtnView()
@@ -140,6 +144,9 @@ class SignUpViewController: UIViewController {
         ruleButton.setAttributedTitle(attrString, for: .normal)
     }
     
+    @objc func dismissAlert() {
+        couponAlert.dismissAlert()
+    }
 }
 
 extension SignUpViewController: UITextFieldDelegate {

@@ -12,7 +12,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EMapDetailViewController" customModule="Beipu" customModuleProvider="target">
             <connections>
                 <outlet property="addrLabel" destination="cg0-2J-XOn" id="Qjt-nU-8xU"/>
-                <outlet property="descriptLabel" destination="gI1-DD-QHl" id="xkW-ym-9Zq"/>
+                <outlet property="descriptionLabel" destination="gI1-DD-QHl" id="xkW-ym-9Zq"/>
+                <outlet property="descriptionView" destination="dKG-LN-dwK" id="6d1-JH-fv3"/>
+                <outlet property="imageView" destination="cda-Zb-aux" id="T4G-af-RHA"/>
                 <outlet property="titleLabel" destination="Mf0-KO-WYc" id="kQk-BL-0TA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -28,37 +30,88 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WEz-16-THq">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gI1-DD-QHl">
-                                    <rect key="frame" x="30" y="127" width="354" height="325"/>
-                                    <mutableString key="text">民國九十一年，從原本的光君製茶廠，改建成現在這種客家唐式風格建築， 取名北埔第一棧，讓客家美食與茶文化更多元豐富。 北埔第一棧在吃的文化上，除酸、鹹、香一貫的客家菜特色外，也發展出令人讚嘆垂涎的料理，如金桔入菜與膨風茶入菜等， 都是極具地方特色的客家美食。 另外，特色膨風茶之產製和銷售，是近年北埔鄉對外的一項主要文化產業，亦是地方重要的經濟來源，「北埔第一棧」為北埔產茶勝地，開設膨風茶文物館，配合四周觀光茶園、果園、客家歷史古蹟、水域遊憩設施等，亦成為遊客想了解北埔鄉茶業的遊憩據點重心，更能吸引國內遊客甚至國際觀光客之注意。北埔第一棧在客家文化的傳承與發揚一直在北埔站在領先的地位，我們希望用認真傳承的心，永續經營這樣的一塊寶地。</mutableString>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="u7" translatesAutoresizingMaskIntoConstraints="NO" id="cda-Zb-aux">
+                                    <rect key="frame" x="20" y="10" width="374" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="zBF-C9-D0X"/>
+                                    </constraints>
+                                </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="埔第一棧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mf0-KO-WYc">
-                                    <rect key="frame" x="162" y="50" width="90" height="27"/>
+                                    <rect key="frame" x="20" y="230" width="374" height="26.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址:水際村3鄰31之1號" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg0-2J-XOn">
-                                    <rect key="frame" x="92.5" y="502" width="229.5" height="26.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKG-LN-dwK">
+                                    <rect key="frame" x="20" y="276.5" width="374" height="375"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gI1-DD-QHl">
+                                            <rect key="frame" x="15" y="15" width="344" height="345"/>
+                                            <string key="text">民國九十一年，從原本的光君製茶廠，改建成現在這種客家唐式風格建築， 取名北埔第一棧，讓客家美食與茶文化更多元豐富。 北埔第一棧在吃的文化上，除酸、鹹、香一貫的客家菜特色外，也發展出令人讚嘆垂涎的料理，如金桔入菜與膨風茶入菜等， 都是極具地方特色的客家美食。 另外，特色膨風茶之產製和銷售，是近年北埔鄉對外的一項主要文化產業，亦是地方重要的經濟來源，「北埔第一棧」為北埔產茶勝地，開設膨風茶文物館，配合四周觀光茶園、果園、客家歷史古蹟、水域遊憩設施等，亦成為遊客想了解北埔鄉茶業的遊憩據點重心，更能吸引國內遊客甚至國際觀光客之注意。北埔第一棧在客家文化的傳承與發揚一直在北埔站在領先的地位，我們希望用認真傳承的心，永續經營這樣的一塊寶地。</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.96379548309999996" green="0.77874433990000003" blue="0.87059622999999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstItem="gI1-DD-QHl" firstAttribute="leading" secondItem="dKG-LN-dwK" secondAttribute="leading" constant="15" id="7se-UE-Zeg"/>
+                                        <constraint firstAttribute="trailing" secondItem="gI1-DD-QHl" secondAttribute="trailing" constant="15" id="PXX-x2-TFY"/>
+                                        <constraint firstItem="gI1-DD-QHl" firstAttribute="top" secondItem="dKG-LN-dwK" secondAttribute="top" constant="15" id="iSD-ho-d29"/>
+                                        <constraint firstAttribute="bottom" secondItem="gI1-DD-QHl" secondAttribute="bottom" constant="15" id="wHR-Ot-JGG"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dod-ip-77p">
+                                    <rect key="frame" x="20" y="681.5" width="374" height="55.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zor-Uu-lCe">
+                                            <rect key="frame" x="0.0" y="0.0" width="181.5" height="55.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin.and.ellipse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0m3-we-kRf">
+                                                    <rect key="frame" x="0.0" y="-0.5" width="25" height="25.5"/>
+                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="0m3-we-kRf" secondAttribute="height" multiplier="1:1" id="0Kx-kI-zx9"/>
+                                                        <constraint firstAttribute="height" constant="25" id="ygV-mN-o0S"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xQ2-JQ-UFr">
+                                                    <rect key="frame" x="35" y="0.0" width="146.5" height="55.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgG-KK-arD">
+                                                            <rect key="frame" x="0.0" y="0.0" width="41" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="水際村3鄰31之1號" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg0-2J-XOn">
+                                                            <rect key="frame" x="0.0" y="34" width="146.5" height="21.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstItem="gI1-DD-QHl" firstAttribute="top" secondItem="Mf0-KO-WYc" secondAttribute="bottom" constant="50" id="5hP-e1-cJV"/>
-                                <constraint firstItem="Mf0-KO-WYc" firstAttribute="top" secondItem="WEz-16-THq" secondAttribute="top" constant="50" id="HNG-T6-kB4"/>
-                                <constraint firstItem="cg0-2J-XOn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WEz-16-THq" secondAttribute="leading" constant="30" id="JEe-Y0-oIv"/>
-                                <constraint firstItem="gI1-DD-QHl" firstAttribute="centerX" secondItem="WEz-16-THq" secondAttribute="centerX" id="Q7s-IT-MyH"/>
-                                <constraint firstItem="gI1-DD-QHl" firstAttribute="leading" secondItem="WEz-16-THq" secondAttribute="leading" constant="30" id="bU1-7v-hvZ"/>
-                                <constraint firstItem="cg0-2J-XOn" firstAttribute="top" secondItem="gI1-DD-QHl" secondAttribute="bottom" constant="50" id="cZs-qX-49S"/>
-                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cg0-2J-XOn" secondAttribute="bottom" constant="200" id="qTC-qt-Q3O"/>
-                                <constraint firstItem="Mf0-KO-WYc" firstAttribute="centerX" secondItem="WEz-16-THq" secondAttribute="centerX" id="rGz-UI-fpp"/>
-                                <constraint firstItem="cg0-2J-XOn" firstAttribute="centerX" secondItem="WEz-16-THq" secondAttribute="centerX" id="rVC-JF-UbO"/>
+                                <constraint firstItem="dKG-LN-dwK" firstAttribute="trailing" secondItem="cda-Zb-aux" secondAttribute="trailing" id="DGV-Vl-6vh"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dod-ip-77p" secondAttribute="bottom" constant="20" id="EDr-i0-Du0"/>
+                                <constraint firstItem="cda-Zb-aux" firstAttribute="top" secondItem="WEz-16-THq" secondAttribute="top" constant="10" id="FJf-50-sXs"/>
+                                <constraint firstItem="Mf0-KO-WYc" firstAttribute="top" secondItem="cda-Zb-aux" secondAttribute="bottom" constant="20" id="HNG-T6-kB4"/>
+                                <constraint firstItem="dod-ip-77p" firstAttribute="leading" secondItem="cda-Zb-aux" secondAttribute="leading" id="Tku-o0-CDj"/>
+                                <constraint firstItem="dod-ip-77p" firstAttribute="top" secondItem="dKG-LN-dwK" secondAttribute="bottom" constant="30" id="VOB-zL-oym"/>
+                                <constraint firstItem="cda-Zb-aux" firstAttribute="leading" secondItem="WEz-16-THq" secondAttribute="leading" constant="20" id="Zrb-24-HaW"/>
+                                <constraint firstItem="Mf0-KO-WYc" firstAttribute="trailing" secondItem="cda-Zb-aux" secondAttribute="trailing" id="bcc-K5-Ajc"/>
+                                <constraint firstItem="dod-ip-77p" firstAttribute="trailing" secondItem="cda-Zb-aux" secondAttribute="trailing" id="cYF-2R-qUK"/>
+                                <constraint firstItem="dKG-LN-dwK" firstAttribute="top" secondItem="Mf0-KO-WYc" secondAttribute="bottom" constant="20" id="jWx-dI-oZn"/>
+                                <constraint firstItem="dKG-LN-dwK" firstAttribute="leading" secondItem="cda-Zb-aux" secondAttribute="leading" id="mnN-FD-9IJ"/>
+                                <constraint firstAttribute="trailing" secondItem="cda-Zb-aux" secondAttribute="trailing" constant="20" id="oGo-Lz-UbH"/>
+                                <constraint firstItem="Mf0-KO-WYc" firstAttribute="leading" secondItem="cda-Zb-aux" secondAttribute="leading" id="zhl-eV-zK8"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -84,6 +137,8 @@
         </view>
     </objects>
     <resources>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+        <image name="u7" width="2667" height="1334"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

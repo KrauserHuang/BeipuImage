@@ -8,7 +8,7 @@
 import UIKit
 protocol MemberCenterTableViewControllerDelegate: AnyObject {
     func memberInfoAction(_ controller: MemberCenterTableViewController)
-    func themeSetAction(_ controller: MemberCenterTableViewController)
+//    func themeSetAction(_ controller: MemberCenterTableViewController)
     func couponAction(_ controller: MemberCenterTableViewController)
     func recordAction(_ controller: MemberCenterTableViewController)
     func userRuleAction(_ controller: MemberCenterTableViewController)
@@ -53,8 +53,8 @@ class MemberCenterTableViewController: UITableViewController {
         switch cell?.tag {
         case 1:
             delegate?.memberInfoAction(self)
-        case 2:
-            delegate?.themeSetAction(self)
+//        case 2:
+//            delegate?.themeSetAction(self)
         case 3:
             delegate?.couponAction(self)
         case 4:
