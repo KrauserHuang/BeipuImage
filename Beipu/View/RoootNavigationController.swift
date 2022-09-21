@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import SafariServices
 
 class RoootNavigationController: UINavigationController {
     
@@ -27,22 +28,39 @@ class RoootNavigationController: UINavigationController {
         
 //        let cartBtn = UIBarButtonItem(image: UIImage(named: "cart")?.imageResized(to: CGSize(width: 35, height: 35)), style: .plain, target: self, action: #selector(cartAction))
 //        cartBtn.tintColor = .black
-        let memberBtn = UIBarButtonItem(image: UIImage(named: "member")?.imageResized(to: CGSize(width: 35, height: 35)), style: .plain, target: self, action: #selector(memberAction))
-        memberBtn.tintColor = .black
+        let memberBtn = UIBarButtonItem(image: UIImage(named: "member")?.imageResized(to: CGSize(width: 35, height: 35)).withRenderingMode(.alwaysOriginal),
+                                        style: .plain,
+                                        target: self,
+                                        action: #selector(memberAction))
+        
         controller.navigationItem.rightBarButtonItems = [memberBtn]
         if #available(iOS 15, *) {
+//            let layer = Theme().getThemeLayer(size: CGSize(width: UIScreen.main.bounds.width, height: 100))
+//            let image = UIImage.layerImage(from: layer)
+//            appearance.backgroundImage = image
+//            appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+//            UINavigationBar.appearance().standardAppearance = appearance
+//            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+            
             let appearance = UINavigationBarAppearance()
-            let layer = Theme().getThemeLayer(size: CGSize(width: UIScreen.main.bounds.width, height: 100))
-            let image = UIImage.layerImage(from: layer)
-            appearance.backgroundImage = image
-            appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+            appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+            appearance.backgroundColor = .navigationBarColor
             UINavigationBar.appearance().standardAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = appearance
+            navigationController?.navigationBar.barTintColor = .white
+            
         }else{
-            let layer = Theme().getThemeLayer(size: CGSize(width: UIScreen.main.bounds.width, height: 100))
-            let image = UIImage.layerImage(from: layer)
-            navigationBar.setBackgroundImage(image, for: .default)
-            navigationBar.shadowImage = UIImage()
+//            let layer = Theme().getThemeLayer(size: CGSize(width: UIScreen.main.bounds.width, height: 100))
+//            let image = UIImage.layerImage(from: layer)
+//            navigationBar.setBackgroundImage(image, for: .default)
+//            navigationBar.shadowImage = UIImage()
+            
+            let appearance = UINavigationBarAppearance()
+            appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+            appearance.backgroundColor = .navigationBarColor
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+            navigationController?.navigationBar.barTintColor = .white
         }
         
         if UserService.shared.didLogIn {
@@ -95,6 +113,46 @@ class RoootNavigationController: UINavigationController {
 }
 
 extension RoootNavigationController: TopPageViewControllerDelegate {
+    func toEMapDetail(_ viewController: TopPageViewController, storeName: String) {
+        let controller = EMapDetailViewController()
+        var index = 0
+        if storeName == "北埔第一棧" {
+            index = 1
+        } else if storeName == "福美軒飲食店" {
+            index = 2
+        } else if storeName == "姜太公柿餅農產商行" {
+            index = 4
+        } else if storeName == "北埔擂茶堂" {
+            index = 5
+        } else if storeName == "山水屋民宿" {
+            index = 6
+        } else if storeName == "哈客愛養生擂茶" {
+            index = 10
+        } else if storeName == "秀汶水（客家米食）" {
+            index = 13
+        } else if storeName == "茶米二十二 北埔擂茶專賣店" {
+            index = 14
+        } else if storeName == "噹好吃鹹豬肉" {
+            index = 16
+        } else if storeName == "佐京茶陶" {
+            index = 19
+        } else if storeName == "鄒記菜包" {
+            index = 21
+        } else if storeName == "青青好農食" {
+            index = 24
+        } else if storeName == "SRC 北埔印象 咖啡/民宿" {
+            index = 27
+        }
+        
+        if index == 0 {
+            print("不給過！")
+        } else {
+            controller.setNavigationTitle("店家介紹")
+            controller.index = index
+            pushViewController(controller, animated: true)
+        }
+    }
+    
     func planAction(_ viewController: TopPageViewController) {
 //        let controller = BlankViewController()
 //        controller.message = "Coming soon......"
@@ -155,11 +213,17 @@ extension RoootNavigationController: TopPageViewControllerDelegate {
     
     func shopAction(_ viewController: TopPageViewController) {
 //        let controller = BlankViewController()
-        let controller = WKWebViewController()
+//        let controller = WKWebViewController()
 //        controller.message = "建置中\n敬請期待"
-        controller.urlStr = "https://hcparking.jotangi.net/beipu_web/shop.php"
-        pushViewController(controller, animated: true)
-        controller.setNavigationTitle("線上商城")
+//        controller.urlStr = "https://hcparking.jotangi.net/beipu_web/shop.php"
+//        pushViewController(controller, animated: true)
+//        controller.setNavigationTitle("線上商城")
+        
+        if let url = URL(string: "https://hcparking.jotangi.net/beipu_web/shop.php") {
+            let safariController = SFSafariViewController(url: url)
+            present(safariController, animated: true)
+        }
+        
         
 //        let tabBarController = OnTopTabBarController()
 //        tabBarController.edgesForExtendedLayout = []

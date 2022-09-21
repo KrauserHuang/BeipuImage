@@ -12,6 +12,8 @@ extension UIColor {
     static let themeLightRed = UIColor.convertHexStringToUIColor(hexString: "F6C7DE", alpha: 0.5)
     static let test1 = UIColor.convertHexStringToUIColor(hexString: "C56C86")
     static let test2 = UIColor.convertHexStringToUIColor(hexString: "FF7582")
+    static let navigationBarColor = UIColor.convertHexStringToUIColor(hexString: "78A3D3")
+    static let arGameButtonColor = UIColor.convertHexStringToUIColor(hexString: "DFB6A0", alpha: 0.8)
 }
 // MARK: - Basic rgb optimization
 extension UIColor {

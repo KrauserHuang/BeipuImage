@@ -21,9 +21,9 @@ class DigitalGuidanceViewController: UIViewController {
     let mapList = [
         "",
         "北埔慈天宮",
-        "姜阿興洋樓",
+        "姜阿新洋樓",
         "金廣福公館",
-        "姜式家廟",
+        "姜氏家廟",
         "叮咚橋",
         "秀巒公園",
         "忠恕堂",

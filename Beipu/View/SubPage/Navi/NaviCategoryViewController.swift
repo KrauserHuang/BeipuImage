@@ -11,6 +11,7 @@ import UIKit
 class NaviCategoryViewController: UIViewController {
     @IBOutlet var riddleButtons: [UIButton]!
     @IBOutlet weak var getCouponButton: UIButton!
+    @IBOutlet weak var descriptionView: UIView!
     @IBAction func naviAction(_ sender: UIButton) {
 //        let controller = UIStoryboard(name: "NaviStoreListCollectionViewController", bundle: nil).instantiateViewController(withIdentifier: "NaviStoreListCollectionViewController") as! NaviStoreListCollectionViewController
 //        controller.setNavigationTitle("數位導覽")
@@ -84,6 +85,7 @@ class NaviCategoryViewController: UIViewController {
         
         getCouponButton.isHidden = true
         
+        initView()
     }
     
     func setNavigationButton(_ viewController: UIViewController){
@@ -97,6 +99,22 @@ class NaviCategoryViewController: UIViewController {
         let navi = UINavigationController(rootViewController: controller)
         navi.modalPresentationStyle = .overFullScreen
         present(navi, animated: false)
+    }
+    
+    func initView() {
+        descriptionView.addCornerRadius(10)
+//        descriptionView.addShadow(cornerRadius: 10,
+//                                  shadowColor: .blue)
+        descriptionView.addShadow(cornerRadius: 10,
+                                  shadowColor: .blue,
+                                  shadowOffset: CGSize(width: 10, height: 10),
+                                  shadowOpacity: 0.3,
+                                  shadowRadius: 5)
+        
+        for button in riddleButtons {
+            button.addCornerRadius(5)
+            button.backgroundColor = .arGameButtonColor
+        }
     }
     
     func setArSpot(){

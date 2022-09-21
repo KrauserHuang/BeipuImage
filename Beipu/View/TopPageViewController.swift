@@ -13,6 +13,7 @@ protocol TopPageViewControllerDelegate: AnyObject {
     func healthAction(_ viewController: TopPageViewController)
     func parkingAction(_ viewController: TopPageViewController)
     func shopAction(_ viewController: TopPageViewController)
+    func toEMapDetail(_ viewController: TopPageViewController, storeName: String)
 }
 
 class TopPageViewController: UIViewController {
@@ -151,14 +152,33 @@ extension TopPageViewController: UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         let store = storeList[indexPath.row]
-        let website = store.store_website
-        if website.count != 0 {
-            let vc = WKWebViewController()
-            vc.urlStr = website
-            navigationController?.pushViewController(vc, animated: true)
-        } else {
-            print("沒網址可去拉")
-        }
+//        let website = store.store_website
+        let storeName = store.store_name
+        let sid = store.sid
+        delegate?.toEMapDetail(self, storeName: storeName)
+//        let vc = EMapDetailViewController()
+//        vc.sid = sid
+//        print(#function, "sid:\(sid)")
+//        print(#function, "vc.sid:\(vc.sid)")
+//        if vc.sid == vc.storeList[vc.index].8 {
+//            navigationController?.pushViewController(vc, animated: true)
+//        } else {
+//            print("vc.storeList[vc.index].8:\(vc.storeList[vc.index].8)")
+//            print("沒頁面可去拉")
+//        }
+//        if sid == vc.sid {
+//            navigationController?.pushViewController(vc, animated: true)
+//        } else {
+//            print("沒頁面可去拉")
+//        }
+//        navigationController?.pushViewController(vc, animated: true)
+//        if website.count != 0 {
+//            let vc = WKWebViewController()
+//            vc.urlStr = website
+//            navigationController?.pushViewController(vc, animated: true)
+//        } else {
+//            print("沒網址可去拉")
+//        }
     }
 }
 
@@ -194,5 +214,4 @@ class ShopCollectionViewCell: UICollectionViewCell {
             }
         }
     }
-
 }

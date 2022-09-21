@@ -17,6 +17,7 @@
 	<false/>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+		<string>comgooglemaps</string>
 		<string>healthmanage</string>
 	</array>
 	<key>NSAppTransportSecurity</key>

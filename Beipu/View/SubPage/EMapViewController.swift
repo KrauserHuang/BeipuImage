@@ -11,6 +11,7 @@ protocol EMapViewControllerDelegate: AnyObject {
 }
 
 class EMapViewController: UIViewController {
+    @IBOutlet weak var mapImage: UIImageView!
     @IBOutlet var mapButtons: [UIButton]!
     @IBAction func nextAction(_ sender: UIButton) {
         delegate?.nextAction(self, index: sender.tag)
@@ -42,13 +43,13 @@ class EMapViewController: UIViewController {
         "鄒記菜包",
         "阿滿水晶餃",
         "陳媽媽黃金包",
-        "彭家粄糕",
-        "民歌擂茶",
-        "深山裡柴燒蘿蔔糕",
-        "北埔食堂",
-        "上品擂茶客家菜",
+        "青青好農食",
+        "姜記麻糬",
+        "圓樓牛肉麵",
+        "SRC 北埔印象 咖啡/民宿",
+        "劉家柑橘園",
         "榕樹下粄條",
-        "劉家小館"
+        "北埔水餃館"
     ]
     
     override func viewDidLoad() {
@@ -57,9 +58,15 @@ class EMapViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         for button in mapButtons {
+            button.titleLabel?.minimumScaleFactor = 0.3
+            button.titleLabel?.numberOfLines = 0
+            button.titleLabel?.adjustsFontSizeToFitWidth = true
+            
             let index = button.tag
             button.setImage(UIImage.init(systemName: "\(index).circle"), for: .normal)
             button.setTitle(mapList[index], for: .normal)
         }
+        
+        mapImage.addCornerRadius(10)
     }
 }

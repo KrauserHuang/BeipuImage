@@ -231,4 +231,15 @@ class UserService {
         logout()
     }
     
+    func userChangePassword(_ newUser: User, newPassword: String, completion: @escaping (Bool)->()) {
+//        guard let user = user else { return }
+        let url = API_URL + URL_USERCHANGEPWD
+        let parameter = "member_id=\(newUser.member_id)&" + "new_password=\(newPassword)"
+        WebAPI.shared.request(urlString: url, parameters: parameter) { isSuccess, data, error in
+            if isSuccess {
+                self.loadUser(id: newUser.member_id, pw: newPassword)
+            }
+            completion(isSuccess)
+        }
+    }
 }

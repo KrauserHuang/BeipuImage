@@ -80,10 +80,24 @@ extension LogInFlowViewController: SignUpViewControllerDelegate {
 }
 
 extension LogInFlowViewController: ForgotPasswordViewControllerDelegate {
+    
+    
     func getVerifyAction(_ viewController: ForgotPasswordViewController, phone: String) {
         
     }
-    func verifyAction(_ viewController: ForgotPasswordViewController, newUser: User, verifyCode: String) {
-        
+//    func verifyAction(_ viewController: ForgotPasswordViewController, newUser: User, verifyCode: String) {
+//
+//    }
+    
+    func verifyAction(_ viewController: ForgotPasswordViewController, newUser: User) {
+        UserService.shared.userChangePassword(newUser, newPassword: newUser.member_pwd) { isSuccess in
+            if isSuccess {
+                Alert.showMessage(title: "重設密碼成功", msg: "", vc: viewController) {
+                    self.navigationController?.popToRootViewController(animated: true)
+                }
+            } else {
+                Alert.showMessage(title: "重設密碼失敗", msg: "", vc: viewController)
+            }
+        }
     }
 }

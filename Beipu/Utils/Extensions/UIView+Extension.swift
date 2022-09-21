@@ -20,6 +20,17 @@ extension UIView {
         layer.cornerRadius = radius
         layer.masksToBounds = true
     }
+    func addShadow(cornerRadius: CGFloat = 16,
+                   shadowColor: UIColor = UIColor(white: .zero, alpha: 1),
+                   shadowOffset: CGSize = CGSize(width: 0.0, height: 3.0),
+                   shadowOpacity: Float = 0.3,
+                   shadowRadius: CGFloat = 5) {
+        layer.cornerRadius = cornerRadius
+        layer.shadowColor = shadowColor.cgColor
+        layer.shadowOffset = shadowOffset
+        layer.shadowOpacity = shadowOpacity
+        layer.shadowRadius = shadowRadius
+    }
     func setDimensions(height: CGFloat, width: CGFloat) {
         translatesAutoresizingMaskIntoConstraints = false
         heightAnchor.constraint(equalToConstant: height).isActive = true

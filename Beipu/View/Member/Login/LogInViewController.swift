@@ -77,9 +77,11 @@ class LogInViewController: UIViewController {
         setButtonUnderline(forgotButton)
         setAllRadius()
         setAllTextField()
-        let layer = Theme().getThemeLayer(size: loginButton.frame.size)
-        loginButton.layer.insertSublayer(layer, at: 0)
-        loginButton.layer.masksToBounds = true
+//        let layer = Theme().getThemeLayer(size: loginButton.frame.size)
+//        loginButton.layer.insertSublayer(layer, at: 0)
+//        loginButton.layer.masksToBounds = true
+        loginButton.backgroundColor = .navigationBarColor
+//        signupButton.titleLabel?.textColor = .navigationBarColor
     }
     
     func setButtonUnderline(_ button: UIButton){
@@ -99,7 +101,8 @@ class LogInViewController: UIViewController {
         view.layer.cornerRadius = 5
         view.layer.borderWidth = 1
         if view.isKind(of: UIButton.self) {
-            view.layer.borderColor = Theme.redColor.cgColor
+//            view.layer.borderColor = Theme.redColor.cgColor
+            view.layer.borderColor = UIColor.navigationBarColor.cgColor
         }else{
             view.layer.borderColor = UIColor.lightGray.cgColor
         }

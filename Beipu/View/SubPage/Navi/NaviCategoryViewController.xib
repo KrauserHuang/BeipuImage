@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NaviCategoryViewController" customModule="Beipu" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionView" destination="JOc-qd-jcm" id="7k5-r9-jug"/>
                 <outlet property="getCouponButton" destination="Ocp-U9-s45" id="1na-by-kGI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outletCollection property="riddleButtons" destination="ACx-SW-w5Z" collectionClass="NSMutableArray" id="JAd-m2-9RL"/>
@@ -25,17 +27,43 @@
             <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iB3-Fz-Z2e" userLabel="Background View">
+                    <rect key="frame" x="0.0" y="47" width="428" height="845"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ARGameLogo" translatesAutoresizingMaskIntoConstraints="NO" id="oTl-I2-a34">
+                            <rect key="frame" x="218" y="10" width="200" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="AyJ-d4-f5B"/>
+                                <constraint firstAttribute="width" secondItem="oTl-I2-a34" secondAttribute="height" multiplier="1:1" id="TKH-OX-Yqn"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ARGameMap" translatesAutoresizingMaskIntoConstraints="NO" id="wnV-G2-kgv">
+                            <rect key="frame" x="10" y="415" width="408" height="300"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="wnV-G2-kgv" secondAttribute="height" multiplier="34:25" id="FXz-vE-LcL"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="oTl-I2-a34" firstAttribute="top" secondItem="iB3-Fz-Z2e" secondAttribute="top" constant="10" id="J7k-hb-ETi"/>
+                        <constraint firstAttribute="bottom" secondItem="wnV-G2-kgv" secondAttribute="bottom" constant="130" id="V9M-6O-eb7"/>
+                        <constraint firstItem="wnV-G2-kgv" firstAttribute="centerX" secondItem="iB3-Fz-Z2e" secondAttribute="centerX" id="Wbx-W0-DVh"/>
+                        <constraint firstItem="wnV-G2-kgv" firstAttribute="leading" secondItem="iB3-Fz-Z2e" secondAttribute="leading" constant="10" id="gbK-2c-i1J"/>
+                        <constraint firstAttribute="trailing" secondItem="oTl-I2-a34" secondAttribute="trailing" constant="10" id="nXF-tg-oaR"/>
+                    </constraints>
+                </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5vG-q3-Ibx">
-                    <rect key="frame" x="50" y="215.66666666666663" width="328" height="550"/>
+                    <rect key="frame" x="75" y="147" width="278" height="340"/>
                     <subviews>
                         <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACx-SW-w5Z">
-                            <rect key="frame" x="0.0" y="0.0" width="328" height="75"/>
-                            <color key="backgroundColor" red="1" green="0.23921568630000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <rect key="frame" x="0.0" y="0.0" width="278" height="40"/>
+                            <color key="backgroundColor" red="0.87450980392156863" green="0.71372549019607845" blue="0.62745098039215685" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="75" id="a4V-sf-TV8"/>
+                                <constraint firstAttribute="height" constant="40" id="a4V-sf-TV8"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                            <state key="normal" title="謎題1">
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            <state key="normal" title="謎題一">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
@@ -43,10 +71,10 @@
                             </connections>
                         </button>
                         <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZ6-yX-BS4">
-                            <rect key="frame" x="0.0" y="95.000000000000028" width="328" height="75"/>
-                            <color key="backgroundColor" red="1" green="0.23921568630000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                            <state key="normal" title="謎題2">
+                            <rect key="frame" x="0.0" y="60" width="278" height="40"/>
+                            <color key="backgroundColor" red="0.84895157809999999" green="0.69161182639999996" blue="0.61174738409999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            <state key="normal" title="謎題二">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
@@ -54,10 +82,10 @@
                             </connections>
                         </button>
                         <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9E-zS-lYv">
-                            <rect key="frame" x="0.0" y="190.00000000000003" width="328" height="74.999999999999972"/>
-                            <color key="backgroundColor" red="1" green="0.23921568630000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                            <state key="normal" title="謎題3">
+                            <rect key="frame" x="0.0" y="120" width="278" height="40"/>
+                            <color key="backgroundColor" red="0.84895157809999999" green="0.69161182639999996" blue="0.61174738409999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            <state key="normal" title="謎題三">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
@@ -65,10 +93,10 @@
                             </connections>
                         </button>
                         <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avK-WZ-H5m">
-                            <rect key="frame" x="0.0" y="285" width="328" height="75"/>
-                            <color key="backgroundColor" red="1" green="0.23921568630000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                            <state key="normal" title="謎題4">
+                            <rect key="frame" x="0.0" y="180" width="278" height="40"/>
+                            <color key="backgroundColor" red="0.84895157809999999" green="0.69161182639999996" blue="0.61174738409999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            <state key="normal" title="謎題四">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
@@ -76,10 +104,10 @@
                             </connections>
                         </button>
                         <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R77-8W-Vwz">
-                            <rect key="frame" x="0.0" y="380" width="328" height="75"/>
-                            <color key="backgroundColor" red="1" green="0.23921568630000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                            <state key="normal" title="謎題5">
+                            <rect key="frame" x="0.0" y="240" width="278" height="40"/>
+                            <color key="backgroundColor" red="0.84895157809999999" green="0.69161182639999996" blue="0.61174738409999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            <state key="normal" title="謎題五">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
@@ -87,9 +115,9 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocp-U9-s45">
-                            <rect key="frame" x="0.0" y="475" width="328" height="75"/>
-                            <color key="backgroundColor" red="1" green="0.23921568630000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <rect key="frame" x="0.0" y="300" width="278" height="40"/>
+                            <color key="backgroundColor" red="0.84705882352941175" green="0.69019607843137254" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                             <state key="normal" title="領取小禮物">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -105,41 +133,70 @@
                         <constraint firstItem="g9E-zS-lYv" firstAttribute="height" secondItem="nZ6-yX-BS4" secondAttribute="height" id="mdI-Nq-cOL"/>
                     </constraints>
                 </stackView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歡迎來到數位導覽專區，我們將帶您用智慧遊玩北埔，只要成功解完5道謎題，就可以獲得神秘小禮物唷" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZL-Xk-NmT">
-                    <rect key="frame" x="30" y="74" width="368" height="61"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="遊戲方式:只要到謎題上所解說的古蹟名稱，按下『解謎去』，拍下景點，即可解謎成功囉！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCV-u2-LkQ">
-                    <rect key="frame" x="30" y="155" width="368" height="40.666666666666657"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" systemColor="systemRedColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOc-qd-jcm" userLabel="Description View">
+                    <rect key="frame" x="20" y="702" width="388" height="170"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="oDG-Aa-ehB">
+                            <rect key="frame" x="20" y="20" width="348" height="130"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歡迎來到數位導覽專區，我們將帶您用智慧遊玩北埔，只要成功解完5道謎題，就可以獲得神秘小禮物唷！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZL-Xk-NmT">
+                                    <rect key="frame" x="0.0" y="0.0" width="348" height="61"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="遊戲方式：只要到謎題上所解說的古蹟名稱，按下『解謎去』，拍下景點，即可解謎成功囉！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCV-u2-LkQ">
+                                    <rect key="frame" x="0.0" y="69" width="348" height="61"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="oDG-Aa-ehB" firstAttribute="top" secondItem="JOc-qd-jcm" secondAttribute="top" constant="20" id="F3Q-rS-qJv"/>
+                        <constraint firstAttribute="bottom" secondItem="oDG-Aa-ehB" secondAttribute="bottom" constant="20" id="OgI-9Q-R16"/>
+                        <constraint firstAttribute="trailing" secondItem="oDG-Aa-ehB" secondAttribute="trailing" constant="20" id="XNq-Ob-KZY"/>
+                        <constraint firstItem="oDG-Aa-ehB" firstAttribute="leading" secondItem="JOc-qd-jcm" secondAttribute="leading" constant="20" id="bzl-Hv-ZNR"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="u4Y-0t-APh"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ARGameImage" translatesAutoresizingMaskIntoConstraints="NO" id="kjx-bp-cJH">
+                    <rect key="frame" x="353" y="827" width="65" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="H6z-ei-FAn"/>
+                        <constraint firstAttribute="width" secondItem="kjx-bp-cJH" secondAttribute="height" multiplier="1:1" id="xkP-Ku-893"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.81568627450980391" green="0.59607843137254901" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="mCV-u2-LkQ" firstAttribute="centerX" secondItem="OZL-Xk-NmT" secondAttribute="centerX" id="8hx-E1-zbA"/>
-                <constraint firstItem="5vG-q3-Ibx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="D6h-t8-1DT"/>
-                <constraint firstItem="OZL-Xk-NmT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DeE-aO-3Qc"/>
-                <constraint firstItem="mCV-u2-LkQ" firstAttribute="leading" secondItem="OZL-Xk-NmT" secondAttribute="leading" id="QMl-Gr-R6n"/>
-                <constraint firstItem="OZL-Xk-NmT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="SF1-EX-HUi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iB3-Fz-Z2e" secondAttribute="trailing" id="9aS-ay-kwZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kjx-bp-cJH" secondAttribute="bottom" id="AfX-cp-BDW"/>
+                <constraint firstItem="iB3-Fz-Z2e" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="COX-A2-SoG"/>
+                <constraint firstItem="5vG-q3-Ibx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="75" id="D6h-t8-1DT"/>
+                <constraint firstItem="JOc-qd-jcm" firstAttribute="centerX" secondItem="iB3-Fz-Z2e" secondAttribute="centerX" id="Lgw-pd-s3o"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="iB3-Fz-Z2e" secondAttribute="bottom" id="Lva-gt-xc1"/>
+                <constraint firstItem="5vG-q3-Ibx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="PQ2-Ap-dpK"/>
                 <constraint firstItem="5vG-q3-Ibx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="V74-EX-n26"/>
-                <constraint firstItem="mCV-u2-LkQ" firstAttribute="top" secondItem="OZL-Xk-NmT" secondAttribute="bottom" constant="20" id="ftd-vZ-TdV"/>
-                <constraint firstItem="5vG-q3-Ibx" firstAttribute="top" secondItem="mCV-u2-LkQ" secondAttribute="bottom" constant="20" id="qBF-t2-GgC"/>
-                <constraint firstItem="OZL-Xk-NmT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="tQE-f0-KR8"/>
+                <constraint firstItem="JOc-qd-jcm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="WPT-Fw-asL"/>
+                <constraint firstItem="iB3-Fz-Z2e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bAq-66-lWW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kjx-bp-cJH" secondAttribute="trailing" constant="10" id="cdr-NH-FMo"/>
+                <constraint firstAttribute="trailing" secondItem="JOc-qd-jcm" secondAttribute="trailing" constant="20" id="hza-9C-3lG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JOc-qd-jcm" secondAttribute="bottom" constant="20" id="vg8-m6-ZQ5"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="121"/>
+            <point key="canvasLocation" x="138.78504672897196" y="120.5183585313175"/>
         </view>
     </objects>
     <resources>
+        <image name="ARGameImage" width="535" height="544"/>
+        <image name="ARGameLogo" width="1526" height="1245"/>
+        <image name="ARGameMap" width="3334" height="2429"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -8,7 +8,8 @@
 import UIKit
 protocol ForgotPasswordViewControllerDelegate: AnyObject {
     func getVerifyAction(_ viewController: ForgotPasswordViewController, phone: String)
-    func verifyAction(_ viewController: ForgotPasswordViewController, newUser: User, verifyCode: String)
+//    func verifyAction(_ viewController: ForgotPasswordViewController, newUser: User, verifyCode: String)
+    func verifyAction(_ viewController: ForgotPasswordViewController, newUser: User)
 }
 
 class ForgotPasswordViewController: UIViewController {
@@ -57,15 +58,22 @@ class ForgotPasswordViewController: UIViewController {
     }
     @IBAction func submitAction(_ sender: Any) {
         view.endEditing(true)
-        guard let code = verifyTextField.text, let pwd = passwordTextField.text, let confirmPwd = comfirmTextField.text else {return}
-        guard code != "", phoneNumber != "", pwd != "", confirmPwd == pwd else {
+        guard let pwd = passwordTextField.text, let confirmPwd = comfirmTextField.text else {return}
+        let predicate = NSPredicate(format: "SELF MATCHES %@", "^09[0-9]{8}$")
+        guard let phone = phoneTextField.text, predicate.evaluate(with: phone) else{
+            let alert = UIAlertController.simpleOKAlert(title: "電話格式錯誤", message: "", buttonTitle: "確認", action: nil)
+            present(alert, animated: true, completion: nil)
+            return}
+        phoneNumber = phone
+        guard phoneNumber != "", pwd != "", confirmPwd == pwd else {
             let alert = UIAlertController.simpleOKAlert(title: "欄位不能空白", message: "", buttonTitle: "確認", action: nil)
             present(alert, animated: true, completion: nil)
             return}
         let user = User()
         user.member_id = phoneNumber
         user.member_pwd = pwd
-        delegate?.verifyAction(self, newUser: user, verifyCode: code)
+//        delegate?.verifyAction(self, newUser: user, verifyCode: code)
+        delegate?.verifyAction(self, newUser: user)
     }
     
     weak var delegate: ForgotPasswordViewControllerDelegate?
@@ -78,7 +86,6 @@ class ForgotPasswordViewController: UIViewController {
         hideKeyBoard()
         setBtnView()
         phoneTextField.delegate = self
-        verifyTextField.delegate = self
         passwordTextField.delegate = self
         comfirmTextField.delegate = self
         setBorderView()
@@ -89,7 +96,6 @@ class ForgotPasswordViewController: UIViewController {
         borderView.layer.borderColor = UIColor.lightGray.cgColor
         borderView.layer.cornerRadius = 10
         phoneTextField.setBottomBorder()
-        verifyTextField.setBottomBorder()
         passwordTextField.setBottomBorder()
         comfirmTextField.setBottomBorder()
     }
@@ -105,14 +111,10 @@ class ForgotPasswordViewController: UIViewController {
     func setBtnView(){
         //外框線
         sendButton.layer.borderWidth = 1
-        getVerifyButton.layer.borderWidth = 1
         //systemBlue
 //        sendButton.layer.borderColor = CGColor(red: 0, green: 122/255, blue: 255/255, alpha: 0.7)
         sendButton.layer.borderColor = UIColor(red: 78/255, green: 171/255, blue: 173/255, alpha: 0.7).cgColor
         sendButton.layer.cornerRadius = 5
-//        getVerifyButton.layer.borderColor = CGColor(red: 0, green: 122/255, blue: 255/255, alpha: 0.7)
-        getVerifyButton.layer.borderColor = UIColor(red: 78/255, green: 171/255, blue: 173/255, alpha: 0.7).cgColor
-        getVerifyButton.layer.cornerRadius = 5
     }
     @objc func setCountdown(){
         if countDount < 1 {
