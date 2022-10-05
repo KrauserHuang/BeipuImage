@@ -10,6 +10,7 @@ import UIKit
 extension UIColor {
     static let themeRed = UIColor.rgb(red: 255, green: 61, blue: 148)
     static let themeLightRed = UIColor.convertHexStringToUIColor(hexString: "F6C7DE", alpha: 0.5)
+    static let themeLightBlue = UIColor.convertHexStringToUIColor(hexString: "D7F1F9")
     static let test1 = UIColor.convertHexStringToUIColor(hexString: "C56C86")
     static let test2 = UIColor.convertHexStringToUIColor(hexString: "FF7582")
     static let navigationBarColor = UIColor.convertHexStringToUIColor(hexString: "78A3D3")

@@ -19,8 +19,15 @@
 		4F1B1FC628C0A08100E969CD /* DigitalGuidanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B1FC428C0A08100E969CD /* DigitalGuidanceDetailViewController.swift */; };
 		4F1B1FC728C0A08100E969CD /* DigitalGuidanceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F1B1FC528C0A08100E969CD /* DigitalGuidanceDetailViewController.xib */; };
 		4F1B1FC928C0B66500E969CD /* CouponAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B1FC828C0B66500E969CD /* CouponAlert.swift */; };
+		4F6D5C7828E13F590087229D /* 建築物說明.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4F6D5C7528E13F580087229D /* 建築物說明.m4a */; };
+		4F6D5C7928E13F590087229D /* 慈天宮簡介.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4F6D5C7628E13F590087229D /* 慈天宮簡介.m4a */; };
+		4F6D5C7A28E13F590087229D /* 參拜說明.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4F6D5C7728E13F590087229D /* 參拜說明.m4a */; };
 		4F727B9028AB998100AFABC3 /* ParkingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F727B8E28AB998100AFABC3 /* ParkingTableViewCell.swift */; };
 		4F727B9128AB998100AFABC3 /* ParkingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F727B8F28AB998100AFABC3 /* ParkingTableViewCell.xib */; };
+		4F914D9D28DDB8C000F17071 /* random.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F914D9C28DDB8BF00F17071 /* random.mp3 */; };
+		4FE7408628DC59960067E620 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7408528DC59960067E620 /* URL+Extension.swift */; };
+		4FEA6B7528E28EC400876641 /* DigitalGuidanceDetail2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEA6B7328E28EC400876641 /* DigitalGuidanceDetail2ViewController.swift */; };
+		4FEA6B7628E28EC400876641 /* DigitalGuidanceDetail2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FEA6B7428E28EC400876641 /* DigitalGuidanceDetail2ViewController.xib */; };
 		5406E8DC289A6D3300B639EA /* PayRecordTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5406E8DA289A6D3300B639EA /* PayRecordTableViewController.storyboard */; };
 		5406E8DD289A6D3300B639EA /* PayRecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5406E8DB289A6D3300B639EA /* PayRecordTableViewController.swift */; };
 		5406E8E0289A775300B639EA /* PayRecordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5406E8DE289A775300B639EA /* PayRecordDetailViewController.swift */; };
@@ -151,8 +158,15 @@
 		4F1B1FC528C0A08100E969CD /* DigitalGuidanceDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DigitalGuidanceDetailViewController.xib; sourceTree = "<group>"; };
 		4F1B1FC828C0B66500E969CD /* CouponAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponAlert.swift; sourceTree = "<group>"; };
 		4F49B72828D0592E00D86A03 /* Beipu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Beipu.entitlements; sourceTree = "<group>"; };
+		4F6D5C7528E13F580087229D /* 建築物說明.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "建築物說明.m4a"; sourceTree = "<group>"; };
+		4F6D5C7628E13F590087229D /* 慈天宮簡介.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "慈天宮簡介.m4a"; sourceTree = "<group>"; };
+		4F6D5C7728E13F590087229D /* 參拜說明.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "參拜說明.m4a"; sourceTree = "<group>"; };
 		4F727B8E28AB998100AFABC3 /* ParkingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingTableViewCell.swift; sourceTree = "<group>"; };
 		4F727B8F28AB998100AFABC3 /* ParkingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingTableViewCell.xib; sourceTree = "<group>"; };
+		4F914D9C28DDB8BF00F17071 /* random.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = random.mp3; sourceTree = "<group>"; };
+		4FE7408528DC59960067E620 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		4FEA6B7328E28EC400876641 /* DigitalGuidanceDetail2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalGuidanceDetail2ViewController.swift; sourceTree = "<group>"; };
+		4FEA6B7428E28EC400876641 /* DigitalGuidanceDetail2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DigitalGuidanceDetail2ViewController.xib; sourceTree = "<group>"; };
 		5406E8DA289A6D3300B639EA /* PayRecordTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PayRecordTableViewController.storyboard; sourceTree = "<group>"; };
 		5406E8DB289A6D3300B639EA /* PayRecordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayRecordTableViewController.swift; sourceTree = "<group>"; };
 		5406E8DE289A775300B639EA /* PayRecordDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayRecordDetailViewController.swift; sourceTree = "<group>"; };
@@ -321,6 +335,7 @@
 			children = (
 				4F1B1FB328C0850900E969CD /* UIColor+Extension.swift */,
 				4F1B1FB528C0868100E969CD /* UIView+Extension.swift */,
+				4FE7408528DC59960067E620 /* URL+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -344,12 +359,25 @@
 		4F1B1FBF28C09A8000E969CD /* DigitalGuidance */ = {
 			isa = PBXGroup;
 			children = (
+				4F6D5C7428E13F2D0087229D /* Speech Audio */,
 				4F1B1FC028C09BEE00E969CD /* DigitalGuidanceViewController.swift */,
 				4F1B1FC128C09BEE00E969CD /* DigitalGuidanceViewController.xib */,
 				4F1B1FC428C0A08100E969CD /* DigitalGuidanceDetailViewController.swift */,
 				4F1B1FC528C0A08100E969CD /* DigitalGuidanceDetailViewController.xib */,
+				4FEA6B7328E28EC400876641 /* DigitalGuidanceDetail2ViewController.swift */,
+				4FEA6B7428E28EC400876641 /* DigitalGuidanceDetail2ViewController.xib */,
 			);
 			path = DigitalGuidance;
+			sourceTree = "<group>";
+		};
+		4F6D5C7428E13F2D0087229D /* Speech Audio */ = {
+			isa = PBXGroup;
+			children = (
+				4F6D5C7728E13F590087229D /* 參拜說明.m4a */,
+				4F6D5C7528E13F580087229D /* 建築物說明.m4a */,
+				4F6D5C7628E13F590087229D /* 慈天宮簡介.m4a */,
+			);
+			path = "Speech Audio";
 			sourceTree = "<group>";
 		};
 		5416F401289BDB6300D4F9B9 /* Merchant */ = {
@@ -417,6 +445,7 @@
 		5420E560286567E2003F8371 /* Beipu */ = {
 			isa = PBXGroup;
 			children = (
+				4F914D9C28DDB8BF00F17071 /* random.mp3 */,
 				4F49B72828D0592E00D86A03 /* Beipu.entitlements */,
 				4F1B1FB128C084E400E969CD /* Utils */,
 				5428AC5F286B11B5009AD92B /* Custom */,
@@ -728,6 +757,7 @@
 				5428AC74286B11B5009AD92B /* BlankViewController.xib in Resources */,
 				543005F62874304D00784D3B /* GetSetTableViewController.storyboard in Resources */,
 				4F727B9128AB998100AFABC3 /* ParkingTableViewCell.xib in Resources */,
+				4FEA6B7628E28EC400876641 /* DigitalGuidanceDetail2ViewController.xib in Resources */,
 				5416F405289BDD0700D4F9B9 /* MerchantTopViewController.xib in Resources */,
 				5431FECD288D9AB30060D5DC /* NaviGetPointViewController.xib in Resources */,
 				5428056F288C37AE009D243F /* BeipuSetTableViewController.storyboard in Resources */,
@@ -741,9 +771,11 @@
 				5431FEC5288D94330060D5DC /* NaviCameraViewController.xib in Resources */,
 				543005DF2872D6DE00784D3B /* CouponTableViewController.storyboard in Resources */,
 				543005E82874105800784D3B /* MapViewController.xib in Resources */,
+				4F6D5C7828E13F590087229D /* 建築物說明.m4a in Resources */,
 				5406E8DC289A6D3300B639EA /* PayRecordTableViewController.storyboard in Resources */,
 				545CC62C286D9C9200D6714A /* ForgotPasswordViewController.xib in Resources */,
 				545CC628286D9C8A00D6714A /* SignUpViewController.xib in Resources */,
+				4F914D9D28DDB8C000F17071 /* random.mp3 in Resources */,
 				54377F60287539D7004A9482 /* NaviCategoryViewController.xib in Resources */,
 				54E1EF0C2876CBDA00D17C85 /* BeiPuSpotViewController.xib in Resources */,
 				5428AC50286ACD1C009AD92B /* TopPageViewController.storyboard in Resources */,
@@ -751,6 +783,7 @@
 				4F1B1FC728C0A08100E969CD /* DigitalGuidanceDetailViewController.xib in Resources */,
 				5428AC78286B11B5009AD92B /* TimeSelectView.xib in Resources */,
 				543005D22871937100784D3B /* MemberInfoViewController.xib in Resources */,
+				4F6D5C7928E13F590087229D /* 慈天宮簡介.m4a in Resources */,
 				54B0467C288E92A9003F04CA /* PayDetailViewController.xib in Resources */,
 				5431FEC9288D95640060D5DC /* NaviNotInRangeViewController.xib in Resources */,
 				5431FED1288E77940060D5DC /* ShoppingCartTableViewController.storyboard in Resources */,
@@ -762,6 +795,7 @@
 				5420E569286567E2003F8371 /* Main.storyboard in Resources */,
 				543005DA2872C52000784D3B /* ThemeSetTableViewController.storyboard in Resources */,
 				5416F400289BD03F00D4F9B9 /* EMapDetailViewController.xib in Resources */,
+				4F6D5C7A28E13F590087229D /* 參拜說明.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -894,6 +928,7 @@
 				5428F667286C5A0E0096AA34 /* LogInFlowViewController.swift in Sources */,
 				541806C5288A545200A0E55E /* ItemListCollectionViewController.swift in Sources */,
 				4F727B9028AB998100AFABC3 /* ParkingTableViewCell.swift in Sources */,
+				4FE7408628DC59960067E620 /* URL+Extension.swift in Sources */,
 				5420E562286567E2003F8371 /* AppDelegate.swift in Sources */,
 				4F1B1FBA28C08DC700E969CD /* ButtonFactory.swift in Sources */,
 				4F1B1FC228C09BEE00E969CD /* DigitalGuidanceViewController.swift in Sources */,
@@ -927,6 +962,7 @@
 				4F1B1FB028C0820C00E969CD /* AdminQRScanViewController.swift in Sources */,
 				541806CA288AAAF500A0E55E /* ItemDetailViewController.swift in Sources */,
 				5428AC77286B11B5009AD92B /* ScreenCapAlert.swift in Sources */,
+				4FEA6B7528E28EC400876641 /* DigitalGuidanceDetail2ViewController.swift in Sources */,
 				54E1EF0B2876CBDA00D17C85 /* BeiPuSpotViewController.swift in Sources */,
 				542FBEB7286EE1BC00EAB612 /* MemberCenterFlowViewController.swift in Sources */,
 				4F1B1FBC28C08F5C00E969CD /* LabelFactory.swift in Sources */,
@@ -1128,7 +1164,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Beipu/Beipu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = RV8U4Q9DP5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Beipu/Info.plist;
@@ -1164,7 +1200,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Beipu/Beipu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = RV8U4Q9DP5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Beipu/Info.plist;

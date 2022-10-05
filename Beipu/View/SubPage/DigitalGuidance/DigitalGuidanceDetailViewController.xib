@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,11 +13,29 @@
             <connections>
                 <outlet property="chargeLabel" destination="hJQ-LY-9pg" id="OFO-k0-5yN"/>
                 <outlet property="descriptionLabel" destination="E6T-uY-6Xm" id="9k7-tL-MVH"/>
-                <outlet property="descriptionView" destination="55a-SK-n9J" id="oVc-W7-Thi"/>
+                <outlet property="descriptionView" destination="55a-SK-n9J" id="RTv-JX-phy"/>
                 <outlet property="imageView" destination="vn3-Z5-ZO2" id="Fzp-EX-EWh"/>
                 <outlet property="openTimeLabel" destination="CrF-36-Xcn" id="1He-Lx-l7h"/>
+                <outlet property="speechButton1" destination="XLG-0l-0vk" id="AsU-1p-pRg"/>
+                <outlet property="speechButton2" destination="fW8-Cc-w3G" id="Fmc-tz-zHC"/>
+                <outlet property="speechButton3" destination="xw2-0s-LYc" id="FfN-Av-1HV"/>
+                <outlet property="speechInfoStackView" destination="yG0-sX-wUh" id="ilu-uo-17I"/>
+                <outlet property="speechStackView" destination="Nbz-7Z-ILo" id="D5G-We-sF7"/>
                 <outlet property="titleLabel" destination="CRr-L9-Pby" id="AZj-Dq-tvV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="speechButtons" destination="qdC-F3-35w" collectionClass="NSMutableArray" id="JzC-Eu-1sN"/>
+                <outletCollection property="speechButtons" destination="uDD-H7-C3M" collectionClass="NSMutableArray" id="ObV-lN-Og9"/>
+                <outletCollection property="speechButtons" destination="ydL-ae-WvY" collectionClass="NSMutableArray" id="bfe-Gx-jWR"/>
+                <outletCollection property="speechTextLabel" destination="qIe-ef-unn" collectionClass="NSMutableArray" id="4X2-dg-vHr"/>
+                <outletCollection property="speechTextLabel" destination="uep-v1-bEP" collectionClass="NSMutableArray" id="klH-QP-RaA"/>
+                <outletCollection property="speechTextLabel" destination="l0y-Hf-wzu" collectionClass="NSMutableArray" id="Ppq-dK-TeO"/>
+                <outletCollection property="speechTextView" destination="AGj-YW-LFU" collectionClass="NSMutableArray" id="N5f-Ns-vaj"/>
+                <outletCollection property="speechTextView" destination="mtM-3Y-ZWI" collectionClass="NSMutableArray" id="VXj-uE-Wv6"/>
+                <outletCollection property="speechTextView" destination="pol-Wy-JP4" collectionClass="NSMutableArray" id="Dz1-yo-RlF"/>
+                <outletCollection property="speechImage" destination="3SH-8o-3no" collectionClass="NSMutableArray" id="Npm-kR-rnj"/>
+                <outletCollection property="speechImage" destination="21e-Ya-VAv" collectionClass="NSMutableArray" id="W0d-Pv-JTX"/>
+                <outletCollection property="speechImage" destination="UKh-ik-iwf" collectionClass="NSMutableArray" id="514-Ue-FtG"/>
+                <outletCollection property="speechImage" destination="XW7-lc-uSd" collectionClass="NSMutableArray" id="dlr-CK-CHx"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -29,10 +47,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAD-Cv-Wwo">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="876"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="2708"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55a-SK-n9J">
-                                    <rect key="frame" x="20" y="282" width="374" height="375"/>
+                                    <rect key="frame" x="20" y="322" width="374" height="375"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6T-uY-6Xm">
                                             <rect key="frame" x="15" y="15" width="344" height="345"/>
@@ -56,11 +74,205 @@
                                         <constraint firstAttribute="height" constant="200" id="ZFx-oC-SBS"/>
                                     </constraints>
                                 </imageView>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="s7M-5A-yPb">
-                                    <rect key="frame" x="20" y="687" width="374" height="169"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="s7M-5A-yPb" userLabel="Info Stack View">
+                                    <rect key="frame" x="20" y="717" width="374" height="1971"/>
                                     <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yG0-sX-wUh" userLabel="Speech Info Stack View">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="1808.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1100" translatesAutoresizingMaskIntoConstraints="NO" id="UKh-ik-iwf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="200" id="Ohc-z2-Vw5"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QSX-9s-QZS">
+                                                    <rect key="frame" x="0.0" y="210" width="374" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="慈天宮簡介" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxI-mU-51u">
+                                                            <rect key="frame" x="0.0" y="0.0" width="243.5" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLG-0l-0vk">
+                                                            <rect key="frame" x="243.5" y="0.0" width="130.5" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="uty-wy-USK"/>
+                                                            </constraints>
+                                                            <color key="tintColor" systemColor="labelColor"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system" title="慈天宮簡介"/>
+                                                            <connections>
+                                                                <action selector="speechButton1Tapped:" destination="-1" eventType="touchUpInside" id="QgB-lz-KTG"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AGj-YW-LFU">
+                                                    <rect key="frame" x="0.0" y="260" width="374" height="294"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIe-ef-unn">
+                                                            <rect key="frame" x="15" y="15" width="344" height="264"/>
+                                                            <string key="text">北埔慈天宮為北埔峨眉寶山三鄉的信仰中心，自從姜秀鑾於1835年開墾北埔之後，當地的民眾認知需要一個精神依託，當時姜秀鑾祖先從中國大陸帶來的觀音菩薩當作守護神，當時只是一座使用茅草蓋的觀音廟。
+1846年，由於茅草屋容易毀壞，且北埔發展也告一個段落，因此把茅草屋拆掉改成木造建築，1848年完工之後也從北港朝天宮迎請媽祖，成為台灣少數的雙慈併寺。
+1871年，木造也容易毀壞，因此墾首姜秀鑾的孫子姜榮華集資用北埔在地建材，包含石板及木材等，打造了現在的慈天宮。</string>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.47228860859999999" green="0.63906377550000004" blue="0.82747644190000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstItem="qIe-ef-unn" firstAttribute="leading" secondItem="AGj-YW-LFU" secondAttribute="leading" constant="15" id="DiW-eE-EB2"/>
+                                                        <constraint firstAttribute="bottom" secondItem="qIe-ef-unn" secondAttribute="bottom" constant="15" id="WC4-If-9q6"/>
+                                                        <constraint firstItem="qIe-ef-unn" firstAttribute="top" secondItem="AGj-YW-LFU" secondAttribute="top" constant="15" id="chE-ke-W5o"/>
+                                                        <constraint firstAttribute="trailing" secondItem="qIe-ef-unn" secondAttribute="trailing" constant="15" id="hwz-e0-JGJ"/>
+                                                    </constraints>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="64V-SD-BQs">
+                                                    <rect key="frame" x="0.0" y="564" width="374" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="參拜說明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bh6-7u-D4L">
+                                                            <rect key="frame" x="0.0" y="0.0" width="261" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fW8-Cc-w3G">
+                                                            <rect key="frame" x="261" y="0.0" width="113" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="cFy-CL-a0G"/>
+                                                            </constraints>
+                                                            <color key="tintColor" systemColor="labelColor"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system" title="參拜說明"/>
+                                                            <connections>
+                                                                <action selector="speechButton2Tapped:" destination="-1" eventType="touchUpInside" id="WHE-gU-yxG"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1106" translatesAutoresizingMaskIntoConstraints="NO" id="XW7-lc-uSd">
+                                                    <rect key="frame" x="0.0" y="614" width="374" height="200"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="200" id="R3Q-vi-Fjh"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mtM-3Y-ZWI">
+                                                    <rect key="frame" x="0.0" y="824" width="374" height="355"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uep-v1-bEP">
+                                                            <rect key="frame" x="15" y="15" width="344" height="325"/>
+                                                            <string key="text">殿前的石雕龍柱作法為台灣廟宇少見的「升龍式」龍柱，一般的龍柱龍頭在下方，稱為磐龍柱，但這裡看到的升龍柱，龍頭在上，進入廟裡才會看見磐龍柱。
+磐龍柱與升龍柱有著特殊含義:
+1.由於慈天宮的主神為觀音菩薩，觀音菩薩坐騎是龍，當看見人民需要救苦救難時，就要馬上出發，因此升龍柱的意思為馬上支援。
+2.信眾來到廟裡要跟神明溝通，用的方式為『香』，而新竹縣最有名的是風，當香被風吹散時，神明會聽不清楚信眾的訴求，因此升龍柱代表當信眾進入廟裡時，神龍就把人的心願直接向上傳達，訴說完之後，神明就利用降龍柱將祝福傳回人間。</string>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.47228860859999999" green="0.63906377550000004" blue="0.82747644190000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="uep-v1-bEP" secondAttribute="trailing" constant="15" id="1Qj-hs-cZj"/>
+                                                        <constraint firstItem="uep-v1-bEP" firstAttribute="leading" secondItem="mtM-3Y-ZWI" secondAttribute="leading" constant="15" id="X0J-5f-qsv"/>
+                                                        <constraint firstAttribute="bottom" secondItem="uep-v1-bEP" secondAttribute="bottom" constant="15" id="kHR-MN-6VJ"/>
+                                                        <constraint firstItem="uep-v1-bEP" firstAttribute="top" secondItem="mtM-3Y-ZWI" secondAttribute="top" constant="15" id="saY-yT-b1h"/>
+                                                    </constraints>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5sd-jP-ki7">
+                                                    <rect key="frame" x="0.0" y="1189" width="374" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="建築物說明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mU4-fu-EGj">
+                                                            <rect key="frame" x="0.0" y="0.0" width="243.5" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xw2-0s-LYc">
+                                                            <rect key="frame" x="243.5" y="0.0" width="130.5" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="sbJ-ei-V57"/>
+                                                            </constraints>
+                                                            <color key="tintColor" systemColor="labelColor"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system" title="建築物說明"/>
+                                                            <connections>
+                                                                <action selector="speechButton3Tapped:" destination="-1" eventType="touchUpInside" id="jhv-Ic-WIF"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wd2-0m-OUF">
+                                                    <rect key="frame" x="0.0" y="1239" width="374" height="200"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance3" translatesAutoresizingMaskIntoConstraints="NO" id="3SH-8o-3no">
+                                                            <rect key="frame" x="0.0" y="0.0" width="182" height="200"/>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance4" translatesAutoresizingMaskIntoConstraints="NO" id="21e-Ya-VAv">
+                                                            <rect key="frame" x="192" y="0.0" width="182" height="200"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="200" id="69n-fJ-0WZ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pol-Wy-JP4">
+                                                    <rect key="frame" x="0.0" y="1449" width="374" height="294"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0y-Hf-wzu">
+                                                            <rect key="frame" x="15" y="15" width="344" height="264"/>
+                                                            <string key="text">慈天宮除了宗教信仰，在藝術面的價值也是相當高，正殿兩旁的一對龍柱，雕刻得栩栩如生，彷彿隨時都會帶著信眾的心願直達天庭。
+當你走進廟宇的正中間，往上看可以看到客式的木作雕工，相當簡約樸實但生動，
+且每一個樑柱都有彩繪，上面繪有24孝的故事，顏料則採用天然礦石，研磨成粉利用特殊工法彩繪上去，幾乎不會褪色，從1871年至現在雖然有幾次整修，但結構大部分都保存完整。</string>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.47228860859999999" green="0.63906377550000004" blue="0.82747644190000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="l0y-Hf-wzu" secondAttribute="bottom" constant="15" id="0uE-ga-EZO"/>
+                                                        <constraint firstItem="l0y-Hf-wzu" firstAttribute="leading" secondItem="pol-Wy-JP4" secondAttribute="leading" constant="15" id="OS0-Zo-Q2Q"/>
+                                                        <constraint firstAttribute="trailing" secondItem="l0y-Hf-wzu" secondAttribute="trailing" constant="15" id="Tff-bs-ENg"/>
+                                                        <constraint firstItem="l0y-Hf-wzu" firstAttribute="top" secondItem="pol-Wy-JP4" secondAttribute="top" constant="15" id="qfZ-zw-UuB"/>
+                                                    </constraints>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uwL-GN-cVH">
+                                                    <rect key="frame" x="0.0" y="1753" width="374" height="55.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble.left.and.exclamationmark.bubble.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aC5-W1-PN3">
+                                                            <rect key="frame" x="0.0" y="-0.5" width="25" height="26"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="25" id="81v-pa-8FF"/>
+                                                                <constraint firstAttribute="width" secondItem="aC5-W1-PN3" secondAttribute="height" multiplier="1:1" id="KdK-4R-tfz"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="onn-Ax-QR5">
+                                                            <rect key="frame" x="35" y="0.0" width="339" height="55.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="語音導覽解說員" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ug1-tP-HzB">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="143" height="24"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="慈天宮 姜瑞金總幹事" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnu-jr-F3Z">
+                                                                    <rect key="frame" x="0.0" y="34" width="169.5" height="21.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2GA-Ko-ldL">
-                                            <rect key="frame" x="0.0" y="0.0" width="181.5" height="77"/>
+                                            <rect key="frame" x="0.0" y="1823.5" width="181.5" height="55.5"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar.badge.exclamationmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SGN-MH-9Kr">
                                                     <rect key="frame" x="0.0" y="1.5" width="26.5" height="24"/>
@@ -90,7 +302,7 @@
                                             </subviews>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rRG-4I-diZ">
-                                            <rect key="frame" x="0.0" y="92" width="347" height="77"/>
+                                            <rect key="frame" x="0.0" y="1894" width="347" height="77"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollarsign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MKb-ws-y0n">
                                                     <rect key="frame" x="0.0" y="0.5" width="25" height="24"/>
@@ -121,28 +333,66 @@
                                         </stackView>
                                     </subviews>
                                 </stackView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="埔第一棧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRr-L9-Pby">
-                                    <rect key="frame" x="20" y="238" width="82" height="24"/>
-                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CJD-jU-rXJ" userLabel="Title Stack View">
+                                    <rect key="frame" x="20" y="238" width="374" height="74"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="埔第一棧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRr-L9-Pby">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Nbz-7Z-ILo" userLabel="Speech Stack View">
+                                            <rect key="frame" x="0.0" y="34" width="374" height="40"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDD-H7-C3M">
+                                                    <rect key="frame" x="0.0" y="0.0" width="121.5" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="05D-N9-iLb"/>
+                                                    </constraints>
+                                                    <color key="tintColor" systemColor="labelColor"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="慈天宮簡介" image="speaker.wave.3.fill" catalog="system">
+                                                        <color key="titleColor" systemColor="labelColor"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydL-ae-WvY">
+                                                    <rect key="frame" x="126.5" y="0.0" width="121" height="40"/>
+                                                    <color key="tintColor" systemColor="labelColor"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="參拜說明" image="speaker.wave.3.fill" catalog="system">
+                                                        <color key="titleColor" systemColor="labelColor"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdC-F3-35w">
+                                                    <rect key="frame" x="252.5" y="0.0" width="121.5" height="40"/>
+                                                    <color key="tintColor" systemColor="labelColor"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="建築物說明" image="speaker.wave.3.fill" catalog="system">
+                                                        <color key="titleColor" systemColor="labelColor"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="s7M-5A-yPb" firstAttribute="trailing" secondItem="vn3-Z5-ZO2" secondAttribute="trailing" id="2No-D2-Uvv"/>
                                 <constraint firstItem="s7M-5A-yPb" firstAttribute="centerX" secondItem="xAD-Cv-Wwo" secondAttribute="centerX" id="8HO-lv-RYY"/>
-                                <constraint firstItem="CRr-L9-Pby" firstAttribute="leading" secondItem="vn3-Z5-ZO2" secondAttribute="leading" id="Dac-Uf-94D"/>
                                 <constraint firstItem="55a-SK-n9J" firstAttribute="centerX" secondItem="vn3-Z5-ZO2" secondAttribute="centerX" id="Dg0-Rm-ZwJ"/>
+                                <constraint firstItem="s7M-5A-yPb" firstAttribute="top" secondItem="55a-SK-n9J" secondAttribute="bottom" constant="20" id="Dpp-mA-FYE"/>
                                 <constraint firstItem="vn3-Z5-ZO2" firstAttribute="leading" secondItem="xAD-Cv-Wwo" secondAttribute="leading" constant="20" id="EKU-XA-xp8"/>
-                                <constraint firstItem="55a-SK-n9J" firstAttribute="top" secondItem="CRr-L9-Pby" secondAttribute="bottom" constant="20" id="Lij-hH-MH1"/>
+                                <constraint firstItem="55a-SK-n9J" firstAttribute="top" secondItem="CJD-jU-rXJ" secondAttribute="bottom" constant="10" id="GYC-Ph-hv9"/>
                                 <constraint firstAttribute="trailing" secondItem="vn3-Z5-ZO2" secondAttribute="trailing" constant="20" id="NOy-K0-ezr"/>
                                 <constraint firstItem="55a-SK-n9J" firstAttribute="trailing" secondItem="vn3-Z5-ZO2" secondAttribute="trailing" id="P45-ux-kSP"/>
-                                <constraint firstItem="CRr-L9-Pby" firstAttribute="top" secondItem="vn3-Z5-ZO2" secondAttribute="bottom" constant="20" id="VwA-Mj-cEx"/>
+                                <constraint firstItem="CJD-jU-rXJ" firstAttribute="top" secondItem="vn3-Z5-ZO2" secondAttribute="bottom" constant="20" id="Uf5-X2-HsT"/>
+                                <constraint firstItem="CJD-jU-rXJ" firstAttribute="trailing" secondItem="vn3-Z5-ZO2" secondAttribute="trailing" id="bqB-cU-5FX"/>
                                 <constraint firstItem="vn3-Z5-ZO2" firstAttribute="top" secondItem="xAD-Cv-Wwo" secondAttribute="topMargin" constant="10" id="eof-RS-Ym3"/>
-                                <constraint firstItem="s7M-5A-yPb" firstAttribute="top" secondItem="55a-SK-n9J" secondAttribute="bottom" constant="30" id="ezz-CF-l9b"/>
                                 <constraint firstItem="s7M-5A-yPb" firstAttribute="leading" secondItem="vn3-Z5-ZO2" secondAttribute="leading" id="fKN-Mw-dSo"/>
                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="s7M-5A-yPb" secondAttribute="bottom" constant="20" id="jqe-B0-gi2"/>
+                                <constraint firstItem="CJD-jU-rXJ" firstAttribute="leading" secondItem="vn3-Z5-ZO2" secondAttribute="leading" id="nBZ-Em-0gJ"/>
                                 <constraint firstItem="55a-SK-n9J" firstAttribute="leading" secondItem="vn3-Z5-ZO2" secondAttribute="leading" id="vgR-oc-psx"/>
                             </constraints>
                         </view>
@@ -169,8 +419,18 @@
         </view>
     </objects>
     <resources>
+        <image name="IMG_1100" width="4032" height="3024"/>
+        <image name="IMG_1106" width="4032" height="3024"/>
+        <image name="bubble.left.and.exclamationmark.bubble.right" catalog="system" width="128" height="96"/>
         <image name="calendar.badge.exclamationmark" catalog="system" width="128" height="108"/>
-        <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
+        <image name="dollarsign.circle" catalog="system" width="128" height="123"/>
+        <image name="guidance3" width="1180" height="1572"/>
+        <image name="guidance4" width="1180" height="1572"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
+        <image name="speaker.wave.3.fill" catalog="system" width="128" height="84"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

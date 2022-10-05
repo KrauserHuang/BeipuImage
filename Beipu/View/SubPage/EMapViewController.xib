@@ -54,16 +54,16 @@
                     <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsT-r4-kNr">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="1038.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="936"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="北埔老街地圖" translatesAutoresizingMaskIntoConstraints="NO" id="AzU-BQ-U36">
-                                    <rect key="frame" x="10" y="10" width="394" height="448.5"/>
+                                    <rect key="frame" x="10" y="10" width="394" height="346"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" secondItem="AzU-BQ-U36" secondAttribute="height" multiplier="703:800" id="SSX-Nm-BBV"/>
+                                        <constraint firstAttribute="width" secondItem="AzU-BQ-U36" secondAttribute="height" multiplier="197:173" id="siv-9E-esB"/>
                                     </constraints>
                                 </imageView>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DBf-JR-kRK">
-                                    <rect key="frame" x="30" y="468.5" width="354" height="540"/>
+                                    <rect key="frame" x="30" y="366" width="354" height="540"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="W05-q5-3D8">
                                             <rect key="frame" x="0.0" y="0.0" width="172" height="540"/>
@@ -438,14 +438,14 @@
                 <constraint firstItem="DD9-Yd-8x5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="krJ-gc-oK4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DD9-Yd-8x5" secondAttribute="trailing" id="qUp-M1-SIV"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="121"/>
+            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
         </view>
     </objects>
     <resources>
         <image name="1.circle" catalog="system" width="128" height="123"/>
         <image name="2.circle" catalog="system" width="128" height="123"/>
         <image name="3.circle" catalog="system" width="128" height="123"/>
-        <image name="北埔老街地圖" width="703" height="800"/>
+        <image name="北埔老街地圖" width="801" height="702"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

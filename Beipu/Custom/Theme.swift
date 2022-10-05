@@ -45,6 +45,11 @@ enum ReturnCode {
     static let MALL_RETURN_SUCCESS = ("0x0200", "SUCCESS")
 }
 
+public func Base64(string: String) -> String {
+    let data = string.data(using: .utf8)
+    return data?.base64EncodedString(options: .lineLength64Characters) ?? ""
+}
+
 class Alert {
 
     class func comfirmBeforeLogout(title: String?, msg: String, vc: UIViewController, handler: @escaping Handler) {

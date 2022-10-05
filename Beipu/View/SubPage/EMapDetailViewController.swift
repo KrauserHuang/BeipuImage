@@ -50,7 +50,7 @@ class EMapDetailViewController: UIViewController {
     
     func initView() {
         imageView.addCornerRadius(8)
-        descriptionView.backgroundColor = .themeLightRed
+        descriptionView.backgroundColor = .themeLightBlue
         descriptionView.addCornerRadius(8)
         descriptionLabel.textColor = .black
     }
@@ -68,10 +68,10 @@ class EMapDetailViewController: UIViewController {
     }
     
     //店家名、地址、敘述、電話、Facebook、lat、lon、商城、sid
-    let storeList:[(String, String, String, String, String, Double, Double, String, String)] = [
+    let storeList: [(String, String, String, String, String, Double, Double, String, String)] = [
         ("", "", "", "", "", 0, 0, "", ""),
         ("北埔第一棧",
-         "新竹縣北埔鄉水際村31之1號",
+         "新竹縣北埔鄉水磜村31之1號",
          "民國九十一年，從原本的光君製茶廠，改建成現在這種客家唐式風格建築，取名北埔第一棧，讓客家美食與茶文化更多元豐富。北埔第一棧在吃的文化上，除酸、鹹、香一貫的客家菜特色外，也發展出令人讚嘆垂涎的料理，如金桔入菜與膨風茶入菜等，都是極具地方特色的客家美食。另外，特色膨風茶之產製和銷售，是近年北埔鄉對外的一項主要文化產業，亦是地方重要的經濟來源，「北埔第一棧」為北埔產茶勝地，開設膨風茶文物館，配合四周觀光茶園、果園、客家歷史古蹟、水域遊憩設施等，亦成為遊客想了解北埔鄉茶業的遊憩據點重心，更能吸引國內遊客甚至國際觀光客之注意。北埔第一棧在客家文化的傳承與發揚一直在北埔站在領先的地位，我們希望用認真傳承的心，永續經營這樣的一塊寶地。",
          "03-5803131",
          "https://www.facebook.com/kcft.tw",
@@ -104,7 +104,7 @@ class EMapDetailViewController: UIViewController {
          "https://www.facebook.com/LordJiangsPersimmonCake.TW",
          24.6996937,
          121.0575699,
-         "https://hcparking.jotangi.net/beipu_web/shop-single.php?pno=A0001",
+         "https://hcparking.jotangi.net/beipu_web/shop-single.php?pno=A0004",
          "226"),
         ("北埔擂茶堂",
          "新竹縣北埔鄉廟前街4-1號",
@@ -262,7 +262,7 @@ class EMapDetailViewController: UIViewController {
         ("阿滿水晶餃",
          "新竹縣北埔鄉光復街30號",
          "阿滿姐包水晶餃的工夫是傳承自婆婆的好手藝，由於傳統的水晶餃外皮較為生硬，在經過不斷的改良修正後，終於研發出更Q彈有嚼勁的口感 。 阿滿水晶餃好吃的祕訣就在於手工製的外皮，與謹慎掌控外皮粉漿的細節比例，並搭配新鮮特選的溫體豬前腿肉內餡，簡單用心的口味迅速征服在地人的胃，成功打響口碑，阿滿姐堅持的傳統美味更成為許多饕客到北埔必吃的美食名單之一。",
-         "0935-659-363 / 0960-623-773",
+         "0935-659-363",
          "https://www.facebook.com/AManShuiJingJiao/",
          24.6991257,
          121.0563081,
@@ -360,10 +360,6 @@ extension EMapDetailViewController {
     
     func callPhoneNumber(indexPath: Int) {
         let phoneNumber = storeList[indexPath].3
-        
-//        if phoneNumber.contains(where: { <#Character#> in
-//            <#code#>
-//        })
         
         if let phoneCallURL = URL(string: "tel://" + phoneNumber),
            UIApplication.shared.canOpenURL(phoneCallURL) {

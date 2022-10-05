@@ -28,7 +28,14 @@ class NaviCameraViewController: UIViewController, AVCaptureMetadataOutputObjects
     weak var delegate: NaviCameraViewControllerDelegate?
     var currentLat = 0.0
     var currentLong = 0.0
-    let arLocations = [(0,0),(24.69994638181437, 121.0582215816484),(24.70039501169668, 121.05789269699194),(24.69863477847924, 121.05826535466362),(24.699555364368607, 121.0591729273457),(24.70097752180357, 121.0579163988429)]
+    let arLocations = [
+        (0,0),
+        (24.69994638181437, 121.0582215816484), //慈天宮 (實際差距26公尺)
+        (24.70039501169668, 121.05789269699194), //姜阿新洋樓 (實際差距29公尺)
+        (24.69863477847924, 121.05826535466362), //鄧南光影像紀念館 (實際差距0)
+        (24.699555364368607, 121.0591729273457), //慈母亭 (實際差距8公尺)
+        (24.70097752180357, 121.0579163988429) //金廣福公館 (實際差距81公尺)
+    ]
     
     
     override func viewDidLoad() {
@@ -135,7 +142,10 @@ class NaviCameraViewController: UIViewController, AVCaptureMetadataOutputObjects
 //            print("目標經度:\(self.arInfo?.ar_longitude)")
 //            print("目標緯度:\(self.arInfo?.ar_latitude)")
 //        }
-        let distance = getDistance(lat1: currentLat, lng1: currentLong, lat2: arLocations[arIndex].0, lng2: arLocations[arIndex].1)
+        let distance = getDistance(lat1: currentLat,
+                                   lng1: currentLong,
+                                   lat2: arLocations[arIndex].0,
+                                   lng2: arLocations[arIndex].1)
         delegate?.getAction(self, arIndex: arIndex, distance: distance)
     }
     

@@ -91,6 +91,7 @@ class TopPageViewController: UIViewController {
                 banners.append(banner)
             }
             self.bannerList = banners
+            print("banner:\(self.bannerList)")
         }
     }
     

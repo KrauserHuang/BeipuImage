@@ -26,14 +26,30 @@ class RoootNavigationController: UINavigationController {
         controller.setNavigationTitle("北埔印象")
         self.viewControllers = [controller]
         
-//        let cartBtn = UIBarButtonItem(image: UIImage(named: "cart")?.imageResized(to: CGSize(width: 35, height: 35)), style: .plain, target: self, action: #selector(cartAction))
-//        cartBtn.tintColor = .black
-        let memberBtn = UIBarButtonItem(image: UIImage(named: "member")?.imageResized(to: CGSize(width: 35, height: 35)).withRenderingMode(.alwaysOriginal),
+        let dotdotButton = UIBarButtonItem(image: UIImage(named: "dotdotLogo")?.imageResized(to: CGSize(width: 35,
+                                                                                                        height: 35)).withRenderingMode(.alwaysOriginal),
+                                           style: .plain,
+                                           target: self,
+                                           action: #selector(toDotDotAppAction))
+        
+        let negativeSeperator = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
+        negativeSeperator.width = -50
+        
+//        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 35, height: 35))
+//        button.contentMode = .scaleAspectFit
+//        button.setImage(UIImage(named: "dotdotLogo"), for: .normal)
+//        button.addTarget(self, action: #selector(toDotDotAppAction), for: .touchUpInside)
+//        button.frame = CGRectMake(0, 0, 35, 35)
+//        let dotdotButton = UIBarButtonItem(customView: button)
+        
+        let memberButton = UIBarButtonItem(image: UIImage(named: "member")?.imageResized(to: CGSize(width: 35,
+                                                                                                 height: 35)).withRenderingMode(.alwaysOriginal),
                                         style: .plain,
                                         target: self,
                                         action: #selector(memberAction))
         
-        controller.navigationItem.rightBarButtonItems = [memberBtn]
+//        controller.navigationItem.rightBarButtonItems = [dotdotButton ,memberButton]
+        controller.navigationItem.rightBarButtonItems = [memberButton, negativeSeperator, dotdotButton]
         if #available(iOS 15, *) {
 //            let layer = Theme().getThemeLayer(size: CGSize(width: UIScreen.main.bounds.width, height: 100))
 //            let image = UIImage.layerImage(from: layer)
@@ -91,6 +107,24 @@ class RoootNavigationController: UINavigationController {
     
     @objc func cartAction(){
         
+    }
+    @objc func toDotDotAppAction() {
+//    @objc func toDotDotAppAction(_ sender: UIBarButtonItem) {
+        let user = UserService.shared.user
+        let id = Base64(string: "\(user?.member_id ?? "")")
+        let pwd = Base64(string: "\(user?.member_pwd ?? "")")
+        let name = Base64(string: "\(user?.member_name ?? "")")
+        let dotdotAppPath = "spot://?id=\(id)&pwd=\(pwd)&name=\(name)"
+        print("=========================================")
+        print(#function, "dotdotAppPath:\(dotdotAppPath)")
+        print("=========================================")
+        let appStorePath = "https://apps.apple.com/tw/app/id1551917653"
+        if let appURL = URL(string: dotdotAppPath),
+           UIApplication.shared.canOpenURL(appURL) {
+            UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
+        } else if let appStoreURL = URL(string: appStorePath) {
+            UIApplication.shared.open(appStoreURL)
+        }
     }
     @objc func memberAction(){
         let user = UserService.shared.user
@@ -186,8 +220,6 @@ extension RoootNavigationController: TopPageViewControllerDelegate {
     
     func naviAction(_ viewController: TopPageViewController) {
         guard let user = UserService.shared.user else {
-//            let alert = UIAlertController.simpleOKAlert(title: "", message: "請先登入會員", buttonTitle: "確認", action: nil)
-//            present(alert, animated: true)
             Alert.showMessage(title: "", msg: "請先登入會員", vc: viewController)
             return
         }
@@ -198,10 +230,15 @@ extension RoootNavigationController: TopPageViewControllerDelegate {
     }
     
     func healthAction(_ viewController: TopPageViewController) {
-        if let url = URL(string: "healthmanage://"), UIApplication.shared.canOpenURL(url) {
-            UIApplication.shared.open(url)
-        }else if let url = URL(string: "https://apps.apple.com/tw/app/id1610454916"){
-            UIApplication.shared.open(url)
+        let user = UserService.shared.user
+        let healthmanageAppPath = "healthmanage://?id=\(user?.member_id ?? "")&name=\(user?.member_name ?? "")"
+        print(#function, "healthmanageAppPath:\(healthmanageAppPath)")
+        let appStorePath = "https://apps.apple.com/tw/app/id1610454916"
+        if let appURL = URL(string: healthmanageAppPath),
+           UIApplication.shared.canOpenURL(appURL) {
+            UIApplication.shared.open(appURL)
+        } else if let appStoreURL = URL(string: appStorePath) {
+            UIApplication.shared.open(appStoreURL)
         }
     }
     

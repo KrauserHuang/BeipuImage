@@ -58,10 +58,8 @@ class NaviCategoryViewController: UIViewController {
         didSet {
             riddleButtons[arIndex - 1].backgroundColor = state == .yes ? .systemGray4 : .themeRed
             riddleButtons[arIndex - 1].setTitle(state == .yes ? "謎題\(arIndex)(已完成)" : "謎題\(arIndex)", for: .normal)
-//            riddleButtons[arIndex - 1].titleLabel?.text = state == .yes ? "謎題\(arIndex)(已完成)" : "謎題\(arIndex)"
             riddleButtons[arIndex - 1].isUserInteractionEnabled = state == .no
             
-//            getCouponButton.backgroundColor = state == .yes ? .systemGray4 : .themeRed
             if riddleButtons.allSatisfy({ button in
                 button.isUserInteractionEnabled == false
             }) {
@@ -164,8 +162,7 @@ extension NaviCategoryViewController: NaviCameraViewControllerDelegate {
         if area(distance, 50) {
             if !gotAr.contains("\(arIndex)") {
                 gotAr.append("\(arIndex)")
-                print(#function)
-                print("gotAr:\(gotAr)")
+                print(#function, "gotAr:\(gotAr)")
                 state = .yes
                 let str = gotAr.joined(separator: ",")
                 UserDefaults.standard.set(str, forKey: "gotArSpotBeipu")
@@ -204,8 +201,8 @@ extension NaviCategoryViewController: NaviCameraViewControllerDelegate {
             controller = NaviNotInRangeViewController()
             (controller as? NaviNotInRangeViewController)?.delegate = self
         }
-        controller.setNavigationTitle("數位導覽")
-        pushViewController(controller, animated: true)
+        controller.setNavigationTitle("數位導覽，距離為\(distance)")
+        self.pushViewController(controller, animated: true)
     }
 }
 

@@ -17,6 +17,7 @@
 	<false/>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+		<string>spot</string>
 		<string>comgooglemaps</string>
 		<string>healthmanage</string>
 	</array>
