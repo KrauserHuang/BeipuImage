@@ -399,7 +399,7 @@ extension RoootNavigationController {
 //                print(results)
 //            }
 //        }
-        AF.request(bundleURLString).responseJSON { response in
+        AF.request(bundleURLString).response { response in
             let json: JSON = try! JSON(data: response.data!)
             if let result = json["results"].array {
                 for data in result {
@@ -413,7 +413,7 @@ extension RoootNavigationController {
                         print("current Version: \(self.currentVersion)")
                         let controller = UIAlertController(title: "需要更新版本", message: "請至App Store立即更新", preferredStyle: .alert)
                         let updateAction = UIAlertAction(title: "立即更新", style: .default) { (action) in
-                            let targetUrl = URL(string: "https://apps.apple.com/tw/app/rilink/id1511096774")
+                            let targetUrl = URL(string: "https://apps.apple.com/tw/app/北埔印象/id1636198260")
                             UIApplication.shared.open(targetUrl!, options: [:], completionHandler: nil)
                         }
                         controller.addAction(updateAction)
